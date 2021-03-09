@@ -19,7 +19,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _framerMotion = require("framer-motion");
 
-var _Animate = require("src/components/Animate");
+var _ = require(".");
 
 var _styles = require("@material-ui/core/styles");
 
@@ -48,7 +48,7 @@ function MotionContainer(_ref) {
     component: _framerMotion.motion.div,
     initial: false,
     animate: open ? 'animate' : 'exit',
-    variants: _Animate.varWrapEnter,
+    variants: _.varWrapEnter,
     className: (0, _clsx.default)(classes.root, className)
   }, other, {
     __self: this,

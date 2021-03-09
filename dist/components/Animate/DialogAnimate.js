@@ -19,7 +19,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _Animate = require("src/components/Animate");
+var _ = require(".");
 
 var _framerMotion = require("framer-motion");
 
@@ -67,7 +67,7 @@ function DialogAnimate(_ref) {
     open: open,
     onClose: onClose,
     PaperComponent: _framerMotion.motion.div,
-    PaperProps: (0, _objectSpread2.default)({}, _Animate.varFadeInUp),
+    PaperProps: (0, _objectSpread2.default)({}, _.varFadeInUp),
     classes: {
       paper: classes.paper
     },

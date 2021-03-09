@@ -21,7 +21,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _Animate = require("src/components/Animate");
+var _Animate = require("../../../components/Animate");
 
 var _styles = require("@material-ui/core/styles");
 

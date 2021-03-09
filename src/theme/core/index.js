@@ -11,7 +11,7 @@ import GlobalStyles from './globalStyles';
 import borderRadius from './borderRadius';
 import componentsOverride from './overrides';
 import { CacheProvider } from '@emotion/react';
-import useSettings from 'src/hooks/useSettings';
+import useSettings from '../../hooks/useSettings';
 import React, { useMemo, useEffect } from 'react';
 import {
   jssPreset,

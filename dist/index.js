@@ -5,107 +5,37 @@ var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhu
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "useTheme", {
-  enumerable: true,
-  get: function get() {
-    return _useTheme.default;
-  }
-});
+var _exportNames = {
+  ThemeProvider: true,
+  StatusLabel: true
+};
 Object.defineProperty(exports, "ThemeProvider", {
   enumerable: true,
   get: function get() {
-    return _ThemeProvider.default;
+    return _core.default;
   }
 });
-Object.defineProperty(exports, "Divider", {
+Object.defineProperty(exports, "StatusLabel", {
   enumerable: true,
   get: function get() {
-    return _Divider.default;
-  }
-});
-Object.defineProperty(exports, "AvatarInitials", {
-  enumerable: true,
-  get: function get() {
-    return _AvatarInitials.default;
-  }
-});
-Object.defineProperty(exports, "AvatarIcon", {
-  enumerable: true,
-  get: function get() {
-    return _AvatarIcon.default;
-  }
-});
-Object.defineProperty(exports, "StatusBadge", {
-  enumerable: true,
-  get: function get() {
-    return _StatusBadge.default;
-  }
-});
-Object.defineProperty(exports, "UserActionListItem", {
-  enumerable: true,
-  get: function get() {
-    return _UserActionListItem.default;
-  }
-});
-Object.defineProperty(exports, "RoundedScrollableBox", {
-  enumerable: true,
-  get: function get() {
-    return _RoundedScrollableBox.default;
-  }
-});
-Object.defineProperty(exports, "ScrollableListBox", {
-  enumerable: true,
-  get: function get() {
-    return _ScrollableListBox.default;
-  }
-});
-Object.defineProperty(exports, "ActionPopoverButton", {
-  enumerable: true,
-  get: function get() {
-    return _ActionPopoverButton.default;
-  }
-});
-Object.defineProperty(exports, "StatListItem", {
-  enumerable: true,
-  get: function get() {
-    return _StatListItem.default;
-  }
-});
-Object.defineProperty(exports, "StatisticCard", {
-  enumerable: true,
-  get: function get() {
-    return _StatisticCard.default;
-  }
-});
-Object.defineProperty(exports, "GradientStatisticCard", {
-  enumerable: true,
-  get: function get() {
-    return _GradientStatisticCard.default;
+    return _StatusLabel.default;
   }
 });
 
-var _useTheme = _interopRequireDefault(require("./reducers/useTheme"));
+var _core = _interopRequireDefault(require("./theme/core"));
 
-var _ThemeProvider = _interopRequireDefault(require("./theme/ThemeProvider"));
+var _materialExtend = require("./theme/@material-extend");
 
-var _Divider = _interopRequireDefault(require("./components/Divider"));
+Object.keys(_materialExtend).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _materialExtend[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _materialExtend[key];
+    }
+  });
+});
 
-var _AvatarInitials = _interopRequireDefault(require("./components/AvatarInitials"));
-
-var _AvatarIcon = _interopRequireDefault(require("./components/AvatarIcon"));
-
-var _StatusBadge = _interopRequireDefault(require("./components/StatusBadge"));
-
-var _UserActionListItem = _interopRequireDefault(require("./components/UserActionListItem"));
-
-var _RoundedScrollableBox = _interopRequireDefault(require("./widgets/RoundedScrollableBox"));
-
-var _ScrollableListBox = _interopRequireDefault(require("./widgets/ScrollableListBox"));
-
-var _ActionPopoverButton = _interopRequireDefault(require("./widgets/ActionPopoverButton"));
-
-var _StatListItem = _interopRequireDefault(require("./widgets/StatListItem"));
-
-var _StatisticCard = _interopRequireDefault(require("./widgets/StatisticCard"));
-
-var _GradientStatisticCard = _interopRequireDefault(require("./widgets/GradientStatisticCard"));
+var _StatusLabel = _interopRequireDefault(require("./custom-components/StatusLabel"));

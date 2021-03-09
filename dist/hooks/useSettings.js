@@ -1,41 +1,42 @@
 "use strict";
 
+var _interopRequireWildcard = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-var _react = require("react");
+var _slicedToArray2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray"));
 
-var _reactRedux = require("react-redux");
-
-var _settings = require("src/redux/slices/settings");
+var _react = _interopRequireWildcard(require("react"));
 
 // ----------------------------------------------------------------------
 function useSettings() {
-  var dispatch = (0, _reactRedux.useDispatch)();
+  var _React$useState = _react.default.useState('ltr'),
+      _React$useState2 = (0, _slicedToArray2.default)(_React$useState, 2),
+      themeDirection = _React$useState2[0],
+      setThemediretion = _React$useState2[1];
 
-  var _useSelector = (0, _reactRedux.useSelector)(function (state) {
-    return state.settings;
-  }),
-      themeMode = _useSelector.themeMode,
-      themeDirection = _useSelector.themeDirection;
+  var _React$useState3 = _react.default.useState('light'),
+      _React$useState4 = (0, _slicedToArray2.default)(_React$useState3, 2),
+      themeMode = _React$useState4[0],
+      setThemeMode = _React$useState4[1];
 
   var isLight = themeMode === 'light';
   var handleToggleTheme = (0, _react.useCallback)(function () {
-    return dispatch((0, _settings.switchMode)(isLight ? 'dark' : 'light'));
-  }, [dispatch, isLight]);
-  var handleChangeTheme = (0, _react.useCallback)(function (event) {
-    return dispatch((0, _settings.switchMode)(event.target.value));
-  }, [dispatch]);
+    return setThemeMode(isLight ? 'dark' : 'light');
+  }, [isLight]);
   var handleChangeDirection = (0, _react.useCallback)(function (event) {
-    return dispatch((0, _settings.switchDirection)(event.target.value));
-  }, [dispatch]);
+    return setThemediretion(event.target.value);
+  }, []);
   return {
     // Mode
     themeMode: themeMode,
     toggleMode: handleToggleTheme,
-    selectMode: handleChangeTheme,
+    selectMode: handleToggleTheme,
     // Direction
     themeDirection: themeDirection,
     selectDirection: handleChangeDirection

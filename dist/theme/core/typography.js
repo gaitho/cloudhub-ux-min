@@ -11,7 +11,7 @@ var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/
 
 var _defineProperty2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty"));
 
-var _formatFontSize = require("src/utils/formatFontSize");
+var _formatFontSize = require("../../utils/formatFontSize");
 
 var _createBreakpoints = _interopRequireDefault(require("@material-ui/core/styles/createBreakpoints"));
 

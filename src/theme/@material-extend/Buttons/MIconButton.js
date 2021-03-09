@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { forwardRef } from 'react';
-import { ButtonAnimate } from 'src/components/Animate';
+import { ButtonAnimate } from '../../../components/Animate';
 import { alpha, makeStyles } from '@material-ui/core/styles';
 import { capitalize } from '@material-ui/core/utils';
 import { IconButton } from '@material-ui/core';

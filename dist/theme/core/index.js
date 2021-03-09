@@ -37,7 +37,7 @@ var _overrides = _interopRequireDefault(require("./overrides"));
 
 var _react = require("@emotion/react");
 
-var _useSettings2 = _interopRequireDefault(require("src/hooks/useSettings"));
+var _useSettings2 = _interopRequireDefault(require("../../hooks/useSettings"));
 
 var _react2 = _interopRequireWildcard(require("react"));
 

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
-import Logo from 'src/components/Logo';
+import Logo from './Logo';
 import { makeStyles, alpha } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------

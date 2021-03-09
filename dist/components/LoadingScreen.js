@@ -19,7 +19,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _framerMotion = require("framer-motion");
 
-var _Logo = _interopRequireDefault(require("src/components/Logo"));
+var _Logo = _interopRequireDefault(require("./Logo"));
 
 var _styles = require("@material-ui/core/styles");
 

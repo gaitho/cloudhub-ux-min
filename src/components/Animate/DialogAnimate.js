@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { varFadeInUp } from 'src/components/Animate';
+import { varFadeInUp } from '.';
 import { motion, AnimatePresence } from 'framer-motion';
 import { makeStyles } from '@material-ui/core/styles';
 import { Dialog } from '@material-ui/core';

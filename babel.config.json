@@ -9,6 +9,7 @@
   "only": [
     "./src/theme",
     "./src/components",
+    "./src/custom-components",
     "./src/widgets",
     "./src/hooks",
     "./src/utils",

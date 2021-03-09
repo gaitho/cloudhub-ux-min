@@ -1,4 +1,4 @@
-import { pxToRem } from 'src/utils/formatFontSize';
+import { pxToRem } from '../../utils/formatFontSize';
 import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
 
 // ----------------------------------------------------------------------

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
-import { varSmallClick } from 'src/components/Animate';
+import { varSmallClick } from '.';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 
