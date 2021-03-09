@@ -1,0 +1,17 @@
+{
+  "presets": [["@babel/preset-env"], "@babel/preset-react", "@babel/flow"],
+  "plugins": [
+    "@babel/plugin-transform-object-assign",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties"
+  ],
+
+  "only": [
+    "./src/theme",
+    "./src/components",
+    "./src/widgets",
+    "./src/hooks",
+    "./src/utils",
+    "src/components.js"
+  ]
+}
