@@ -36,9 +36,16 @@ var GlobalStyles = (0, _styles.withStyles)(function (theme) {
           backgroundColor: (0, _styles.alpha)(theme.palette.grey[600], 0.48)
         }
       },
+      a: {
+        color: theme.palette.primary.main,
+        cursor: 'pointer',
+        textDecoration: 'none'
+      },
       '#root': {
         width: '100%',
-        height: '100%'
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column'
       },
       input: {
         '&[type=number]': {
@@ -68,9 +75,6 @@ var GlobalStyles = (0, _styles.withStyles)(function (theme) {
           color: theme.palette.text.disabled
         }
       },
-      a: {
-        color: theme.palette.primary.main
-      },
       img: {
         display: 'block',
         maxWidth: '100%'
@@ -84,6 +88,11 @@ var GlobalStyles = (0, _styles.withStyles)(function (theme) {
       '.blur-up.lazyloaded ': {
         WebkitFilter: 'blur(0)',
         filter: 'blur(0)'
+      },
+      'fieldset.scheduler-border': {
+        border: '1px solid #ddd !important',
+        borderRadius: 5,
+        padding: 5
       }
     }
   };

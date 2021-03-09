@@ -71,40 +71,54 @@ const GREY = {
   500_80: alpha('#919EAB', 0.8)
 };
 
-const GRADIENTS = {
-  primary: createGradient(PRIMARY.light, PRIMARY.main),
-  info: createGradient(INFO.light, INFO.main),
-  success: createGradient(SUCCESS.light, SUCCESS.main),
-  warning: createGradient(WARNING.light, WARNING.main),
-  error: createGradient(ERROR.light, ERROR.main)
+const getColors = (colors) => {
+  const {
+    primaryColors,
+    secondaryColors,
+    tertiaryColors,
+    textColors,
+    backgroundColors
+  } = colors || {};
+
+  const GRADIENTS = {
+    primary: createGradient(PRIMARY.light, PRIMARY.main),
+    info: createGradient(INFO.light, INFO.main),
+    success: createGradient(SUCCESS.light, SUCCESS.main),
+    warning: createGradient(WARNING.light, WARNING.main),
+    error: createGradient(ERROR.light, ERROR.main)
+  };
+
+  const COMMON = {
+    common: { black: '#000', white: '#fff' },
+    primary: { ...PRIMARY, contrastText: '#fff', ...primaryColors },
+    secondary: { ...SECONDARY, contrastText: '#fff', ...secondaryColors },
+    tertiary: { ...tertiaryColors },
+    background: { ...backgroundColors },
+    text: { ...textColors },
+    info: { ...INFO, contrastText: '#fff' },
+    success: { ...SUCCESS, contrastText: GREY[800] },
+    warning: { ...WARNING, contrastText: GREY[800] },
+    error: { ...ERROR, contrastText: '#fff' },
+    grey: GREY,
+    gradients: GRADIENTS,
+    divider: GREY[500_24],
+    action: {
+      hover: GREY[500_8],
+      selected: GREY[500_16],
+      disabled: GREY[500_80],
+      disabledBackground: GREY[500_24],
+      focus: GREY[500_24],
+      hoverOpacity: 0.08,
+      disabledOpacity: 0.48
+    }
+  };
+
+  return COMMON;
 };
 
-const COMMON = {
-  common: { black: '#000', white: '#fff' },
-  primary: { ...PRIMARY, contrastText: '#fff' },
-  secondary: { ...SECONDARY, contrastText: '#fff' },
-  info: { ...INFO, contrastText: '#fff' },
-  success: { ...SUCCESS, contrastText: GREY[800] },
-  warning: { ...WARNING, contrastText: GREY[800] },
-  error: { ...ERROR, contrastText: '#fff' },
-  grey: GREY,
-  gradients: GRADIENTS,
-  divider: GREY[500_24],
-  action: {
-    hover: GREY[500_8],
-    selected: GREY[500_16],
-    disabled: GREY[500_80],
-    disabledBackground: GREY[500_24],
-    focus: GREY[500_24],
-    hoverOpacity: 0.08,
-    disabledOpacity: 0.48
-  }
-};
-
-const palette = {
-  // LIGHT MODE
-  light: {
-    ...COMMON,
+export const getLightColors = (colors) => {
+  return {
+    ...getColors(colors),
     mode: 'light',
     text: {
       primary: GREY[800],
@@ -118,13 +132,15 @@ const palette = {
     },
     action: {
       active: GREY[600],
-      ...COMMON.action
+      ...getColors(colors).action
     }
-  },
+  };
+};
 
-  // DARK MODE
-  dark: {
-    ...COMMON,
+// DARK MODE
+export const getDarkColors = (colors) => {
+  return {
+    ...getColors(colors),
     mode: 'dark',
     text: {
       primary: '#fff',
@@ -138,9 +154,7 @@ const palette = {
     },
     action: {
       active: GREY[500],
-      ...COMMON.action
+      ...getColors(colors).action
     }
-  }
+  };
 };
-
-export default palette;

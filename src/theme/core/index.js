@@ -1,6 +1,6 @@
 import rtl from 'jss-rtl';
 import { create } from 'jss';
-import palette from './palette';
+import { getLightColors, getDarkColors } from './palette';
 import shadows from './shadows';
 import PropTypes from 'prop-types';
 import typography from './typography';
@@ -57,35 +57,42 @@ ThemeConfig.propTypes = {
   children: PropTypes.node
 };
 
-function ThemeConfig({ children }) {
+function ThemeConfig({ children, fonts, sizes, colors }) {
   const { themeMode, themeDirection } = useSettings();
   const isLight = themeMode === 'light';
 
   const themeOptions = useMemo(
     () => ({
-      palette: palette[isLight ? 'light' : 'dark'],
+      palette: isLight ? getLightColors() : getDarkColors(),
       shadows: shadows[isLight ? 'light' : 'dark'],
-      typography: typography,
+      typography: typography(fonts),
       shape: borderRadius,
       breakpoints: breakpoints,
       direction: themeDirection,
       components: componentsOverride({
         theme: {
-          palette: palette[isLight ? 'light' : 'dark'],
+          palette: isLight ? getLightColors() : getDarkColors(),
           shadows: shadows[isLight ? 'light' : 'dark'],
-          typography: typography,
+          typography: typography(fonts),
           shape: borderRadius,
-          direction: themeDirection
+          direction: themeDirection,
+          colors: { ...colors },
+          sizes: { ...sizes },
+          fonts: { ...fonts }
         }
-      })
+      }),
+      colors: { ...colors },
+      sizes: { ...sizes },
+      fonts: { ...fonts }
     }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [isLight, themeDirection]
   );
 
   const theme = createMuiTheme(themeOptions);
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} colors={colors} fonts={fonts} sizes={sizes}>
       <CssBaseline />
       <GlobalStyles />
       <RTLProvider direction={themeDirection}>{children}</RTLProvider>

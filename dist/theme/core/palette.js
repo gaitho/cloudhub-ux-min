@@ -5,7 +5,7 @@ var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhu
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.getDarkColors = exports.getLightColors = void 0;
 
 var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
 
@@ -79,52 +79,66 @@ var GREY = {
   50056: (0, _styles.alpha)('#919EAB', 0.56),
   50080: (0, _styles.alpha)('#919EAB', 0.8)
 };
-var GRADIENTS = {
-  primary: createGradient(PRIMARY.light, PRIMARY.main),
-  info: createGradient(INFO.light, INFO.main),
-  success: createGradient(SUCCESS.light, SUCCESS.main),
-  warning: createGradient(WARNING.light, WARNING.main),
-  error: createGradient(ERROR.light, ERROR.main)
+
+var getColors = function getColors(colors) {
+  var _ref = colors || {},
+      primaryColors = _ref.primaryColors,
+      secondaryColors = _ref.secondaryColors,
+      tertiaryColors = _ref.tertiaryColors,
+      textColors = _ref.textColors,
+      backgroundColors = _ref.backgroundColors;
+
+  var GRADIENTS = {
+    primary: createGradient(PRIMARY.light, PRIMARY.main),
+    info: createGradient(INFO.light, INFO.main),
+    success: createGradient(SUCCESS.light, SUCCESS.main),
+    warning: createGradient(WARNING.light, WARNING.main),
+    error: createGradient(ERROR.light, ERROR.main)
+  };
+  var COMMON = {
+    common: {
+      black: '#000',
+      white: '#fff'
+    },
+    primary: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, PRIMARY), {}, {
+      contrastText: '#fff'
+    }, primaryColors),
+    secondary: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, SECONDARY), {}, {
+      contrastText: '#fff'
+    }, secondaryColors),
+    tertiary: (0, _objectSpread2.default)({}, tertiaryColors),
+    background: (0, _objectSpread2.default)({}, backgroundColors),
+    text: (0, _objectSpread2.default)({}, textColors),
+    info: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, INFO), {}, {
+      contrastText: '#fff'
+    }),
+    success: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, SUCCESS), {}, {
+      contrastText: GREY[800]
+    }),
+    warning: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, WARNING), {}, {
+      contrastText: GREY[800]
+    }),
+    error: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, ERROR), {}, {
+      contrastText: '#fff'
+    }),
+    grey: GREY,
+    gradients: GRADIENTS,
+    divider: GREY[50024],
+    action: {
+      hover: GREY[5008],
+      selected: GREY[50016],
+      disabled: GREY[50080],
+      disabledBackground: GREY[50024],
+      focus: GREY[50024],
+      hoverOpacity: 0.08,
+      disabledOpacity: 0.48
+    }
+  };
+  return COMMON;
 };
-var COMMON = {
-  common: {
-    black: '#000',
-    white: '#fff'
-  },
-  primary: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, PRIMARY), {}, {
-    contrastText: '#fff'
-  }),
-  secondary: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, SECONDARY), {}, {
-    contrastText: '#fff'
-  }),
-  info: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, INFO), {}, {
-    contrastText: '#fff'
-  }),
-  success: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, SUCCESS), {}, {
-    contrastText: GREY[800]
-  }),
-  warning: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, WARNING), {}, {
-    contrastText: GREY[800]
-  }),
-  error: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, ERROR), {}, {
-    contrastText: '#fff'
-  }),
-  grey: GREY,
-  gradients: GRADIENTS,
-  divider: GREY[50024],
-  action: {
-    hover: GREY[5008],
-    selected: GREY[50016],
-    disabled: GREY[50080],
-    disabledBackground: GREY[50024],
-    focus: GREY[50024],
-    hoverOpacity: 0.08,
-    disabledOpacity: 0.48
-  }
-};
-var palette = {
-  // LIGHT MODE
-  light: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, COMMON), {}, {
+
+var getLightColors = function getLightColors(colors) {
+  return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, getColors(colors)), {}, {
     mode: 'light',
     text: {
       primary: GREY[800],
@@ -138,10 +152,15 @@ var palette = {
     },
     action: (0, _objectSpread2.default)({
       active: GREY[600]
-    }, COMMON.action)
-  }),
-  // DARK MODE
-  dark: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, COMMON), {}, {
+    }, getColors(colors).action)
+  });
+}; // DARK MODE
+
+
+exports.getLightColors = getLightColors;
+
+var getDarkColors = function getDarkColors(colors) {
+  return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, getColors(colors)), {}, {
     mode: 'dark',
     text: {
       primary: '#fff',
@@ -155,8 +174,8 @@ var palette = {
     },
     action: (0, _objectSpread2.default)({
       active: GREY[500]
-    }, COMMON.action)
-  })
+    }, getColors(colors).action)
+  });
 };
-var _default = palette;
-exports.default = _default;
+
+exports.getDarkColors = getDarkColors;

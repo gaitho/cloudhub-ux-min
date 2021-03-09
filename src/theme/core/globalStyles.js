@@ -18,6 +18,7 @@ const GlobalStyles = withStyles((theme) => ({
     body: {
       width: '100%',
       height: '100%',
+
       '&::-webkit-scrollbar, & *::-webkit-scrollbar': {
         width: 8,
         height: 6,
@@ -29,9 +30,17 @@ const GlobalStyles = withStyles((theme) => ({
         backgroundColor: alpha(theme.palette.grey[600], 0.48)
       }
     },
+    a: {
+      color: theme.palette.primary.main,
+      cursor: 'pointer',
+      textDecoration: 'none'
+    },
+
     '#root': {
       width: '100%',
-      height: '100%'
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column'
     },
     input: {
       '&[type=number]': {
@@ -46,9 +55,7 @@ const GlobalStyles = withStyles((theme) => ({
       '&:-ms-input-placeholder': { color: theme.palette.text.disabled },
       '&::placeholder': { color: theme.palette.text.disabled }
     },
-    a: {
-      color: theme.palette.primary.main
-    },
+
     img: {
       display: 'block',
       maxWidth: '100%'
@@ -63,6 +70,11 @@ const GlobalStyles = withStyles((theme) => ({
     '.blur-up.lazyloaded ': {
       WebkitFilter: 'blur(0)',
       filter: 'blur(0)'
+    },
+    'fieldset.scheduler-border': {
+      border: '1px solid #ddd !important',
+      borderRadius: 5,
+      padding: 5
     }
   }
 }))(() => null);

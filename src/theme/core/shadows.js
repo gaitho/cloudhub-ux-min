@@ -1,16 +1,16 @@
-import palette from './palette';
+import { getLightColors } from './palette';
 import { alpha } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 
-const BASE_LIGHT = palette.light.grey[500];
+const BASE_LIGHT = getLightColors().grey[500];
 const BASE_DARK = '#000000';
 
-const PRIMARY = `0 8px 16px 0 ${alpha(palette.light.primary.main, 0.24)}`;
-const INFO = `0 8px 16px 0 ${alpha(palette.light.info.main, 0.24)}`;
-const SUCCESS = `0 8px 16px 0 ${alpha(palette.light.success.main, 0.24)}`;
-const WARNING = `0 8px 16px 0 ${alpha(palette.light.warning.main, 0.24)}`;
-const ERROR = `0 8px 16px 0 ${alpha(palette.light.error.main, 0.24)}`;
+const PRIMARY = `0 8px 16px 0 ${alpha(getLightColors().primary.main, 0.24)}`;
+const INFO = `0 8px 16px 0 ${alpha(getLightColors().info.main, 0.24)}`;
+const SUCCESS = `0 8px 16px 0 ${alpha(getLightColors().success.main, 0.24)}`;
+const WARNING = `0 8px 16px 0 ${alpha(getLightColors().warning.main, 0.24)}`;
+const ERROR = `0 8px 16px 0 ${alpha(getLightColors().error.main, 0.24)}`;
 
 const onLight1 = alpha(BASE_LIGHT, 0.2);
 const onLight2 = alpha(BASE_LIGHT, 0.14);

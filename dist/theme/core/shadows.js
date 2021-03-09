@@ -1,24 +1,22 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-var _palette = _interopRequireDefault(require("./palette"));
+var _palette = require("./palette");
 
 var _styles = require("@material-ui/core/styles");
 
 // ----------------------------------------------------------------------
-var BASE_LIGHT = _palette.default.light.grey[500];
+var BASE_LIGHT = (0, _palette.getLightColors)().grey[500];
 var BASE_DARK = '#000000';
-var PRIMARY = "0 8px 16px 0 ".concat((0, _styles.alpha)(_palette.default.light.primary.main, 0.24));
-var INFO = "0 8px 16px 0 ".concat((0, _styles.alpha)(_palette.default.light.info.main, 0.24));
-var SUCCESS = "0 8px 16px 0 ".concat((0, _styles.alpha)(_palette.default.light.success.main, 0.24));
-var WARNING = "0 8px 16px 0 ".concat((0, _styles.alpha)(_palette.default.light.warning.main, 0.24));
-var ERROR = "0 8px 16px 0 ".concat((0, _styles.alpha)(_palette.default.light.error.main, 0.24));
+var PRIMARY = "0 8px 16px 0 ".concat((0, _styles.alpha)((0, _palette.getLightColors)().primary.main, 0.24));
+var INFO = "0 8px 16px 0 ".concat((0, _styles.alpha)((0, _palette.getLightColors)().info.main, 0.24));
+var SUCCESS = "0 8px 16px 0 ".concat((0, _styles.alpha)((0, _palette.getLightColors)().success.main, 0.24));
+var WARNING = "0 8px 16px 0 ".concat((0, _styles.alpha)((0, _palette.getLightColors)().warning.main, 0.24));
+var ERROR = "0 8px 16px 0 ".concat((0, _styles.alpha)((0, _palette.getLightColors)().error.main, 0.24));
 var onLight1 = (0, _styles.alpha)(BASE_LIGHT, 0.2);
 var onLight2 = (0, _styles.alpha)(BASE_LIGHT, 0.14);
 var onLight3 = (0, _styles.alpha)(BASE_LIGHT, 0.12);
