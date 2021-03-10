@@ -18,7 +18,7 @@ import {
   onOpenSidebarConversation,
   onCloseSidebarConversation
 } from 'src/redux/slices/chat';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box } from '@material-ui/core';
 import { MIconButton } from 'src/theme';
 

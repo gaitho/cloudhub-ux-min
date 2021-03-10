@@ -8,7 +8,7 @@ import roundSend from '@iconify-icons/ic/round-send';
 import EmojiPicker from 'src/components/EmojiPicker';
 import attach2Fill from '@iconify-icons/eva/attach-2-fill';
 import roundAddPhotoAlternate from '@iconify-icons/ic/round-add-photo-alternate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Input,

@@ -8,7 +8,7 @@ import fileFill from '@iconify-icons/eva/file-fill';
 import closeFill from '@iconify-icons/eva/close-fill';
 import { motion, AnimatePresence } from 'framer-motion';
 import { varFadeInRight } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   List,

@@ -8,7 +8,7 @@ import useAuth from 'src/hooks/useAuth';
 import { UploadAvatar } from 'src/components/Upload';
 import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import { Form, FormikProvider, useFormik } from 'formik';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

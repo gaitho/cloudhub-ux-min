@@ -27,7 +27,7 @@ var _copyFill = _interopRequireDefault(require("@iconify-icons/eva/copy-fill"));
 
 var _reactCopyToClipboard = require("react-copy-to-clipboard");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

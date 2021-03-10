@@ -6,7 +6,11 @@ import { PATH_APP } from 'src/routes/paths';
 import copyFill from '@iconify-icons/eva/copy-fill';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { useTheme, makeStyles, hexToRgb } from '@material-ui/core/styles';
+import {
+  useTheme,
+  makeStyles,
+  hexToRgb
+} from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

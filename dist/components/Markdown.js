@@ -25,7 +25,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactMarkdown = _interopRequireDefault(require("react-markdown"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

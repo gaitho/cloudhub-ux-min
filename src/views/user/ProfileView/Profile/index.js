@@ -6,7 +6,7 @@ import AboutCard from './AboutCard';
 import PostInput from './PostInput';
 import FollowCard from './FollowCard';
 import SocialCard from './SocialCard';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Grid } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

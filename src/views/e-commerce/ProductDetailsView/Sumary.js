@@ -15,7 +15,7 @@ import { fShortenNumber, fCurrency } from 'src/utils/formatNumber';
 import { useFormik, Form, FormikProvider, useField } from 'formik';
 import instagramFilled from '@iconify-icons/ant-design/instagram-filled';
 import roundAddShoppingCart from '@iconify-icons/ic/round-add-shopping-cart';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

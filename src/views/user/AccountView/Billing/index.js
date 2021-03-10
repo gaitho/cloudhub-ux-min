@@ -8,7 +8,7 @@ import { useSnackbar } from 'notistack';
 import PaymentMethod from './PaymentMethod';
 import fakeRequest from 'src/utils/fakeRequest';
 import InvoiceHistory from './InvoiceHistory';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Grid, Card, Button, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

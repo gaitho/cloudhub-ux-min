@@ -7,7 +7,7 @@ import { fShortenNumber } from 'src/utils/formatNumber';
 import roundThumbUp from '@iconify-icons/ic/round-thumb-up';
 import roundVerified from '@iconify-icons/ic/round-verified';
 import checkmarkFill from '@iconify-icons/eva/checkmark-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   List,

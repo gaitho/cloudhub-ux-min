@@ -8,7 +8,7 @@ import { fCurrency } from 'src/utils/formatNumber';
 import Scrollbars from 'src/components/Scrollbars';
 import MoreButton from 'src/components/MoreButton';
 import { Link as RouterLink } from 'react-router-dom';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
 import {
   Box,

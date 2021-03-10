@@ -6,7 +6,7 @@ import pinFill from '@iconify-icons/eva/pin-fill';
 import phoneFill from '@iconify-icons/eva/phone-fill';
 import emailFill from '@iconify-icons/eva/email-fill';
 import { DialogAnimate } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Avatar, Typography, DialogContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

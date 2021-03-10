@@ -7,7 +7,7 @@ import LazySize from 'src/components/LazySize';
 import { fCurrency } from 'src/utils/formatNumber';
 import { Link as RouterLink } from 'react-router-dom';
 import { PreviewColor } from 'src/components/ColorUtility';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Card, Link, Typography, CardContent } from '@material-ui/core';
 import { MLabel } from 'src/theme';
 

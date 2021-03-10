@@ -29,7 +29,7 @@ var _moreVerticalFill = _interopRequireDefault(require("@iconify-icons/eva/more-
 
 var _filePdfFilled = _interopRequireDefault(require("@iconify-icons/ant-design/file-pdf-filled"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

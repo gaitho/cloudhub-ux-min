@@ -11,7 +11,7 @@ import collapseFill from '@iconify-icons/eva/collapse-fill';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Hidden,

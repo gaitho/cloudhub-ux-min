@@ -8,7 +8,7 @@ import MyAvatar from 'src/components/MyAvatar';
 import Scrollbars from 'src/components/Scrollbars';
 import { PATH_APP, PATH_DOCS } from 'src/routes/paths';
 import { Link as RouterLink, useLocation, matchPath } from 'react-router-dom';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Link,

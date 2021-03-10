@@ -8,7 +8,7 @@ import Settings from 'src/layouts/Common/Settings';
 import { Link as RouterLink } from 'react-router-dom';
 import menu2Fill from '@iconify-icons/eva/menu-2-fill';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Button,

@@ -21,7 +21,7 @@ var _framerMotion = require("framer-motion");
 
 var _Logo = _interopRequireDefault(require("./Logo"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/LoadingScreen.js";
 // ----------------------------------------------------------------------

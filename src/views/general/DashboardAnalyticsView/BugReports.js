@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import { fShortenNumber } from 'src/utils/formatNumber';
 import bugFilled from '@iconify-icons/ant-design/bug-filled';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

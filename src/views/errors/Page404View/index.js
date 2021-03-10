@@ -8,7 +8,7 @@ import {
   varBounce,
   varBounceIn
 } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Button, Typography, Container } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

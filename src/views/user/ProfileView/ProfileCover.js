@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LazySize from 'src/components/LazySize';
 import MyAvatar from 'src/components/MyAvatar';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

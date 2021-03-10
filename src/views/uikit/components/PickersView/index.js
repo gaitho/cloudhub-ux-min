@@ -6,7 +6,7 @@ import { PATH_APP } from 'src/routes/paths';
 import PickerDateTime from './PickerDateTime';
 import PickerDateRange from './PickerDateRange';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Container, CardHeader, CardContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

@@ -8,7 +8,7 @@ import Scrollbars from 'src/components/Scrollbars';
 import { getFileFullName, getFileThumb } from 'src/utils/getFileFormat';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
 import arrowIosDownwardFill from '@iconify-icons/eva/arrow-ios-downward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Button, Divider, Collapse, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

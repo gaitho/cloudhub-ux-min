@@ -25,7 +25,7 @@ var _core = require("@material-ui/core");
 
 var _utils = require("@material-ui/core/utils");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _this = void 0,
     _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/theme/@material-extend/MChip.js";
@@ -134,7 +134,7 @@ var Mchip = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117,
+        lineNumber: 121,
         columnNumber: 9
       }
     }));
@@ -150,7 +150,7 @@ var Mchip = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130,
+      lineNumber: 134,
       columnNumber: 7
     }
   }));

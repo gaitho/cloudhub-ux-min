@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 import { Form, FormikProvider } from 'formik';
 import plusFill from '@iconify-icons/eva/plus-fill';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

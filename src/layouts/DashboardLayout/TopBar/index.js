@@ -8,7 +8,7 @@ import { Icon } from '@iconify/react';
 import Notifications from './Notifications';
 import Settings from 'src/layouts/Common/Settings';
 import menu2Fill from '@iconify-icons/eva/menu-2-fill';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, AppBar, Hidden, Toolbar, IconButton } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

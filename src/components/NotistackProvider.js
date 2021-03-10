@@ -6,7 +6,7 @@ import infoFill from '@iconify-icons/eva/info-fill';
 import alertCircleFill from '@iconify-icons/eva/alert-circle-fill';
 import alertTriangleFill from '@iconify-icons/eva/alert-triangle-fill';
 import checkmarkCircle2Fill from '@iconify-icons/eva/checkmark-circle-2-fill';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

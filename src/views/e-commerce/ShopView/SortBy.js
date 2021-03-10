@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 import chevronUpFill from '@iconify-icons/eva/chevron-up-fill';
 import chevronDownFill from '@iconify-icons/eva/chevron-down-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Menu, Button, MenuItem, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

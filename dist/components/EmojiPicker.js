@@ -33,7 +33,7 @@ var _react2 = _interopRequireWildcard(require("react"));
 
 var _smilingFaceFill = _interopRequireDefault(require("@iconify-icons/eva/smiling-face-fill"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 
@@ -141,7 +141,7 @@ function EmojiPicker(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
+        lineNumber: 96,
         columnNumber: 7
       }
     });
@@ -161,7 +161,7 @@ function EmojiPicker(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 115,
       columnNumber: 5
     }
   }, /*#__PURE__*/_react2.default.createElement("div", (0, _extends2.default)({
@@ -170,7 +170,7 @@ function EmojiPicker(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
+      lineNumber: 116,
       columnNumber: 7
     }
   }), /*#__PURE__*/_react2.default.createElement("div", {
@@ -178,7 +178,7 @@ function EmojiPicker(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113,
+      lineNumber: 117,
       columnNumber: 9
     }
   }, emojiPicker), /*#__PURE__*/_react2.default.createElement(_core.IconButton, {
@@ -188,7 +188,7 @@ function EmojiPicker(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 122,
       columnNumber: 9
     }
   }, /*#__PURE__*/_react2.default.createElement(_react.Icon, {
@@ -198,7 +198,7 @@ function EmojiPicker(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 123,
       columnNumber: 11
     }
   }))));

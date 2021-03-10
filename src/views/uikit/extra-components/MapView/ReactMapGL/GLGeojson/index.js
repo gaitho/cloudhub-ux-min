@@ -11,7 +11,11 @@ import {
   ControlNavigation,
   ControlFullscreen
 } from '../controls';
-import { makeStyles, useTheme, alpha } from '@material-ui/core/styles';
+import {
+  makeStyles,
+  useTheme,
+  alpha
+} from 'cloudhub-components/dist/mui/styles';
 import { Box, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

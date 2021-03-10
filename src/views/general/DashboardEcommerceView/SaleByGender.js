@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import ReactApexChart from 'react-apexcharts';
 import { fNumber } from 'src/utils/formatNumber';
 import { ApexChartsOption } from 'src/components/Charts/Apexcharts';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, CardHeader } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

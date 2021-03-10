@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { GoogleMap, Circle } from '@react-google-maps/api';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

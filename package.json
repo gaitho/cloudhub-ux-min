@@ -1,7 +1,7 @@
 {
   "name": "cloudhub-min",
   "licence": "UNLICENSED",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/cloudhubke/cloudhub-min.git"
@@ -95,6 +95,14 @@
     "@material-ui/utils": ">=5.0.0-alpha.26"
   },
   "devDependencies": {
+    "@babel/cli": "7.2.0",
+    "@babel/core": "7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-object-assign": "7.2.0",
+    "@babel/preset-env": "7.2.0",
+    "@babel/preset-flow": "7.0.0",
+    "@babel/preset-react": "7.0.0",
     "@hot-loader/react-dom": "^17.0.1",
     "@material-ui/core": "^5.0.0-alpha.26",
     "@material-ui/icons": "^5.0.0-alpha.26",
@@ -109,7 +117,9 @@
     "@types/recharts": "^1.8.19",
     "axios": "^0.21.1",
     "axios-mock-adapter": "^1.19.0",
-    "cloudhub-components": "^1.4.41",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "cloudhub-components": "^1.4.43",
     "clsx": "^1.1.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -150,16 +160,6 @@
     "redux-firestore": "^0.15.0",
     "redux-persist": "^6.0.0",
     "stylis-plugin-rtl": "^2.0.1",
-    "yup": "^0.28.5",
-    "@babel/cli": "7.2.0",
-    "@babel/core": "7.2.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-object-assign": "7.2.0",
-    "@babel/preset-env": "7.2.0",
-    "@babel/preset-flow": "7.0.0",
-    "@babel/preset-react": "7.0.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-styled-components": "^1.11.1"
+    "yup": "^0.28.5"
   }
 }

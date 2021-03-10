@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 import searchFill from '@iconify-icons/eva/search-fill';
 import trash2Fill from '@iconify-icons/eva/trash-2-fill';
 import roundFilterList from '@iconify-icons/ic/round-filter-list';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Toolbar,

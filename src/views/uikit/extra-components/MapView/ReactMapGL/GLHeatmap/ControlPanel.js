@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { fDate } from 'src/utils/formatTime';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Slider, Switch, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

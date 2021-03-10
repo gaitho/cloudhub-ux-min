@@ -8,7 +8,7 @@ import BillingInfo from './BillingInfo';
 import PaymentMethods from './PaymentMethods';
 import { useFormik, Form, FormikProvider } from 'formik';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Grid, Button } from '@material-ui/core';
 import { LoadingButton } from '@material-ui/lab';
 

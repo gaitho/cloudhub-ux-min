@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import React, { useRef, useState } from 'react';
 import PopoverMenu from 'src/components/PopoverMenu';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, MenuItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import { MIconButton } from 'src/theme';
 

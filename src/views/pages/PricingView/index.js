@@ -3,7 +3,7 @@ import PlanCard from './PlanCard';
 import Logo from 'src/components/Logo';
 import Page from 'src/components/Page';
 import { Link as RouterLink } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Grid, Switch, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

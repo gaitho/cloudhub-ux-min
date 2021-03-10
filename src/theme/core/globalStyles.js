@@ -1,4 +1,4 @@
-import { alpha, withStyles } from '@material-ui/core/styles';
+import { alpha, withStyles } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

@@ -7,7 +7,11 @@ import LazySize from 'src/components/LazySize';
 import { Link as RouterLink } from 'react-router-dom';
 import { CarouselArrowsBasic2 } from 'src/components/Carousel';
 import arrowForwardFill from '@iconify-icons/eva/arrow-forward-fill';
-import { alpha, makeStyles, useTheme } from '@material-ui/core/styles';
+import {
+  alpha,
+  makeStyles,
+  useTheme
+} from 'cloudhub-components/dist/mui/styles';
 import { Paper, Box, Link, Typography, CardContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

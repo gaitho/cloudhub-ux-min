@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 import { PATH_APP } from 'src/routes/paths';
 import { Link as RouterLink } from 'react-router-dom';
 import shoppingCartFill from '@iconify-icons/eva/shopping-cart-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Badge, Box } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

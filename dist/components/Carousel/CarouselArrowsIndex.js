@@ -23,7 +23,7 @@ var _arrowLeftFill = _interopRequireDefault(require("@iconify-icons/eva/arrow-le
 
 var _arrowRightFill = _interopRequireDefault(require("@iconify-icons/eva/arrow-right-fill"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 
@@ -78,7 +78,7 @@ function CarouselArrowsIndex(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 59,
       columnNumber: 5
     }
   }), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
@@ -89,7 +89,7 @@ function CarouselArrowsIndex(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 60,
       columnNumber: 7
     }
   }, /*#__PURE__*/_react.default.createElement(_react2.Icon, {
@@ -99,7 +99,7 @@ function CarouselArrowsIndex(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 66,
       columnNumber: 9
     }
   })), /*#__PURE__*/_react.default.createElement(_core.Typography, {
@@ -107,7 +107,7 @@ function CarouselArrowsIndex(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, index + 1, "/", total), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
@@ -118,7 +118,7 @@ function CarouselArrowsIndex(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 77,
       columnNumber: 7
     }
   }, /*#__PURE__*/_react.default.createElement(_react2.Icon, {
@@ -128,7 +128,7 @@ function CarouselArrowsIndex(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 83,
       columnNumber: 9
     }
   })));

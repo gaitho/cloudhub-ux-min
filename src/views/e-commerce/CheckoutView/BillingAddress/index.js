@@ -7,7 +7,7 @@ import NewAddress from './NewAddress';
 import React, { useState } from 'react';
 import plusFill from '@iconify-icons/eva/plus-fill';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

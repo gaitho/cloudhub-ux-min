@@ -14,7 +14,7 @@ import CurrentDownload from './CurrentDownload';
 import TotalActiveUsers from './TotalActiveUsers';
 import TopInstalledCountries from './TopInstalledCountries';
 import TopRelatedApplications from './TopRelatedApplications';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Container, Grid } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import LazySize from 'src/components/LazySize';
 import React, { useState, useRef } from 'react';
 import { CarouselArrowsIndex } from 'src/components/Carousel';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from 'cloudhub-components/dist/mui/styles';
 import { Card } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

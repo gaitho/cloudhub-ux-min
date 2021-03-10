@@ -3,7 +3,7 @@ import hljs from 'highlight.js';
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Link } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

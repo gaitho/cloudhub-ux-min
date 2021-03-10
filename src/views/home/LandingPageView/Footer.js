@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Logo from 'src/components/Logo';
 import { Link as ScrollLink } from 'react-scroll';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Link, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

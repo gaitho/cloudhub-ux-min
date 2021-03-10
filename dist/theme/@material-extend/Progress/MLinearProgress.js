@@ -19,7 +19,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _utils = require("@material-ui/core/utils");
 
@@ -72,7 +72,7 @@ function MLinearProgress(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 50,
         columnNumber: 12
       }
     }));
@@ -84,7 +84,7 @@ function MLinearProgress(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 54,
       columnNumber: 5
     }
   }));

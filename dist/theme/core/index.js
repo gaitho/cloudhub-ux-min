@@ -43,7 +43,7 @@ var _useSettings2 = _interopRequireDefault(require("../../hooks/useSettings"));
 
 var _react2 = _interopRequireWildcard(require("react"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _ThemeProvider = _interopRequireDefault(require("cloudhub-components/dist/theme/ThemeProvider"));
 

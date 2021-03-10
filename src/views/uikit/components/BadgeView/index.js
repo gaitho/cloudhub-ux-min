@@ -4,7 +4,7 @@ import Block from 'src/components/Block';
 import { PATH_APP } from 'src/routes/paths';
 import MailIcon from '@material-ui/icons/Mail';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

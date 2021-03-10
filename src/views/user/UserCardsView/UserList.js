@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import UserItem from './UserItem';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Grid, Skeleton } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

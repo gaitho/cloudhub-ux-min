@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React, { forwardRef } from 'react';
 import { Avatar } from '@material-ui/core';
 import { capitalize } from '@material-ui/core/utils';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

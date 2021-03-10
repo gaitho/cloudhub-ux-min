@@ -8,7 +8,7 @@ import {
   varFadeInUp,
   MotionInView
 } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Link, Box, Container, Typography } from '@material-ui/core';
 import { MButton } from 'src/theme';
 

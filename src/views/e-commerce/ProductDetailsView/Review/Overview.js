@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 import { Link as ScrollLink } from 'react-scroll';
 import { fShortenNumber } from 'src/utils/formatNumber';
 import edit2Fill from '@iconify-icons/eva/edit-2-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

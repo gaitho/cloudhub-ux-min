@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Markdown from 'src/components/Markdown';
 import codeFill from '@iconify-icons/eva/code-fill';
 import { DialogAnimate } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Tooltip,
   IconButton,

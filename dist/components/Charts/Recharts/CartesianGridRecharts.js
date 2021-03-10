@@ -13,7 +13,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _recharts = require("recharts");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Charts/Recharts/CartesianGridRecharts.js";
 

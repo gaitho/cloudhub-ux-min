@@ -9,7 +9,7 @@ import {
   InfoWindow,
   MarkerClusterer
 } from '@react-google-maps/api';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from 'cloudhub-components/dist/mui/styles';
 import { Typography, Box } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

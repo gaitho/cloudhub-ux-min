@@ -6,7 +6,7 @@ import LazySize from 'src/components/LazySize';
 import Lightbox from 'src/components/ModalLightbox';
 import React, { useState, useRef, useEffect } from 'react';
 import { CarouselArrowsIndex } from 'src/components/Carousel';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

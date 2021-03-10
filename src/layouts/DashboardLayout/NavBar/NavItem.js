@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { NavLink as RouterLink } from 'react-router-dom';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
 import arrowIosDownwardFill from '@iconify-icons/eva/arrow-ios-downward-fill';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Collapse,

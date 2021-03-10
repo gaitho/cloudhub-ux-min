@@ -10,7 +10,7 @@ import useBreakpoints from 'src/hooks/useBreakpoints';
 import { Link as RouterLink } from 'react-router-dom';
 import PaymentInformation from './PaymentInformation';
 import { useFormik, Form, FormikProvider } from 'formik';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Grid, Card, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

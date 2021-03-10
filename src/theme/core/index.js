@@ -17,7 +17,7 @@ import {
   jssPreset,
   createMuiTheme,
   StylesProvider
-} from '@material-ui/core/styles';
+} from 'cloudhub-components/dist/mui/styles';
 import ThemeProvider from 'cloudhub-components/dist/theme/ThemeProvider';
 import { CssBaseline } from '@material-ui/core';
 

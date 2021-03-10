@@ -17,7 +17,7 @@ var _recharts = require("recharts");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Charts/Recharts/LegendRecharts.js";
 // ----------------------------------------------------------------------

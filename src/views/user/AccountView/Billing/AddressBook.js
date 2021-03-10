@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 import plusFill from '@iconify-icons/eva/plus-fill';
 import editFill from '@iconify-icons/eva/edit-fill';
 import trash2Fill from '@iconify-icons/eva/trash-2-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Card, Button, Typography } from '@material-ui/core';
 import { MButton } from 'src/theme';
 

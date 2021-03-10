@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useSnackbar } from 'notistack';
 import fakeRequest from 'src/utils/fakeRequest';
 import { useFormik, Form, FormikProvider } from 'formik';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

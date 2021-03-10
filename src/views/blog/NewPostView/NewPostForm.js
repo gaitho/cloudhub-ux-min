@@ -5,7 +5,7 @@ import { Form, FormikProvider } from 'formik';
 import { LoadingButton } from '@material-ui/lab';
 import { QuillEditor } from 'src/components/Editor';
 import { UploadSingleFile } from 'src/components/Upload';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Button,

@@ -11,7 +11,7 @@ import VerifyCodeForm from './VerifyCodeForm';
 import fakeRequest from 'src/utils/fakeRequest';
 import { Link as RouterLink, useHistory } from 'react-router-dom';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Button, Link, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

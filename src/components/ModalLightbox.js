@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import Lightbox from 'react-image-lightbox';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

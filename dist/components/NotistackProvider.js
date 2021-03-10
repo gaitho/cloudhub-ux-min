@@ -25,7 +25,7 @@ var _alertTriangleFill = _interopRequireDefault(require("@iconify-icons/eva/aler
 
 var _checkmarkCircle2Fill = _interopRequireDefault(require("@iconify-icons/eva/checkmark-circle-2-fill"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

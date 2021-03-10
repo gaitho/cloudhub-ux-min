@@ -6,7 +6,7 @@ import CollapsibleTable from './CollapsibleTable';
 import SortingSelecting from './SortingSelecting';
 import GroupingFixedHeader from './GroupingFixedHeader';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Grid, Card, Container, CardHeader } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

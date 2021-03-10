@@ -6,7 +6,7 @@ import Scrollbars from 'src/components/Scrollbars';
 import React, { useState, useEffect } from 'react';
 import EmptyContent from 'src/components/EmptyContent';
 import { useDispatch, useSelector } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Divider, Box } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

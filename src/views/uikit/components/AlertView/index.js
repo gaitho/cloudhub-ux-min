@@ -2,7 +2,7 @@ import React from 'react';
 import Page from 'src/components/Page';
 import { PATH_APP } from 'src/routes/paths';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles, alpha } from '@material-ui/core/styles';
+import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
 import {
   Card,
   Alert,

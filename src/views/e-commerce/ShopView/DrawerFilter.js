@@ -8,7 +8,7 @@ import roundClearAll from '@iconify-icons/ic/round-clear-all';
 import { PickerManyColor } from 'src/components/ColorUtility';
 import roundFilterList from '@iconify-icons/ic/round-filter-list';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Radio,

@@ -5,7 +5,7 @@ import { PATH_APP } from 'src/routes/paths';
 import { getUsers } from 'src/redux/slices/user';
 import { HeaderDashboard } from 'src/layouts/Common';
 import { useDispatch, useSelector } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Container } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

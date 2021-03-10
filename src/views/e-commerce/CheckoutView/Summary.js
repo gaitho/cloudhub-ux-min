@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import { fCurrency } from 'src/utils/formatNumber';
 import editFill from '@iconify-icons/eva/edit-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

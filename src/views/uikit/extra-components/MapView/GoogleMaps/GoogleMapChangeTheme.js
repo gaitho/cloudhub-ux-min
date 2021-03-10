@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { capitalCase } from 'change-case';
 import { GoogleMap, Circle } from '@react-google-maps/api';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from 'cloudhub-components/dist/mui/styles';
 import { TextField } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

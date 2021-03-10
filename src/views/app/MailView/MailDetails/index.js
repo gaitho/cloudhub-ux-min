@@ -7,7 +7,7 @@ import { getMail } from 'src/redux/slices/mail';
 import Markdown from 'react-markdown/with-html';
 import { useDispatch, useSelector } from 'react-redux';
 import Scrollbars from 'src/components/Scrollbars';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Divider, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

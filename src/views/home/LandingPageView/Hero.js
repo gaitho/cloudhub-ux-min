@@ -14,7 +14,7 @@ import {
   varFadeInUp,
   varFadeInRight
 } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Button, Box, Link, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

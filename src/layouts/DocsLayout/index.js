@@ -2,7 +2,7 @@ import NavBar from './NavBar';
 import TopBar from './TopBar';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Container } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

@@ -11,7 +11,7 @@ import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import personFill from '@iconify-icons/eva/person-fill';
 import settings2Fill from '@iconify-icons/eva/settings-2-fill';
 import { Link as RouterLink, useHistory } from 'react-router-dom';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Button, Box, Divider, MenuItem, Typography } from '@material-ui/core';
 import { MIconButton } from 'src/theme';
 

@@ -3,7 +3,11 @@ import { fromJS } from 'immutable';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import MAP_STYLE from '../data/map-style-basic-v8.json';
-import { makeStyles, alpha, useTheme } from '@material-ui/core/styles';
+import {
+  makeStyles,
+  alpha,
+  useTheme
+} from 'cloudhub-components/dist/mui/styles';
 import { Box, Switch, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

@@ -25,7 +25,7 @@ var _core = require("@material-ui/core");
 
 var _utils = require("@material-ui/core/utils");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _this = void 0,
     _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/theme/@material-extend/MAvatar.js";

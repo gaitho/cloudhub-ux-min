@@ -8,7 +8,7 @@ import { fShortenNumber } from 'src/utils/formatNumber';
 import appleFilled from '@iconify-icons/ant-design/apple-filled';
 import windowsFilled from '@iconify-icons/ant-design/windows-filled';
 import androidFilled from '@iconify-icons/ant-design/android-filled';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

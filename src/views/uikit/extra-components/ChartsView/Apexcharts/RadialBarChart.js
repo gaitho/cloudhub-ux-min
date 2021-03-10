@@ -3,7 +3,7 @@ import { merge } from 'lodash';
 import ReactApexChart from 'react-apexcharts';
 import { fNumber } from 'src/utils/formatNumber';
 import { ApexChartsOption } from 'src/components/Charts/Apexcharts';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

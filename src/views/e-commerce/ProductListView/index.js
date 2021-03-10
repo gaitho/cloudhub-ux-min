@@ -16,7 +16,7 @@ import { getProducts } from 'src/redux/slices/product';
 import { useDispatch, useSelector } from 'react-redux';
 import SearchNotFound from 'src/components/SearchNotFound';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

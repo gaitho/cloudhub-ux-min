@@ -4,7 +4,7 @@ import Block from 'src/components/Block';
 import { PATH_APP } from 'src/routes/paths';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Card,
   List,

@@ -10,7 +10,7 @@ import {
   varZoomInOut,
   varFadeInRight
 } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Grid, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

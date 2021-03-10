@@ -1,6 +1,6 @@
 import { merge } from 'lodash';
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from 'cloudhub-components/dist/mui/styles';
 import ReactApexChart from 'react-apexcharts';
 import { ApexChartsOption } from 'src/components/Charts/Apexcharts';
 

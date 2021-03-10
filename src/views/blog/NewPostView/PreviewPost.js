@@ -6,7 +6,7 @@ import { LoadingButton } from '@material-ui/lab';
 import Scrollbars from 'src/components/Scrollbars';
 import EmptyContent from 'src/components/EmptyContent';
 import { DialogAnimate } from 'src/components/Animate';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Button,

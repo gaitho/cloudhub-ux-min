@@ -12,7 +12,7 @@ import linkFill from '@iconify-icons/eva/link-fill';
 import { Link as RouterLink } from 'react-router-dom';
 import starOutline from '@iconify-icons/eva/star-outline';
 import roundLabelImportant from '@iconify-icons/ic/round-label-important';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Link, Hidden, Tooltip, Typography } from '@material-ui/core';
 import { MAvatar, MLabel, MCheckbox } from 'src/theme';
 

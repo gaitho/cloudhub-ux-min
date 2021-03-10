@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Popover } from '@material-ui/core';
-import { makeStyles, alpha } from '@material-ui/core/styles';
+import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
 import { Box } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

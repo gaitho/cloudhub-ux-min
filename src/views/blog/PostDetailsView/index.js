@@ -16,7 +16,7 @@ import fakeRequest from 'src/utils/fakeRequest';
 import { HeaderDashboard } from 'src/layouts/Common';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPost, getRecentPosts } from 'src/redux/slices/blog';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

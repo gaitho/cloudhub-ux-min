@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Scrollbars from 'src/components/Scrollbars';
 import { Link as RouterLink } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { List, Box, Drawer, Hidden, ListSubheader } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

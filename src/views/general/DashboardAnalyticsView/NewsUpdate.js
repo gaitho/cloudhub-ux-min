@@ -9,7 +9,7 @@ import { getImgCover } from 'src/utils/getImages';
 import Scrollbars from 'src/components/Scrollbars';
 import { Link as RouterLink } from 'react-router-dom';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Link,

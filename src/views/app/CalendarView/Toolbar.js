@@ -9,7 +9,7 @@ import roundViewAgenda from '@iconify-icons/ic/round-view-agenda';
 import roundViewModule from '@iconify-icons/ic/round-view-module';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Hidden,

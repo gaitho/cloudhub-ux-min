@@ -9,7 +9,7 @@ import { PATH_APP } from 'src/routes/paths';
 import { fData } from 'src/utils/formatNumber';
 import fakeRequest from 'src/utils/fakeRequest';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Container, Card, CardContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

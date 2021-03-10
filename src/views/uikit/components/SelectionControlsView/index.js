@@ -5,7 +5,7 @@ import Page from 'src/components/Page';
 import RadioButtons from './RadioButtons';
 import { PATH_APP } from 'src/routes/paths';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Container, CardHeader, CardContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

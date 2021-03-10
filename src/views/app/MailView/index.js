@@ -9,7 +9,7 @@ import { PATH_APP } from 'src/routes/paths';
 import { useParams } from 'react-router-dom';
 import { getLabels } from 'src/redux/slices/mail';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Container, Card } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

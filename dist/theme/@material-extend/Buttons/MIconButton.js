@@ -23,7 +23,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _Animate = require("../../../components/Animate");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _utils = require("@material-ui/core/utils");
 

@@ -7,7 +7,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { useSpring, animated } from 'react-spring/web.cjs';
 import { HeaderDashboard } from 'src/layouts/Common';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { alpha, makeStyles, withStyles } from '@material-ui/core/styles';
+import {
+  alpha,
+  makeStyles,
+  withStyles
+} from 'cloudhub-components/dist/mui/styles';
 import {
   Card,
   Grid,

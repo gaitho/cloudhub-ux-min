@@ -9,7 +9,7 @@ import shareFill from '@iconify-icons/eva/share-fill';
 import { DialogAnimate } from 'src/components/Animate';
 import downloadFill from '@iconify-icons/eva/download-fill';
 import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Tooltip, IconButton, DialogActions } from '@material-ui/core';
 import { LoadingButton } from '@material-ui/lab';
 import { MButton } from 'src/theme';

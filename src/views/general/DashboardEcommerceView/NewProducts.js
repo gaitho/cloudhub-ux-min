@@ -6,7 +6,11 @@ import LazySize from 'src/components/LazySize';
 import { getImgProduct } from 'src/utils/getImages';
 import { Link as RouterLink } from 'react-router-dom';
 import { CarouselCustomPaging1 } from 'src/components/Carousel';
-import { alpha, makeStyles, useTheme } from '@material-ui/core/styles';
+import {
+  alpha,
+  makeStyles,
+  useTheme
+} from 'cloudhub-components/dist/mui/styles';
 import { Box, Card, Button, CardContent, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

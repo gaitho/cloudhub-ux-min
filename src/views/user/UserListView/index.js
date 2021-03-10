@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import SearchNotFound from 'src/components/SearchNotFound';
 import { HeaderDashboard } from 'src/layouts/Common';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

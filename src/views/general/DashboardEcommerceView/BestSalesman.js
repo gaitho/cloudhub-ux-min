@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { sentenceCase } from 'change-case';
 import { fCurrency } from 'src/utils/formatNumber';
 import Scrollbars from 'src/components/Scrollbars';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

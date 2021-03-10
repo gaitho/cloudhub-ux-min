@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 import searchFill from '@iconify-icons/eva/search-fill';
-import { makeStyles, alpha } from '@material-ui/core/styles';
+import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Input,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Scrollbars from 'src/components/Scrollbars';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Table,
   TableRow,

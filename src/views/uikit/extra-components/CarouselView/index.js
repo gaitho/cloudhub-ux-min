@@ -11,7 +11,7 @@ import Page from 'src/components/Page';
 import { PATH_APP } from 'src/routes/paths';
 import { getImgFeed } from 'src/utils/getImages';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Grid,
   Card,

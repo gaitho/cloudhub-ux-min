@@ -37,7 +37,7 @@ var _framerMotion = require("framer-motion");
 
 var _Animate = require("src/components/Animate");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

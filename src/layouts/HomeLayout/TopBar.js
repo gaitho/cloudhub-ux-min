@@ -11,7 +11,7 @@ import { PATH_HOME, PATH_DOCS } from 'src/routes/paths';
 import bookOpenFill from '@iconify-icons/eva/book-open-fill';
 import roundStreetview from '@iconify-icons/ic/round-streetview';
 import { NavLink as RouterLink, useLocation } from 'react-router-dom';
-import { makeStyles, alpha } from '@material-ui/core/styles';
+import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   List,

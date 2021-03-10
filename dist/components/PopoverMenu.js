@@ -19,7 +19,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _core = require("@material-ui/core");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/PopoverMenu.js";
 // ----------------------------------------------------------------------

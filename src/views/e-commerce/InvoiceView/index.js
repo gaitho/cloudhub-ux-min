@@ -7,7 +7,7 @@ import { PATH_APP } from 'src/routes/paths';
 import { fCurrency } from 'src/utils/formatNumber';
 import Scrollbars from 'src/components/Scrollbars';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

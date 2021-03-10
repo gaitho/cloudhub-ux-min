@@ -9,7 +9,7 @@ exports.getDarkColors = exports.getLightColors = void 0;
 
 var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 // ----------------------------------------------------------------------
 function createGradient(color1, color2) {

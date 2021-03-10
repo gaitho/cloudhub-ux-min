@@ -15,7 +15,11 @@ import {
   varFadeInRight,
   MotionContainer
 } from 'src/components/Animate';
-import { alpha, makeStyles, useTheme } from '@material-ui/core/styles';
+import {
+  alpha,
+  makeStyles,
+  useTheme
+} from 'cloudhub-components/dist/mui/styles';
 import { CardContent, Box, Card, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

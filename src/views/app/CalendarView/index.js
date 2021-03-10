@@ -28,7 +28,7 @@ import {
   selectEvent,
   selectRange
 } from 'src/redux/slices/calendar';
-import { makeStyles, alpha } from '@material-ui/core/styles';
+import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
 import { Box, Card, Tooltip, Container, DialogTitle } from '@material-ui/core';
 import { MFab } from 'src/theme';
 

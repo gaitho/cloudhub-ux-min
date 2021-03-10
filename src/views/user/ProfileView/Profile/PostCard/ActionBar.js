@@ -6,7 +6,7 @@ import heartFill from '@iconify-icons/eva/heart-fill';
 import shareFill from '@iconify-icons/eva/share-fill';
 import { fShortenNumber } from 'src/utils/formatNumber';
 import messageSquareFill from '@iconify-icons/eva/message-square-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Avatar,

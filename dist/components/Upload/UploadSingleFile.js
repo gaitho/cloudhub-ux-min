@@ -25,7 +25,7 @@ var _reactDropzone = require("react-dropzone");
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

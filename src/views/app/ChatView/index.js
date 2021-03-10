@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { PATH_APP } from 'src/routes/paths';
 import { HeaderDashboard } from 'src/layouts/Common';
 import { getConversations, getContacts } from 'src/redux/slices/chat';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Container } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

@@ -13,7 +13,7 @@ import closeFill from '@iconify-icons/eva/close-fill';
 import { Link as RouterLink } from 'react-router-dom';
 import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import SocialLogin from 'src/views/auth/LoginView/SocialLogin';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Link, Hidden, Container, Typography } from '@material-ui/core';
 import { MIconButton } from 'src/theme';
 

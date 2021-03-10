@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { onCloseSidebarInfo, onOpenSidebarInfo } from 'src/redux/slices/chat';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Divider, IconButton } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

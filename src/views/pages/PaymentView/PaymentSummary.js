@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import shieldFill from '@iconify-icons/eva/shield-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Switch, Divider, Typography } from '@material-ui/core';
 import { LoadingButton } from '@material-ui/lab';
 import { MLabel } from 'src/theme';

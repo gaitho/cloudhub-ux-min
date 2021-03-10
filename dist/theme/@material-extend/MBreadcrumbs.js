@@ -19,9 +19,9 @@ var _lodash = require("lodash");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _reactRouterDom = require("react-router-dom");
+var _reach = require("cloudhub-components/dist/reach");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 
@@ -58,7 +58,7 @@ function LinkItem(_ref) {
     to: href,
     key: name,
     variant: "body2",
-    component: _reactRouterDom.Link,
+    component: _reach.Link,
     sx: {
       lineHeight: 2,
       display: 'flex',

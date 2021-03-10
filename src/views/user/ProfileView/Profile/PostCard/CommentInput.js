@@ -6,7 +6,7 @@ import MyAvatar from 'src/components/MyAvatar';
 import EmojiPicker from 'src/components/EmojiPicker';
 import roundSend from '@iconify-icons/ic/round-send';
 import roundAddPhotoAlternate from '@iconify-icons/ic/round-add-photo-alternate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { TextField, IconButton, InputAdornment } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

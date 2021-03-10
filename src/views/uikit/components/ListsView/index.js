@@ -15,7 +15,7 @@ import StarBorder from '@material-ui/icons/StarBorder';
 import BluetoothIcon from '@material-ui/icons/Bluetooth';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Card,
   Grid,

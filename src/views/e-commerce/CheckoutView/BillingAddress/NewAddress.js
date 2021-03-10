@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { countries } from './countries';
 import { DialogAnimate } from 'src/components/Animate';
 import { useFormik, Form, FormikProvider } from 'formik';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Grid,
   Radio,

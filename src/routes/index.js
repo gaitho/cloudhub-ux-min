@@ -7,7 +7,7 @@ import LoadingScreen from 'src/components/LoadingScreen';
 import GuestProtect from 'src/components/Auth/GuestProtect';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import React, { Suspense, Fragment, lazy, useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

@@ -16,7 +16,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import roundVerified from '@iconify-icons/ic/round-verified';
 import { getProduct, addCart, onGotoStep } from 'src/redux/slices/product';
 import roundVerifiedUser from '@iconify-icons/ic/round-verified-user';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Tab,

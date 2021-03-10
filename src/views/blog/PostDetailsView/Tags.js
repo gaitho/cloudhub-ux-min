@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import heartFill from '@iconify-icons/eva/heart-fill';
 import { fShortenNumber } from 'src/utils/formatNumber';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Chip,

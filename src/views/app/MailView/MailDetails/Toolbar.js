@@ -9,7 +9,7 @@ import roundReply from '@iconify-icons/ic/round-reply';
 import { useHistory, useParams } from 'react-router-dom';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Hidden, Tooltip, IconButton } from '@material-ui/core';
 import { MAvatar } from 'src/theme';
 

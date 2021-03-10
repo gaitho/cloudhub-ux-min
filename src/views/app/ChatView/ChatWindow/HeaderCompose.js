@@ -6,7 +6,7 @@ import parse from 'autosuggest-highlight/parse';
 import match from 'autosuggest-highlight/match';
 import SearchNotFound from 'src/components/SearchNotFound';
 import checkmarkFill from '@iconify-icons/eva/checkmark-fill';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Avatar,

@@ -6,7 +6,7 @@ import { useFormik } from 'formik';
 import { useSnackbar } from 'notistack';
 import fakeRequest from 'src/utils/fakeRequest';
 import { Form, FormikProvider } from 'formik';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Button,

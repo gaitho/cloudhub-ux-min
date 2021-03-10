@@ -4,7 +4,7 @@ import { merge } from 'lodash';
 import PropTypes from 'prop-types';
 import ReactApexChart from 'react-apexcharts';
 import { ApexChartsOption } from 'src/components/Charts/Apexcharts';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from 'cloudhub-components/dist/mui/styles';
 import { Card, CardHeader } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

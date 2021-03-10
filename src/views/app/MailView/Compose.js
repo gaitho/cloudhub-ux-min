@@ -10,7 +10,7 @@ import expandFill from '@iconify-icons/eva/expand-fill';
 import attach2Fill from '@iconify-icons/eva/attach-2-fill';
 import collapseFill from '@iconify-icons/eva/collapse-fill';
 import roundAddPhotoAlternate from '@iconify-icons/ic/round-add-photo-alternate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Input,

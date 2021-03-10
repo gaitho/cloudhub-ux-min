@@ -13,7 +13,7 @@ import roundPostAdd from '@iconify-icons/ic/round-post-add';
 import InfinitScroll from 'react-infinite-scroll-component';
 import React, { useEffect, useCallback, useState } from 'react';
 import { getPostsInitial, getMorePosts } from 'src/redux/slices/blog';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

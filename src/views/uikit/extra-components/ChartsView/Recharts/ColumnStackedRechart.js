@@ -7,7 +7,7 @@ import {
   TooltipRecharts,
   CartesianGridRecharts
 } from 'src/components/Charts/Recharts';
-import { useTheme, alpha } from '@material-ui/core/styles';
+import { useTheme, alpha } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

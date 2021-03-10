@@ -11,7 +11,7 @@ import {
   markAllAsRead,
   getNotifications
 } from 'src/redux/slices/notifications';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   List,

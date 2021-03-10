@@ -7,7 +7,7 @@ import { fDate } from 'src/utils/formatTime';
 import LazySize from 'src/components/LazySize';
 import Lightbox from 'src/components/ModalLightbox';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Grid,
   Card,

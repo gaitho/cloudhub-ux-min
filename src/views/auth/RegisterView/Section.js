@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

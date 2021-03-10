@@ -7,7 +7,7 @@ import {
   UploadSingleFile
 } from 'src/components/Upload';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Container, CardHeader, CardContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

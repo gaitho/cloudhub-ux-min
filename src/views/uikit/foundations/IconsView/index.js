@@ -15,7 +15,7 @@ import alertCircleFill from '@iconify-icons/eva/alert-circle-fill';
 import colorPaletteFill from '@iconify-icons/eva/color-palette-fill';
 import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
 import arrowCircleDownFill from '@iconify-icons/eva/arrow-circle-down-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Card,
   SvgIcon,

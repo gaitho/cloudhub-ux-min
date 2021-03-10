@@ -12,7 +12,7 @@ import OrderTimeline from './OrderTimeline';
 import TrafficBySite from './TrafficBySite';
 import CurrentSubject from './CurrentSubject';
 import ConversionRates from './ConversionRates';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Grid, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

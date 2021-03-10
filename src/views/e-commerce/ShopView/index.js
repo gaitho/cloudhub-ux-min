@@ -16,7 +16,7 @@ import {
   sortByProducts,
   filterProducts
 } from 'src/redux/slices/product';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Backdrop,

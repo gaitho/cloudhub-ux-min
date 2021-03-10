@@ -15,7 +15,7 @@ import {
   updateEvent,
   deleteEvent
 } from 'src/redux/slices/calendar';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Button,
   Switch,

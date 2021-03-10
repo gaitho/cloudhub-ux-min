@@ -10,7 +10,7 @@ import MaxWidthDialog from './MaxWidthDialog';
 import FullScreenDialogs from './FullScreenDialogs';
 import TransitionsDialogs from './TransitionsDialogs';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Grid, Container, CardContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

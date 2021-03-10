@@ -10,7 +10,7 @@ import match from 'autosuggest-highlight/match';
 import { Link as RouterLink } from 'react-router-dom';
 import searchFill from '@iconify-icons/eva/search-fill';
 import SearchNotFound from 'src/components/SearchNotFound';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Link,

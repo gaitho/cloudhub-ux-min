@@ -9,7 +9,7 @@ import twitterFill from '@iconify-icons/eva/twitter-fill';
 import linkedinFill from '@iconify-icons/eva/linkedin-fill';
 import facebookFill from '@iconify-icons/eva/facebook-fill';
 import instagramFilled from '@iconify-icons/ant-design/instagram-filled';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Card, TextField, InputAdornment } from '@material-ui/core';
 import { LoadingButton } from '@material-ui/lab';
 

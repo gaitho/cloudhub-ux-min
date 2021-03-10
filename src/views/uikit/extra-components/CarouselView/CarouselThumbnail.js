@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import LazySize from 'src/components/LazySize';
 import React, { useState, useRef, useEffect } from 'react';
 import { CarouselArrowsIndex } from 'src/components/Carousel';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

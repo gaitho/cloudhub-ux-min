@@ -75,7 +75,7 @@ var _roundFormatTextdirectionLToR = _interopRequireDefault(require("@iconify-ico
 
 var _roundFormatTextdirectionRToL = _interopRequireDefault(require("@iconify-icons/ic/round-format-textdirection-r-to-l"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Editor/QuillEditor/EditorToolbar.js",
     _this = void 0;

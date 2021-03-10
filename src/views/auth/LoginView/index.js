@@ -13,7 +13,7 @@ import { PATH_PAGE } from 'src/routes/paths';
 import closeFill from '@iconify-icons/eva/close-fill';
 import { Link as RouterLink } from 'react-router-dom';
 import useIsMountedRef from 'src/hooks/useIsMountedRef';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Link,

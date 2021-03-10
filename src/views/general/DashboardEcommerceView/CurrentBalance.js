@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { fCurrency } from 'src/utils/formatNumber';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Button, Box, Card, Typography, CardContent } from '@material-ui/core';
 import { MButton } from 'src/theme';
 

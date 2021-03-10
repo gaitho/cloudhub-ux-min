@@ -23,7 +23,7 @@ var _Markdown = _interopRequireDefault(require("src/components/Markdown"));
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/ReadMdFile.js";
 // ----------------------------------------------------------------------

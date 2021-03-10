@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 import { DialogAnimate } from 'src/components/Animate';
 import filePdfFilled from '@iconify-icons/ant-design/file-pdf-filled';
 import arrowIosBackFill from '@iconify-icons/eva/arrow-ios-back-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Link, Button, Divider, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

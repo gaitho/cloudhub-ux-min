@@ -11,7 +11,7 @@ var _toConsumableArray2 = _interopRequireDefault(require("/Users/bernardgaitho/r
 
 var _core = require("@material-ui/core");
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 // ----------------------------------------------------------------------
 function useBreakpoints(direction, firstkey, lastkey) {

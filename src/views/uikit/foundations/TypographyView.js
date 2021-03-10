@@ -5,7 +5,7 @@ import { PATH_APP } from 'src/routes/paths';
 import { remToPx } from 'src/utils/formatFontSize';
 import useBreakpoints from 'src/hooks/useBreakpoints';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Card,
   Container,

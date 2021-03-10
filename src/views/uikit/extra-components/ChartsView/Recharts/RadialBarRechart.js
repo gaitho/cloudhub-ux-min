@@ -1,7 +1,7 @@
 import React from 'react';
 import { LegendRecharts } from 'src/components/Charts/Recharts';
 import { ResponsiveContainer, RadialBarChart, RadialBar, Cell } from 'recharts';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

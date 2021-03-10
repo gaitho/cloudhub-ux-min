@@ -8,7 +8,7 @@ import { fNumber, fPercent } from 'src/utils/formatNumber';
 import { ApexChartsOption } from 'src/components/Charts/Apexcharts';
 import trendingUpFill from '@iconify-icons/eva/trending-up-fill';
 import trendingDownFill from '@iconify-icons/eva/trending-down-fill';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Card, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

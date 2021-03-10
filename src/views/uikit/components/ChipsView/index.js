@@ -4,7 +4,7 @@ import Page from 'src/components/Page';
 import ChipOutlined from './ChipOutlined';
 import { PATH_APP } from 'src/routes/paths';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Grid,
   Card,

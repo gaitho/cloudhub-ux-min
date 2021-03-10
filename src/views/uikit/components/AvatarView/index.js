@@ -7,7 +7,7 @@ import BadgeStatus from 'src/components/BadgeStatus';
 import PageviewIcon from '@material-ui/icons/Pageview';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Card,
   Grid,

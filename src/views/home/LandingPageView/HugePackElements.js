@@ -10,7 +10,11 @@ import {
   MotionInView,
   varFadeInRight
 } from 'src/components/Animate';
-import { alpha, makeStyles, useTheme } from '@material-ui/core/styles';
+import {
+  alpha,
+  makeStyles,
+  useTheme
+} from 'cloudhub-components/dist/mui/styles';
 import { Button, Box, Grid, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { GoogleMap, Autocomplete } from '@react-google-maps/api';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { OutlinedInput } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

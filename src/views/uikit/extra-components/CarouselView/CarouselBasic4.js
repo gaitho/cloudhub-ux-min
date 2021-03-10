@@ -6,7 +6,11 @@ import { Icon } from '@iconify/react';
 import LazySize from 'src/components/LazySize';
 import { CarouselArrowsBasic2 } from 'src/components/Carousel';
 import moreHorizontalFill from '@iconify-icons/eva/more-horizontal-fill';
-import { alpha, makeStyles, useTheme } from '@material-ui/core/styles';
+import {
+  alpha,
+  makeStyles,
+  useTheme
+} from 'cloudhub-components/dist/mui/styles';
 import { Box, Card, Typography, CardContent } from '@material-ui/core';
 import { MIconButton } from 'src/theme';
 

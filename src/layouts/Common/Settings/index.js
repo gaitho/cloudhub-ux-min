@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import ThemeDirection from './ThemeDirection';
 import closeFill from '@iconify-icons/eva/close-fill';
 import settings2Fill from '@iconify-icons/eva/settings-2-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Drawer, Divider, Typography } from '@material-ui/core';
 import { MIconButton } from 'src/theme';
 

@@ -23,7 +23,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _clsx2 = _interopRequireDefault(require("clsx"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _List = _interopRequireDefault(require("@material-ui/core/List"));
 

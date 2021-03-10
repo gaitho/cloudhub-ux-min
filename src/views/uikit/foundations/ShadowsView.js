@@ -3,7 +3,7 @@ import Page from 'src/components/Page';
 import Block from 'src/components/Block';
 import { PATH_APP } from 'src/routes/paths';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

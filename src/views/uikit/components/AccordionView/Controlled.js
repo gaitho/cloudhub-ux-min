@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 import arrowIosDownwardFill from '@iconify-icons/eva/arrow-ios-downward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Accordion,
   Typography,

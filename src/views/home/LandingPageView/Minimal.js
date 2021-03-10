@@ -7,7 +7,7 @@ import {
   varFadeInDown,
   MotionInView
 } from 'src/components/Animate';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Grid, Card, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

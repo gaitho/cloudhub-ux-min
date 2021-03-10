@@ -24,7 +24,7 @@ import {
   increaseQuantity,
   decreaseQuantity
 } from 'src/redux/slices/product';
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { withStyles, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Grid,

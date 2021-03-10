@@ -23,7 +23,7 @@ import {
   getFollowers,
   onToggleFollow
 } from 'src/redux/slices/user';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Tab, Box, Card, Tabs, Container } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

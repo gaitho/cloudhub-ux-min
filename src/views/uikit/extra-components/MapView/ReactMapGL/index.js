@@ -6,7 +6,7 @@ import { cities as CITIES } from './data/cities';
 import { stations as STATIONS } from './data/stations';
 import { countries as COUNTRIES } from './data/countries';
 import { HeaderDashboard } from 'src/layouts/Common';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Grid,
   Card,

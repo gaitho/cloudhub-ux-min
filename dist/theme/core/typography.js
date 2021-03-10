@@ -13,7 +13,7 @@ var _defineProperty2 = _interopRequireDefault(require("/Users/bernardgaitho/repo
 
 var _formatFontSize = require("../../utils/formatFontSize");
 
-var _createBreakpoints = _interopRequireDefault(require("@material-ui/core/styles/createBreakpoints"));
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 // ----------------------------------------------------------------------
 function responsiveFontSizes(_ref) {
@@ -22,7 +22,7 @@ function responsiveFontSizes(_ref) {
   var sm = _ref.sm,
       md = _ref.md,
       lg = _ref.lg;
-  var breakpoints = (0, _createBreakpoints.default)({});
+  var breakpoints = (0, _styles.createBreakpoints)({});
   return _ref2 = {}, (0, _defineProperty2.default)(_ref2, breakpoints.up('sm'), {
     fontSize: (0, _formatFontSize.pxToRem)(sm)
   }), (0, _defineProperty2.default)(_ref2, breakpoints.up('md'), {

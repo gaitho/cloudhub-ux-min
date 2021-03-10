@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 import { formatDistanceToNow } from 'date-fns';
 import clockFill from '@iconify-icons/eva/clock-fill';
 import { Link as RouterLink } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Avatar,

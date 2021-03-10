@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, FormikProvider } from 'formik';
 import { LoadingButton } from '@material-ui/lab';
 import maxLengthCheck from 'src/utils/maxLengthCheck';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, OutlinedInput, FormHelperText } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

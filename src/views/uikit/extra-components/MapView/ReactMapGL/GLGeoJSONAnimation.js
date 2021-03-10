@@ -8,7 +8,7 @@ import {
   ControlNavigation,
   ControlFullscreen
 } from './controls';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

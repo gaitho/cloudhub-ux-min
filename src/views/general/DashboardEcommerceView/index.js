@@ -11,7 +11,7 @@ import SaleByGender from './SaleByGender';
 import SalesOverview from './SalesOverview';
 import LatestProducts from './LatestProducts';
 import CurrentBalance from './CurrentBalance';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Container, Grid } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

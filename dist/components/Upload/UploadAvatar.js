@@ -41,7 +41,7 @@ var _useIsMountedRef = _interopRequireDefault(require("src/hooks/useIsMountedRef
 
 var _roundAddAPhoto = _interopRequireDefault(require("@iconify-icons/ic/round-add-a-photo"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

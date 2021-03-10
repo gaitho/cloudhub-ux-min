@@ -12,7 +12,7 @@ we need to strictly adhere to the following when importing:
 🟢 OK
 
 ```js
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { capitalize } from '@material-ui/core/utils';
 import { Button, AppBar, Hidden, Toolbar, IconButton } from '@material-ui/core';
 ```

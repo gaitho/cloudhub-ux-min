@@ -23,7 +23,7 @@ var _arrowLeftFill = _interopRequireDefault(require("@iconify-icons/eva/arrow-le
 
 var _arrowRightFill = _interopRequireDefault(require("@iconify-icons/eva/arrow-right-fill"));
 
-var _styles = require("@material-ui/core/styles");
+var _styles = require("cloudhub-components/dist/mui/styles");
 
 var _core = require("@material-ui/core");
 

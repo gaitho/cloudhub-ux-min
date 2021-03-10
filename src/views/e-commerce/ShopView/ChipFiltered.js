@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 import { sentenceCase } from 'change-case';
 import getColorName from 'src/utils/getColorName';
 import roundClearAll from '@iconify-icons/ic/round-clear-all';
-import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Chip, Typography } from '@material-ui/core';
 import { MButton } from 'src/theme';
 

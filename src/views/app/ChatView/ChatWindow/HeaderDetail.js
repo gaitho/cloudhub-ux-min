@@ -9,7 +9,7 @@ import phoneFill from '@iconify-icons/eva/phone-fill';
 import BadgeStatus from 'src/components/BadgeStatus';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
 import arrowIosForwardFill from '@iconify-icons/eva/arrow-ios-forward-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Link, Avatar, Typography, AvatarGroup } from '@material-ui/core';
 import { MIconButton } from 'src/theme';
 

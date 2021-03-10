@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react';
 import heartFill from '@iconify-icons/eva/heart-fill';
 import { fShortenNumber } from 'src/utils/formatNumber';
 import trophyFilled from '@iconify-icons/ant-design/trophy-filled';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,

@@ -22,7 +22,7 @@ import {
   getAddressBook,
   getNotifications
 } from 'src/redux/slices/user';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Container, Tab, Box, Tabs } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

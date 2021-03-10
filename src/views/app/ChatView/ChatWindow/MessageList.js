@@ -5,7 +5,7 @@ import MessageItem from './MessageItem';
 import Lightbox from 'src/components/ModalLightbox';
 import React, { useEffect, useState, useRef } from 'react';
 import Scrollbars from 'src/components/Scrollbars';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 
 // ----------------------------------------------------------------------
 

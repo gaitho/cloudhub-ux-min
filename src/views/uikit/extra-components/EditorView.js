@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { PATH_APP } from 'src/routes/paths';
 import { HeaderDashboard } from 'src/layouts/Common';
 import { QuillEditor, DraftEditor } from 'src/components/Editor';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Card, Container, CardHeader, CardContent } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

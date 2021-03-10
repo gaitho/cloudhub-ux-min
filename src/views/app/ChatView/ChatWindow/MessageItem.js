@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LazySize from 'src/components/LazySize';
 import { formatDistanceToNowStrict } from 'date-fns';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Avatar, Box, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

@@ -7,7 +7,7 @@ import { PATH_APP } from 'src/routes/paths';
 import { getImgComponent } from 'src/utils/getImages';
 import { Link as RouterLink } from 'react-router-dom';
 import { varFadeInUp, varWrapEnter } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Link, Hidden, Container, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

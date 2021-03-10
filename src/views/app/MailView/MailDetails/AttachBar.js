@@ -9,7 +9,7 @@ import {
   getFileName,
   getFileThumb
 } from 'src/utils/getFileFormat';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Box, Typography, IconButton } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

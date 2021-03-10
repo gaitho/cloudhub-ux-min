@@ -8,7 +8,7 @@ import {
   ReactCompareSliderImage
 } from 'react-compare-slider';
 import { varFadeInUp, MotionInView } from 'src/components/Animate';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import { Hidden, Typography } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

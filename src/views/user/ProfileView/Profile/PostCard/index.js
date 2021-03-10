@@ -10,7 +10,7 @@ import MyAvatar from 'src/components/MyAvatar';
 import React, { useState, useRef } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Link,

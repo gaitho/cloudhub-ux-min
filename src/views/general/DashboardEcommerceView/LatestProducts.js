@@ -8,7 +8,7 @@ import Scrollbars from 'src/components/Scrollbars';
 import { getImgProduct } from 'src/utils/getImages';
 import { Link as RouterLink } from 'react-router-dom';
 import { PreviewColor } from 'src/components/ColorUtility';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Link,

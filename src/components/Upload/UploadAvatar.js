@@ -8,7 +8,7 @@ import { fData } from 'src/utils/formatNumber';
 import React, { useCallback, useState } from 'react';
 import useIsMountedRef from 'src/hooks/useIsMountedRef';
 import roundAddAPhoto from '@iconify-icons/ic/round-add-a-photo';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Typography,

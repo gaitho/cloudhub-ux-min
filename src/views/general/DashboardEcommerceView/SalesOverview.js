@@ -3,7 +3,7 @@ import React from 'react';
 import faker from 'faker';
 import PropTypes from 'prop-types';
 import { fPercent, fCurrency } from 'src/utils/formatNumber';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from 'cloudhub-components/dist/mui/styles';
 import {
   Box,
   Card,
