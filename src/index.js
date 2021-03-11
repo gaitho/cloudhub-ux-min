@@ -20,7 +20,6 @@ export { default as Page } from './components/Page';
 export { default as PopoverMenu } from './components/PopoverMenu';
 export { default as ReadMdFile } from './components/ReadMdFile';
 export { default as Scrollbars } from './components/Scrollbars';
-export { default as ScrollToTop } from './components/ScrollToTop';
 export { default as SearchNotFound } from './components/SearchNotFound';
 
 export { default as UploadMultiFile } from './components/Upload/UploadMultiFile';

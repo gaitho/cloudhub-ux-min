@@ -50,7 +50,7 @@ function Rating(_ref) {
           }
         },
         iconEmpty: {
-          color: theme.palette.grey[500_48]
+          color: theme.palette.grey['500_48']
         },
         sizeSmall: {
           '& svg': _objectSpread({}, ICON_SMALL)

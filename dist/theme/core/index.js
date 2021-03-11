@@ -7,8 +7,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _jssRtl = _interopRequireDefault(require("jss-rtl"));
-
 var _jss = require("jss");
 
 var _palette = require("./palette");
@@ -21,21 +19,15 @@ var _typography = _interopRequireDefault(require("./typography"));
 
 var _breakpoints = _interopRequireDefault(require("./breakpoints"));
 
-var _cache = _interopRequireDefault(require("@emotion/cache"));
-
-var _stylisPluginRtl = _interopRequireDefault(require("stylis-plugin-rtl"));
-
 var _globalStyles = _interopRequireDefault(require("./globalStyles"));
 
 var _borderRadius = _interopRequireDefault(require("./borderRadius"));
 
 var _overrides = _interopRequireDefault(require("./overrides"));
 
-var _react = require("@emotion/react");
-
 var _useSettings2 = _interopRequireDefault(require("../../hooks/useSettings"));
 
-var _react2 = _interopRequireWildcard(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
 var _styles = require("@material-ui/core/styles");
 
@@ -76,24 +68,25 @@ RTLProvider.propTypes = {
 function RTLProvider(_ref) {
   var direction = _ref.direction,
       children = _ref.children;
-  var isRTL = direction === 'rtl';
+  // const isRTL = direction === 'rtl';
+  // const jss = create({
+  //   plugins: [...jssPreset().plugins, rtl()]
+  // });
+  // const cache = createCache({
+  //   key: isRTL ? 'rtl' : 'css',
+  //   prepend: true,
+  //   stylisPlugins: isRTL ? [rtlPlugin] : []
+  // });
+  // cache.compat = true;
+  // useEffect(() => {
+  //   document.dir = direction;
+  // }, [direction]);
   var jss = (0, _jss.create)({
-    plugins: [].concat(_toConsumableArray((0, _styles.jssPreset)().plugins), [(0, _jssRtl.default)()])
+    plugins: _toConsumableArray((0, _styles.jssPreset)().plugins)
   });
-  var cache = (0, _cache.default)({
-    key: isRTL ? 'rtl' : 'css',
-    prepend: true,
-    stylisPlugins: isRTL ? [_stylisPluginRtl.default] : []
-  });
-  cache.compat = true;
-  (0, _react2.useEffect)(function () {
-    document.dir = direction;
-  }, [direction]);
-  return /*#__PURE__*/_react2.default.createElement(_react.CacheProvider, {
-    value: cache
-  }, /*#__PURE__*/_react2.default.createElement(_styles.StylesProvider, {
+  return /*#__PURE__*/_react.default.createElement(_styles.StylesProvider, {
     jss: jss
-  }, children));
+  }, children);
 }
 
 ThemeConfig.propTypes = {
@@ -111,9 +104,9 @@ function ThemeConfig(_ref2) {
       themeDirection = _useSettings.themeDirection;
 
   var isLight = themeMode === 'light';
-  var themeOptions = (0, _react2.useMemo)(function () {
+  var themeOptions = (0, _react.useMemo)(function () {
     return {
-      palette: isLight ? (0, _palette.getLightColors)() : (0, _palette.getDarkColors)(),
+      palette: isLight ? (0, _palette.getLightColors)(colors) : (0, _palette.getDarkColors)(colors),
       shadows: _shadows.default[isLight ? 'light' : 'dark'],
       typography: (0, _typography.default)(fonts),
       shape: _borderRadius.default,
@@ -121,7 +114,7 @@ function ThemeConfig(_ref2) {
       direction: themeDirection,
       components: (0, _overrides.default)({
         theme: {
-          palette: isLight ? (0, _palette.getLightColors)() : (0, _palette.getDarkColors)(),
+          palette: isLight ? (0, _palette.getLightColors)(colors) : (0, _palette.getDarkColors)(colors),
           shadows: _shadows.default[isLight ? 'light' : 'dark'],
           typography: (0, _typography.default)(fonts),
           shape: _borderRadius.default,
@@ -138,12 +131,12 @@ function ThemeConfig(_ref2) {
   }, // eslint-disable-next-line react-hooks/exhaustive-deps
   [isLight, themeDirection]);
   var theme = (0, _styles.createMuiTheme)(themeOptions);
-  return /*#__PURE__*/_react2.default.createElement(_ThemeProvider.default, {
+  return /*#__PURE__*/_react.default.createElement(_ThemeProvider.default, {
     theme: theme,
     colors: colors,
     fonts: fonts,
     sizes: sizes
-  }, /*#__PURE__*/_react2.default.createElement(_core.CssBaseline, null), /*#__PURE__*/_react2.default.createElement(_globalStyles.default, null), /*#__PURE__*/_react2.default.createElement(RTLProvider, {
+  }, /*#__PURE__*/_react.default.createElement(_core.CssBaseline, null), /*#__PURE__*/_react.default.createElement(_globalStyles.default, null), /*#__PURE__*/_react.default.createElement(RTLProvider, {
     direction: themeDirection
   }, children));
 }

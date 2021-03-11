@@ -13,8 +13,6 @@ var _reactHelmet = require("react-helmet");
 
 var _analytics = _interopRequireDefault(require("../utils/analytics"));
 
-var _reactRouterDom = require("react-router-dom");
-
 var _react = _interopRequireWildcard(require("react"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -34,10 +32,8 @@ var Page = (0, _react.forwardRef)(function (_ref, ref) {
   var children = _ref.children,
       _ref$title = _ref.title,
       title = _ref$title === void 0 ? '' : _ref$title,
-      other = _objectWithoutProperties(_ref, ["children", "title"]);
-
-  var _useLocation = (0, _reactRouterDom.useLocation)(),
-      pathname = _useLocation.pathname;
+      pathname = _ref.pathname,
+      other = _objectWithoutProperties(_ref, ["children", "title", "pathname"]);
 
   var sendPageViewEvent = (0, _react.useCallback)(function () {
     _analytics.default.pageview({

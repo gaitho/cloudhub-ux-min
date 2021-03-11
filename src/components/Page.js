@@ -1,14 +1,11 @@
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import track from '../utils/analytics';
-import { useLocation } from 'react-router-dom';
 import React, { forwardRef, useEffect, useCallback } from 'react';
 
 // ----------------------------------------------------------------------
 
-const Page = forwardRef(({ children, title = '', ...other }, ref) => {
-  const { pathname } = useLocation();
-
+const Page = forwardRef(({ children, title = '', pathname, ...other }, ref) => {
   const sendPageViewEvent = useCallback(() => {
     track.pageview({
       page_path: pathname

@@ -1,18 +1,18 @@
-import rtl from 'jss-rtl';
+// import rtl from 'jss-rtl';
 import { create } from 'jss';
 import { getLightColors, getDarkColors } from './palette';
 import shadows from './shadows';
 import PropTypes from 'prop-types';
 import typography from './typography';
 import breakpoints from './breakpoints';
-import createCache from '@emotion/cache';
-import rtlPlugin from 'stylis-plugin-rtl';
+// import createCache from '@emotion/cache';
+// import rtlPlugin from 'stylis-plugin-rtl';
 import GlobalStyles from './globalStyles';
 import borderRadius from './borderRadius';
 import componentsOverride from './overrides';
-import { CacheProvider } from '@emotion/react';
+// import { CacheProvider } from '@emotion/react';
 import useSettings from '../../hooks/useSettings';
-import React, { useMemo, useEffect } from 'react';
+import React, { useMemo } from 'react';
 
 import {
   jssPreset,
@@ -31,28 +31,27 @@ RTLProvider.propTypes = {
 };
 
 function RTLProvider({ direction, children }) {
-  const isRTL = direction === 'rtl';
+  // const isRTL = direction === 'rtl';
+  // const jss = create({
+  //   plugins: [...jssPreset().plugins, rtl()]
+  // });
+
+  // const cache = createCache({
+  //   key: isRTL ? 'rtl' : 'css',
+  //   prepend: true,
+  //   stylisPlugins: isRTL ? [rtlPlugin] : []
+  // });
+
+  // cache.compat = true;
+
+  // useEffect(() => {
+  //   document.dir = direction;
+  // }, [direction]);
   const jss = create({
-    plugins: [...jssPreset().plugins, rtl()]
+    plugins: [...jssPreset().plugins]
   });
 
-  const cache = createCache({
-    key: isRTL ? 'rtl' : 'css',
-    prepend: true,
-    stylisPlugins: isRTL ? [rtlPlugin] : []
-  });
-
-  cache.compat = true;
-
-  useEffect(() => {
-    document.dir = direction;
-  }, [direction]);
-
-  return (
-    <CacheProvider value={cache}>
-      <StylesProvider jss={jss}>{children}</StylesProvider>
-    </CacheProvider>
-  );
+  return <StylesProvider jss={jss}>{children}</StylesProvider>;
 }
 
 ThemeConfig.propTypes = {
@@ -65,7 +64,7 @@ function ThemeConfig({ children, fonts, sizes, colors }) {
 
   const themeOptions = useMemo(
     () => ({
-      palette: isLight ? getLightColors() : getDarkColors(),
+      palette: isLight ? getLightColors(colors) : getDarkColors(colors),
       shadows: shadows[isLight ? 'light' : 'dark'],
       typography: typography(fonts),
       shape: borderRadius,
@@ -73,7 +72,7 @@ function ThemeConfig({ children, fonts, sizes, colors }) {
       direction: themeDirection,
       components: componentsOverride({
         theme: {
-          palette: isLight ? getLightColors() : getDarkColors(),
+          palette: isLight ? getLightColors(colors) : getDarkColors(colors),
           shadows: shadows[isLight ? 'light' : 'dark'],
           typography: typography(fonts),
           shape: borderRadius,

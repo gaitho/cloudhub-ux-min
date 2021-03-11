@@ -23,7 +23,6 @@ var _exportNames = {
   PopoverMenu: true,
   ReadMdFile: true,
   Scrollbars: true,
-  ScrollToTop: true,
   SearchNotFound: true,
   UploadMultiFile: true,
   UploadSingleFile: true,
@@ -171,12 +170,6 @@ Object.defineProperty(exports, "Scrollbars", {
   enumerable: true,
   get: function get() {
     return _Scrollbars.default;
-  }
-});
-Object.defineProperty(exports, "ScrollToTop", {
-  enumerable: true,
-  get: function get() {
-    return _ScrollToTop.default;
   }
 });
 Object.defineProperty(exports, "SearchNotFound", {
@@ -419,8 +412,6 @@ var _PopoverMenu = _interopRequireDefault(require("./components/PopoverMenu"));
 var _ReadMdFile = _interopRequireDefault(require("./components/ReadMdFile"));
 
 var _Scrollbars = _interopRequireDefault(require("./components/Scrollbars"));
-
-var _ScrollToTop = _interopRequireDefault(require("./components/ScrollToTop"));
 
 var _SearchNotFound = _interopRequireDefault(require("./components/SearchNotFound"));
 
