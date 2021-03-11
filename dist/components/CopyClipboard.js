@@ -13,8 +13,6 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _react = require("@iconify/react");
 
-var _notistack = require("notistack");
-
 var _react2 = _interopRequireWildcard(require("react"));
 
 var _copyFill = _interopRequireDefault(require("@iconify-icons/eva/copy-fill"));
@@ -66,9 +64,6 @@ function CopyClipboard(_ref) {
       className = _ref.className;
   var classes = useStyles();
 
-  var _useSnackbar = (0, _notistack.useSnackbar)(),
-      enqueueSnackbar = _useSnackbar.enqueueSnackbar;
-
   var _useState = (0, _react2.useState)({
     value: value,
     copied: false
@@ -89,10 +84,7 @@ function CopyClipboard(_ref) {
       copied: true
     }));
 
-    if (state.value) {
-      enqueueSnackbar('Copied', {
-        variant: 'success'
-      });
+    if (state.value) {// enqueueSnackbar('Copied', { variant: 'success' });
     }
   };
 

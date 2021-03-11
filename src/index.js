@@ -15,7 +15,6 @@ export { default as Logo } from './components/Logo';
 export { default as Markdown } from './components/Markdown';
 export { default as ModalLightBox } from './components/BadgeStatus';
 export { default as MoreButton } from './components/MoreButton';
-export { default as NotistackProvider } from './components/NotistackProvider';
 export { default as Page } from './components/Page';
 export { default as PopoverMenu } from './components/PopoverMenu';
 export { default as ReadMdFile } from './components/ReadMdFile';

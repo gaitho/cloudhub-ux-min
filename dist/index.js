@@ -18,7 +18,6 @@ var _exportNames = {
   Logo: true,
   Markdown: true,
   MoreButton: true,
-  NotistackProvider: true,
   Page: true,
   PopoverMenu: true,
   ReadMdFile: true,
@@ -140,12 +139,6 @@ Object.defineProperty(exports, "MoreButton", {
   enumerable: true,
   get: function get() {
     return _MoreButton.default;
-  }
-});
-Object.defineProperty(exports, "NotistackProvider", {
-  enumerable: true,
-  get: function get() {
-    return _NotistackProvider.default;
   }
 });
 Object.defineProperty(exports, "Page", {
@@ -402,8 +395,6 @@ var _Logo = _interopRequireDefault(require("./components/Logo"));
 var _Markdown = _interopRequireDefault(require("./components/Markdown"));
 
 var _MoreButton = _interopRequireDefault(require("./components/MoreButton"));
-
-var _NotistackProvider = _interopRequireDefault(require("./components/NotistackProvider"));
 
 var _Page = _interopRequireDefault(require("./components/Page"));
 
