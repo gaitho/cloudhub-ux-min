@@ -9,8 +9,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _useAuth2 = _interopRequireDefault(require("../hooks/useAuth"));
-
 var _theme = require("../theme");
 
 var _createAvatar = _interopRequireDefault(require("../utils/createAvatar"));
@@ -30,10 +28,8 @@ MyAvatar.propTypes = {
 
 function MyAvatar(_ref) {
   var className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["className"]);
-
-  var _useAuth = (0, _useAuth2.default)(),
-      user = _useAuth.user;
+      user = _ref.user,
+      other = _objectWithoutProperties(_ref, ["className", "user"]);
 
   return /*#__PURE__*/_react.default.createElement(_theme.MAvatar, _extends({
     src: user.photoURL,

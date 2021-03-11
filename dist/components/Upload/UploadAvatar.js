@@ -15,8 +15,6 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _react = require("@iconify/react");
 
-var _config = require("../../config");
-
 var _reactDropzone = require("react-dropzone");
 
 var _formatNumber = require("../../utils/formatNumber");
@@ -62,9 +60,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 // ----------------------------------------------------------------------
-var CLOUDINARY_KEY = _config.cloudinaryConfig.cloudinaryKey;
-var CLOUDINARY_PRESET = _config.cloudinaryConfig.cloudinaryPreset;
-var CLOUDINARY_URL = _config.cloudinaryConfig.cloudinaryUrl;
 var PHOTO_SIZE = 3145728; // bytes
 
 var FILE_FORMATS = ['image/jpg', 'image/jpeg', 'image/gif', 'image/png'];
@@ -163,7 +158,9 @@ function UploadAvatar(_ref) {
       file = _ref.value,
       setFile = _ref.onChange,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["disabled", "caption", "error", "value", "onChange", "className"]);
+      _ref$config = _ref.config,
+      config = _ref$config === void 0 ? {} : _ref$config,
+      other = _objectWithoutProperties(_ref, ["disabled", "caption", "error", "value", "onChange", "className", "config"]);
 
   var classes = useStyles();
 
@@ -208,9 +205,9 @@ function UploadAvatar(_ref) {
               formData = new FormData();
               formData.append('file', file);
               formData.append('folder', 'upload_minimal/avatar');
-              formData.append('upload_preset', CLOUDINARY_PRESET);
-              formData.append('api_key', CLOUDINARY_KEY);
-              return _context.abrupt("return", _axios.default.post(CLOUDINARY_URL, formData, {
+              formData.append('upload_preset', config.cloudinaryPreset || '');
+              formData.append('api_key', config.cloudinaryKey || '');
+              return _context.abrupt("return", _axios.default.post(config.cloudinaryUrl || '', formData, {
                 headers: {
                   'X-Requested-With': 'XMLHttpRequest'
                 }

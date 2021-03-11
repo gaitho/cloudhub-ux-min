@@ -1,17 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { googleAnalyticsConfig } from '../config';
 
-// ----------------------------------------------------------------------
-
-const GA_MEASUREMENT_ID = googleAnalyticsConfig;
-
-function GoogleAnalytics() {
+function GoogleAnalytics({ config }) {
   return (
     <Helmet>
       <script
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsConfig}`}
       />
       <script>
         {`
@@ -22,7 +17,7 @@ function GoogleAnalytics() {
           }
 
           gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}');
+          gtag('config', '${config.googleAnalyticsConfig}');
         `}
       </script>
     </Helmet>

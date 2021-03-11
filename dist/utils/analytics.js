@@ -5,8 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _config = require("../config");
-
 // ----------------------------------------------------------------------
 var setup = function setup() {
   var _window;
@@ -23,8 +21,8 @@ var setup = function setup() {
 };
 
 var track = {
-  pageview: function pageview(props) {
-    setup('config', _config.googleAnalyticsConfig, props);
+  pageview: function pageview(props, googleAnalyticsConfig) {
+    setup('config', googleAnalyticsConfig, props);
   },
   event: function event(type, props) {
     setup('event', type, props);

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useAuth from '../hooks/useAuth';
 import { MAvatar } from '../theme';
 import createAvatar from '../utils/createAvatar';
 
@@ -10,9 +9,7 @@ MyAvatar.propTypes = {
   className: PropTypes.string
 };
 
-function MyAvatar({ className, ...other }) {
-  const { user } = useAuth();
-
+function MyAvatar({ className, user, ...other }) {
   return (
     <MAvatar
       src={user.photoURL}

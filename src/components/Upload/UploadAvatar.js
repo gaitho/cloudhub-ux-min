@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
-import { cloudinaryConfig } from '../../config';
+
 import { useDropzone } from 'react-dropzone';
 import { fData } from '../../utils/formatNumber';
 import React, { useCallback, useState } from 'react';
@@ -17,10 +17,6 @@ import {
 } from '@material-ui/core';
 
 // ----------------------------------------------------------------------
-
-const CLOUDINARY_KEY = cloudinaryConfig.cloudinaryKey;
-const CLOUDINARY_PRESET = cloudinaryConfig.cloudinaryPreset;
-const CLOUDINARY_URL = cloudinaryConfig.cloudinaryUrl;
 
 const PHOTO_SIZE = 3145728; // bytes
 const FILE_FORMATS = ['image/jpg', 'image/jpeg', 'image/gif', 'image/png'];
@@ -103,6 +99,7 @@ function UploadAvatar({
   value: file,
   onChange: setFile,
   className,
+  config = {},
   ...other
 }) {
   const classes = useStyles();
@@ -131,10 +128,10 @@ function UploadAvatar({
           const formData = new FormData();
           formData.append('file', file);
           formData.append('folder', 'upload_minimal/avatar');
-          formData.append('upload_preset', CLOUDINARY_PRESET);
-          formData.append('api_key', CLOUDINARY_KEY);
+          formData.append('upload_preset', config.cloudinaryPreset || '');
+          formData.append('api_key', config.cloudinaryKey || '');
           return axios
-            .post(CLOUDINARY_URL, formData, {
+            .post(config.cloudinaryUrl || '', formData, {
               headers: { 'X-Requested-With': 'XMLHttpRequest' }
             })
             .then((response) => {
