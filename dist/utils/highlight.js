@@ -1,10 +1,10 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 var _highlight = _interopRequireDefault(require("highlight.js"));
 
 require("highlight.js/styles/atom-one-dark.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ----------------------------------------------------------------------
 _highlight.default.configure({

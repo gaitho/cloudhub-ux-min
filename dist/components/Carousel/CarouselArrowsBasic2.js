@@ -1,15 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
 
 var _clsx = _interopRequireDefault(require("clsx"));
 
@@ -23,13 +17,20 @@ var _arrowLeftFill = _interopRequireDefault(require("@iconify-icons/eva/arrow-le
 
 var _arrowRightFill = _interopRequireDefault(require("@iconify-icons/eva/arrow-right-fill"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _theme = require("src/theme");
+var _theme = require("../../theme");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Carousel/CarouselArrowsBasic2.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 // ----------------------------------------------------------------------
 var SIZE = 40;
 var useStyles = (0, _styles.makeStyles)(function (theme) {
@@ -74,61 +75,31 @@ function CarouselArrowsBasic2(_ref) {
   var onNext = _ref.onNext,
       onPrevious = _ref.onPrevious,
       className = _ref.className,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["onNext", "onPrevious", "className"]);
+      other = _objectWithoutProperties(_ref, ["onNext", "onPrevious", "className"]);
+
   var classes = useStyles();
   var theme = (0, _styles.useTheme)();
   var isRTL = theme.direction === 'rtl';
-  return /*#__PURE__*/_react.default.createElement(_core.Box, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_core.Box, _extends({
     className: (0, _clsx.default)(classes.root, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 5
-    }
-  }), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
+  }, other), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
     size: "small",
     color: "white",
     onClick: onPrevious,
-    className: classes.arrow,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 7
-    }
+    className: classes.arrow
   }, /*#__PURE__*/_react.default.createElement(_react2.Icon, {
     width: 20,
     height: 20,
-    icon: isRTL ? _arrowRightFill.default : _arrowLeftFill.default,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 9
-    }
+    icon: isRTL ? _arrowRightFill.default : _arrowLeftFill.default
   })), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
     size: "small",
     color: "white",
     onClick: onNext,
-    className: classes.arrow,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 7
-    }
+    className: classes.arrow
   }, /*#__PURE__*/_react.default.createElement(_react2.Icon, {
     width: 20,
     height: 20,
-    icon: isRTL ? _arrowLeftFill.default : _arrowRightFill.default,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 9
-    }
+    icon: isRTL ? _arrowLeftFill.default : _arrowRightFill.default
   })));
 }
 

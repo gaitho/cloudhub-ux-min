@@ -23,7 +23,7 @@ function Input(_ref) {
       styleOverrides: {
         underline: {
           '&:before': {
-            borderBottomColor: theme.palette.grey[50056]
+            borderBottomColor: theme.palette.grey[500_56]
           }
         }
       }
@@ -31,9 +31,9 @@ function Input(_ref) {
     MuiFilledInput: {
       styleOverrides: {
         root: {
-          backgroundColor: theme.palette.grey[50012],
+          backgroundColor: theme.palette.grey[500_12],
           '&:hover': {
-            backgroundColor: theme.palette.grey[50016]
+            backgroundColor: theme.palette.grey[500_16]
           },
           '&.Mui-focused': {
             backgroundColor: theme.palette.action.focus
@@ -44,7 +44,7 @@ function Input(_ref) {
         },
         underline: {
           '&:before': {
-            borderBottomColor: theme.palette.grey[50056]
+            borderBottomColor: theme.palette.grey[500_56]
           }
         }
       }
@@ -53,7 +53,7 @@ function Input(_ref) {
       styleOverrides: {
         root: {
           '& .MuiOutlinedInput-notchedOutline': {
-            borderColor: theme.palette.grey[50032]
+            borderColor: theme.palette.grey[500_32]
           },
           '&.Mui-disabled': {
             '& .MuiOutlinedInput-notchedOutline': {

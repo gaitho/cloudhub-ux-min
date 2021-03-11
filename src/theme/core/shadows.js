@@ -1,5 +1,5 @@
 import { getLightColors } from './palette';
-import { alpha } from 'cloudhub-components/dist/mui/styles';
+import { alpha } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

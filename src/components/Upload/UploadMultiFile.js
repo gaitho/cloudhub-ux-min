@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { fData } from 'src/utils/formatNumber';
+import { fData } from '../../utils/formatNumber';
 import fileFill from '@iconify-icons/eva/file-fill';
 import closeFill from '@iconify-icons/eva/close-fill';
 import { motion, AnimatePresence } from 'framer-motion';
-import { varFadeInRight } from 'src/components/Animate';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { varFadeInRight } from '../Animate';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Box,
   List,
@@ -20,7 +20,7 @@ import {
   ListItemText,
   ListItemSecondaryAction
 } from '@material-ui/core';
-import { MIconButton } from 'src/theme';
+import { MIconButton } from '../../theme';
 
 // ----------------------------------------------------------------------
 

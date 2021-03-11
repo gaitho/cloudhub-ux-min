@@ -1,19 +1,21 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
-
-var _defineProperty2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty"));
-
 var _formatFontSize = require("../../utils/formatFontSize");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _createBreakpoints = _interopRequireDefault(require("@material-ui/core/styles/createBreakpoints"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // ----------------------------------------------------------------------
 function responsiveFontSizes(_ref) {
@@ -22,12 +24,12 @@ function responsiveFontSizes(_ref) {
   var sm = _ref.sm,
       md = _ref.md,
       lg = _ref.lg;
-  var breakpoints = (0, _styles.createBreakpoints)({});
-  return _ref2 = {}, (0, _defineProperty2.default)(_ref2, breakpoints.up('sm'), {
+  var breakpoints = (0, _createBreakpoints.default)({});
+  return _ref2 = {}, _defineProperty(_ref2, breakpoints.up('sm'), {
     fontSize: (0, _formatFontSize.pxToRem)(sm)
-  }), (0, _defineProperty2.default)(_ref2, breakpoints.up('md'), {
+  }), _defineProperty(_ref2, breakpoints.up('md'), {
     fontSize: (0, _formatFontSize.pxToRem)(md)
-  }), (0, _defineProperty2.default)(_ref2, breakpoints.up('lg'), {
+  }), _defineProperty(_ref2, breakpoints.up('lg'), {
     fontSize: (0, _formatFontSize.pxToRem)(lg)
   }), _ref2;
 }
@@ -44,7 +46,7 @@ var typography = function typography(fonts) {
     fontWeightRegular: 500,
     fontWeightMedium: 600,
     fontWeightBold: 700,
-    h1: (0, _objectSpread2.default)({
+    h1: _objectSpread({
       fontWeight: 600,
       lineHeight: 80 / 64,
       fontSize: (0, _formatFontSize.pxToRem)(40)
@@ -53,7 +55,7 @@ var typography = function typography(fonts) {
       md: 58,
       lg: 64
     })),
-    h2: (0, _objectSpread2.default)({
+    h2: _objectSpread({
       fontWeight: 600,
       lineHeight: 64 / 48,
       fontSize: (0, _formatFontSize.pxToRem)(32)
@@ -62,7 +64,7 @@ var typography = function typography(fonts) {
       md: 44,
       lg: 48
     })),
-    h3: (0, _objectSpread2.default)({
+    h3: _objectSpread({
       lineHeight: 1.5,
       fontWeight: 600,
       fontSize: (0, _formatFontSize.pxToRem)(24)
@@ -71,7 +73,7 @@ var typography = function typography(fonts) {
       md: 30,
       lg: 32
     })),
-    h4: (0, _objectSpread2.default)({
+    h4: _objectSpread({
       lineHeight: 1.5,
       fontWeight: 600,
       fontSize: (0, _formatFontSize.pxToRem)(20)
@@ -80,7 +82,7 @@ var typography = function typography(fonts) {
       md: 24,
       lg: 24
     })),
-    h5: (0, _objectSpread2.default)({
+    h5: _objectSpread({
       lineHeight: 1.5,
       fontWeight: 600,
       fontSize: (0, _formatFontSize.pxToRem)(18)
@@ -89,7 +91,7 @@ var typography = function typography(fonts) {
       md: 20,
       lg: 20
     })),
-    h6: (0, _objectSpread2.default)({
+    h6: _objectSpread({
       fontWeight: 600,
       lineHeight: 28 / 18,
       fontSize: (0, _formatFontSize.pxToRem)(17)

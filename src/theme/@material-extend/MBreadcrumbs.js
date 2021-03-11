@@ -3,7 +3,7 @@ import React from 'react';
 import { last } from 'lodash';
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'cloudhub-components/dist/reach';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Box, Link, Breadcrumbs } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

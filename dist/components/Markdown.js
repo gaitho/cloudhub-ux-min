@@ -1,19 +1,11 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
-var _interopRequireWildcard = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
-
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
 
 var _clsx = _interopRequireDefault(require("clsx"));
 
@@ -25,24 +17,41 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactMarkdown = _interopRequireDefault(require("react-markdown"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Markdown.js";
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   var isLight = theme.palette.mode === 'light';
   return {
     root: {
-      '& h1': (0, _objectSpread2.default)({}, theme.typography.h1),
-      '& h2': (0, _objectSpread2.default)({}, theme.typography.h2),
-      '& h3': (0, _objectSpread2.default)({}, theme.typography.h3),
-      '& h4': (0, _objectSpread2.default)({}, theme.typography.h4),
-      '& h5': (0, _objectSpread2.default)({}, theme.typography.h5),
-      '& h6': (0, _objectSpread2.default)({}, theme.typography.h6),
+      '& h1': _objectSpread({}, theme.typography.h1),
+      '& h2': _objectSpread({}, theme.typography.h2),
+      '& h3': _objectSpread({}, theme.typography.h3),
+      '& h4': _objectSpread({}, theme.typography.h4),
+      '& h5': _objectSpread({}, theme.typography.h5),
+      '& h6': _objectSpread({}, theme.typography.h6),
       // Paragraph
-      '& p': (0, _objectSpread2.default)((0, _objectSpread2.default)({}, theme.typography.body1), {}, {
+      '& p': _objectSpread(_objectSpread({}, theme.typography.body1), {}, {
         lineHeight: 1.6
       }),
       // Hr
@@ -60,7 +69,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
         }
       },
       // List
-      '& ul, & ol': (0, _objectSpread2.default)((0, _objectSpread2.default)({}, theme.typography.body1), {}, {
+      '& ul, & ol': _objectSpread(_objectSpread({}, theme.typography.body1), {}, {
         paddingLeft: theme.spacing(5),
         '& li': {
           lineHeight: 2
@@ -102,7 +111,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
         padding: theme.spacing(2),
         color: theme.palette.common.white,
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: theme.palette.grey[isLight ? 900 : 50016]
+        backgroundColor: theme.palette.grey[isLight ? 900 : 500_16]
       },
       '& code': {
         fontSize: 14,
@@ -133,21 +142,8 @@ function CodeBlock(_ref) {
     });
   }, [value]);
   return /*#__PURE__*/_react.default.createElement("pre", {
-    dir: "ltr",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/_react.default.createElement("code", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117,
-      columnNumber: 7
-    }
-  }, value));
+    dir: "ltr"
+  }, /*#__PURE__*/_react.default.createElement("code", null, value));
 }
 
 function LinkTo(_ref2) {
@@ -156,22 +152,17 @@ function LinkTo(_ref2) {
   var isHttp = href.includes('http');
   return /*#__PURE__*/_react.default.createElement(_core.Link, {
     href: href,
-    target: isHttp ? '_blank' : '_self',
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 125,
-      columnNumber: 5
-    }
+    target: isHttp ? '_blank' : '_self'
   }, children);
 }
 
 function Markdown(_ref3) {
   var source = _ref3.source,
       className = _ref3.className,
-      other = (0, _objectWithoutProperties2.default)(_ref3, ["source", "className"]);
+      other = _objectWithoutProperties(_ref3, ["source", "className"]);
+
   var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement(_reactMarkdown.default, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_reactMarkdown.default, _extends({
     allowDangerousHtml: true,
     renderers: {
       code: CodeBlock,
@@ -179,14 +170,7 @@ function Markdown(_ref3) {
     },
     source: source,
     className: (0, _clsx.default)(classes.root, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 5
-    }
-  }));
+  }, other));
 }
 
 var _default = Markdown;

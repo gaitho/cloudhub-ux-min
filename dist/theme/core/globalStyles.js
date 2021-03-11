@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 // ----------------------------------------------------------------------
 var GlobalStyles = (0, _styles.withStyles)(function (theme) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tooltip } from 'recharts';
-import { useTheme } from 'cloudhub-components/dist/mui/styles';
+import { useTheme } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

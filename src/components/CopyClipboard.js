@@ -5,7 +5,7 @@ import { useSnackbar } from 'notistack';
 import React, { useState } from 'react';
 import copyFill from '@iconify-icons/eva/copy-fill';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Tooltip,
   TextField,

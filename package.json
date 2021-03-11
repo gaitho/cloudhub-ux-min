@@ -1,7 +1,7 @@
 {
   "name": "cloudhub-min",
   "licence": "UNLICENSED",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/cloudhubke/cloudhub-min.git"
@@ -18,9 +18,8 @@
     "dist"
   ],
   "scripts": {
-    "start": "PORT=1113 react-app-rewired --max_old_space_size=2048 start",
     "prebuild": "rimraf dist",
-    "build": "NODE_ENV=development npx babel src --config-file ./babel.config.json --out-dir dist && mv dist/components.js dist/index.js"
+    "build": "NODE_ENV=development npx babel src --config-file ./babel.config.json --out-dir dist"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -90,10 +89,8 @@
     "stylis-plugin-rtl": "^2.0.1"
   },
   "peerDependencies": {
-    "@material-ui/core": ">=5.0.0-alpha.26",
-    "@material-ui/icons": ">=5.0.0-alpha.26",
-    "@material-ui/lab": ">=5.0.0-alpha.26",
-    "@material-ui/utils": ">=5.0.0-alpha.26"
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
   },
   "devDependencies": {
     "@babel/cli": "7.2.0",
@@ -104,62 +101,8 @@
     "@babel/preset-env": "7.2.0",
     "@babel/preset-flow": "7.0.0",
     "@babel/preset-react": "7.0.0",
-    "@hot-loader/react-dom": "^17.0.1",
-    "@material-ui/core": "^5.0.0-alpha.26",
-    "@material-ui/icons": "^5.0.0-alpha.26",
-    "@material-ui/lab": "^5.0.0-alpha.26",
-    "@material-ui/utils": "^5.0.0-alpha.26",
-    "@react-pdf/renderer": "^1.6.12",
-    "@reduxjs/toolkit": "^1.5.0",
-    "@turf/bbox": "^6.0.1",
-    "@types/autosuggest-highlight": "^3.1.1",
-    "@types/react-copy-to-clipboard": "^5.0.0",
-    "@types/react-scroll": "^1.8.2",
-    "@types/recharts": "^1.8.19",
-    "axios": "^0.21.1",
-    "axios-mock-adapter": "^1.19.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-styled-components": "^1.11.1",
-    "cloudhub-components": "^1.4.43",
-    "clsx": "^1.1.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "faker": "^5.1.0",
-    "firebase": "^7.22.0",
-    "formik": "^2.2.0",
-    "framer-motion": "^2.9.1",
-    "history": "^4.10.1",
-    "i18next": "^19.7.0",
-    "i18next-browser-languagedetector": "^6.0.1",
-    "i18next-xhr-backend": "^3.2.2",
-    "immutable": "^4.0.0-rc.12",
-    "jsonwebtoken": "^8.5.1",
-    "jwt-decode": "^3.1.2",
-    "lazysizes": "^5.3.0",
-    "lodash": "^4.17.19",
-    "mapbox-gl": "^2.1.1",
-    "nprogress": "^0.2.0",
-    "numeral": "^2.0.6",
-    "prettier": "2.2.1",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-app-rewire-hot-loader": "^2.0.1",
-    "react-app-rewired": "^2.1.5",
-    "react-compare-slider": "^1.2.0",
-    "react-copy-to-clipboard": "^5.0.2",
-    "react-dom": "^17.0.1",
-    "react-draft-wysiwyg": "^1.14.5",
-    "react-dropzone": "^11.2.4",
-    "react-helmet": "^6.1.0",
-    "react-hot-loader": "^4.12.18",
-    "react-redux": "^7.2.0",
-    "react-redux-firebase": "^3.8.1",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
-    "redux": "^4.0.5",
-    "redux-firestore": "^0.15.0",
-    "redux-persist": "^6.0.0",
-    "yup": "^0.28.5"
+    "prettier": "2.2.1"
   }
 }

@@ -2,13 +2,13 @@ import clsx from 'clsx';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
-import { cloudinaryConfig } from 'src/config';
+import { cloudinaryConfig } from '../../config';
 import { useDropzone } from 'react-dropzone';
-import { fData } from 'src/utils/formatNumber';
+import { fData } from '../../utils/formatNumber';
 import React, { useCallback, useState } from 'react';
-import useIsMountedRef from 'src/hooks/useIsMountedRef';
+import useIsMountedRef from '../../hooks/useIsMountedRef';
 import roundAddAPhoto from '@iconify-icons/ic/round-add-a-photo';
-import { alpha, makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { alpha, makeStyles } from '@material-ui/core/styles';
 import {
   Box,
   Typography,

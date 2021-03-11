@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { varFadeInUp } from '.';
 import { motion, AnimatePresence } from 'framer-motion';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import { Dialog } from '@material-ui/core';
 
 // ----------------------------------------------------------------------

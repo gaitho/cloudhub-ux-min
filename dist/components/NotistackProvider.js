@@ -1,13 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -25,11 +21,18 @@ var _alertTriangleFill = _interopRequireDefault(require("@iconify-icons/eva/aler
 
 var _checkmarkCircle2Fill = _interopRequireDefault(require("@iconify-icons/eva/checkmark-circle-2-fill"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/NotistackProvider.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   var isLight = theme.palette.mode === 'light';
@@ -66,10 +69,10 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
         }
       }
     },
-    info: (0, _objectSpread2.default)({}, createStyle),
-    success: (0, _objectSpread2.default)({}, createStyle),
-    warning: (0, _objectSpread2.default)({}, createStyle),
-    error: (0, _objectSpread2.default)({}, createStyle)
+    info: _objectSpread({}, createStyle),
+    success: _objectSpread({}, createStyle),
+    warning: _objectSpread({}, createStyle),
+    error: _objectSpread({}, createStyle)
   };
 }); // ----------------------------------------------------------------------
 
@@ -90,23 +93,11 @@ function SnackbarIcon(_ref) {
       bgcolor: function bgcolor(theme) {
         return (0, _styles.alpha)(theme.palette[color].main, 0.16);
       }
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 5
     }
   }, /*#__PURE__*/_react.default.createElement(_react2.Icon, {
     icon: icon,
     width: 24,
-    height: 24,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 7
-    }
+    height: 24
   }));
 }
 
@@ -129,43 +120,19 @@ function NotistackProvider(_ref2) {
     iconVariant: {
       success: /*#__PURE__*/_react.default.createElement(SnackbarIcon, {
         icon: _checkmarkCircle2Fill.default,
-        color: "success",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 97,
-          columnNumber: 18
-        }
+        color: "success"
       }),
       error: /*#__PURE__*/_react.default.createElement(SnackbarIcon, {
         icon: _infoFill.default,
-        color: "error",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 98,
-          columnNumber: 16
-        }
+        color: "error"
       }),
       warning: /*#__PURE__*/_react.default.createElement(SnackbarIcon, {
         icon: _alertTriangleFill.default,
-        color: "warning",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 99,
-          columnNumber: 18
-        }
+        color: "warning"
       }),
       info: /*#__PURE__*/_react.default.createElement(SnackbarIcon, {
         icon: _alertCircleFill.default,
-        color: "info",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 100,
-          columnNumber: 15
-        }
+        color: "info"
       })
     },
     classes: {
@@ -177,12 +144,6 @@ function NotistackProvider(_ref2) {
       variantSuccess: classes.success,
       variantWarning: classes.warning,
       variantError: classes.error
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87,
-      columnNumber: 5
     }
   }, children);
 }

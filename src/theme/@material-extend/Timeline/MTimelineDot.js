@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import { capitalize } from '@material-ui/core/utils';
 import { TimelineDot } from '@material-ui/lab';
 

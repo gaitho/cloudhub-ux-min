@@ -5,7 +5,7 @@ import archiveFill from '@iconify-icons/eva/archive-fill';
 import downloadFill from '@iconify-icons/eva/download-fill';
 import moreVerticalFill from '@iconify-icons/eva/more-vertical-fill';
 import filePdfFilled from '@iconify-icons/ant-design/file-pdf-filled';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Menu,
   MenuItem,

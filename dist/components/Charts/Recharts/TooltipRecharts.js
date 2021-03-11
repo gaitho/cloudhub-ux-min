@@ -1,25 +1,24 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
 var _react = _interopRequireDefault(require("react"));
 
 var _recharts = require("recharts");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Charts/Recharts/TooltipRecharts.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 // ----------------------------------------------------------------------
 function TooltipRecharts(_ref) {
-  var other = (0, _extends2.default)({}, _ref);
+  var other = _extends({}, _ref);
+
   var theme = (0, _styles.useTheme)();
   var itemStyle = {
     fontSize: 13,
@@ -42,19 +41,12 @@ function TooltipRecharts(_ref) {
   var cursorStyle = {
     stroke: theme.palette.divider
   };
-  return /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, _extends({
     cursor: cursorStyle,
     itemStyle: itemStyle,
     contentStyle: contentStyle,
     labelStyle: labelStyle
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 5
-    }
-  }));
+  }, other));
 }
 
 var _default = TooltipRecharts;

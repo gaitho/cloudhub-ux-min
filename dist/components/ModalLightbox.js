@@ -1,19 +1,11 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
-var _interopRequireWildcard = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
-
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
 
 var _clsx = _interopRequireDefault(require("clsx"));
 
@@ -23,11 +15,28 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactImageLightbox = _interopRequireDefault(require("react-image-lightbox"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/ModalLightbox.js";
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   var isRTL = theme.direction === 'rtl';
@@ -90,11 +99,11 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       '& .ril__navButtons': {
         padding: theme.spacing(3),
         borderRadius: theme.shape.borderRadiusSm,
-        '&.ril__navButtonPrev': (0, _objectSpread2.default)({
+        '&.ril__navButtonPrev': _objectSpread({
           left: theme.spacing(2),
           right: 'auto'
         }, backgroundIcon(isRTL ? 'arrow-ios-forward' : 'arrow-ios-back')),
-        '&.ril__navButtonNext': (0, _objectSpread2.default)({
+        '&.ril__navButtonNext': _objectSpread({
           right: theme.spacing(2),
           left: 'auto'
         }, backgroundIcon(isRTL ? 'arrow-ios-back' : 'arrow-ios-forward'))
@@ -119,7 +128,8 @@ function ModalLightbox(_ref) {
       isOpen = _ref.isOpen,
       onClose = _ref.onClose,
       className = _ref.className,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["images", "photoIndex", "setPhotoIndex", "isOpen", "onClose", "className"]);
+      other = _objectWithoutProperties(_ref, ["images", "photoIndex", "setPhotoIndex", "isOpen", "onClose", "className"]);
+
   var classes = useStyles();
   (0, _react.useEffect)(function () {
     if (isOpen) {
@@ -130,13 +140,7 @@ function ModalLightbox(_ref) {
   }, [isOpen]);
 
   var showIndex = /*#__PURE__*/_react.default.createElement(_core.Typography, {
-    variant: "subtitle2",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114,
-      columnNumber: 5
-    }
+    variant: "subtitle2"
   }, "".concat(photoIndex + 1, " / ").concat(images.length));
 
   var disabledRTL = function disabledRTL() {
@@ -149,7 +153,7 @@ function ModalLightbox(_ref) {
       zIndex: 9999
     }
   };
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, isOpen && /*#__PURE__*/_react.default.createElement(_reactImageLightbox.default, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, isOpen && /*#__PURE__*/_react.default.createElement(_reactImageLightbox.default, _extends({
     onAfterOpen: disabledRTL,
     mainSrc: images[photoIndex],
     nextSrc: images[(photoIndex + 1) % images.length],
@@ -164,14 +168,7 @@ function ModalLightbox(_ref) {
     toolbarButtons: toolbarButtons,
     reactModalStyle: customStyles,
     wrapperClassName: (0, _clsx.default)(classes.root, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 9
-    }
-  })));
+  }, other)));
 }
 
 var _default = ModalLightbox;

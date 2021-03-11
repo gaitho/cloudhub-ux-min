@@ -1,21 +1,11 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
-var _interopRequireWildcard = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
-
-var _defineProperty2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty"));
 
 var _clsx2 = _interopRequireDefault(require("clsx"));
 
@@ -25,18 +15,35 @@ var _reactDropzone = require("react-dropzone");
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Upload/UploadSingleFile.js";
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     root: {
       width: '100%'
     },
-    dropZone: (0, _defineProperty2.default)({
+    dropZone: _defineProperty({
       outline: 'none',
       display: 'flex',
       overflow: 'hidden',
@@ -49,7 +56,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       borderRadius: theme.shape.borderRadius,
       transition: theme.transitions.create('padding'),
       backgroundColor: theme.palette.background.neutral,
-      border: "1px dashed ".concat(theme.palette.grey[50032]),
+      border: "1px dashed ".concat(theme.palette.grey[500_32]),
       '&:hover': {
         opacity: 0.72,
         cursor: 'pointer'
@@ -90,13 +97,14 @@ function UploadSingleFile(_ref) {
       file = _ref.value,
       setFile = _ref.onChange,
       className = _ref.className,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["caption", "error", "value", "onChange", "className"]);
+      other = _objectWithoutProperties(_ref, ["caption", "error", "value", "onChange", "className"]);
+
   var classes = useStyles();
   var handleDrop = (0, _react.useCallback)(function (acceptedFiles) {
     var file = acceptedFiles[0];
 
     if (file) {
-      setFile((0, _objectSpread2.default)((0, _objectSpread2.default)({}, file), {}, {
+      setFile(_objectSpread(_objectSpread({}, file), {}, {
         preview: URL.createObjectURL(file)
       }));
     }
@@ -119,98 +127,41 @@ function UploadSingleFile(_ref) {
       }
     };
   }, [file]);
-  return /*#__PURE__*/_react.default.createElement("div", (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement("div", _extends({
     className: (0, _clsx2.default)(classes.root, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101,
-      columnNumber: 5
-    }
-  }), /*#__PURE__*/_react.default.createElement("div", (0, _extends2.default)({
-    className: (0, _clsx2.default)(classes.dropZone, (_clsx = {}, (0, _defineProperty2.default)(_clsx, classes.isDragActive, isDragActive), (0, _defineProperty2.default)(_clsx, classes.isDragAccept, isDragAccept), (0, _defineProperty2.default)(_clsx, classes.isDragReject, isDragReject || error), (0, _defineProperty2.default)(_clsx, classes.hasFile, file), _clsx))
-  }, getRootProps(), {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/_react.default.createElement("input", (0, _extends2.default)({}, getInputProps(), {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 9
-    }
-  })), /*#__PURE__*/_react.default.createElement(_core.Box, {
+  }, other), /*#__PURE__*/_react.default.createElement("div", _extends({
+    className: (0, _clsx2.default)(classes.dropZone, (_clsx = {}, _defineProperty(_clsx, classes.isDragActive, isDragActive), _defineProperty(_clsx, classes.isDragAccept, isDragAccept), _defineProperty(_clsx, classes.isDragReject, isDragReject || error), _defineProperty(_clsx, classes.hasFile, file), _clsx))
+  }, getRootProps()), /*#__PURE__*/_react.default.createElement("input", getInputProps()), /*#__PURE__*/_react.default.createElement(_core.Box, {
     component: "img",
     alt: "select file",
     src: "/static/illustrations/illustration_upload.svg",
     sx: {
       height: 160
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 9
     }
   }), /*#__PURE__*/_react.default.createElement(_core.Box, {
     sx: {
       ml: {
         md: 5
       }
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120,
-      columnNumber: 9
     }
   }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
     gutterBottom: true,
-    variant: "h5",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 121,
-      columnNumber: 11
-    }
+    variant: "h5"
   }, "Drop or Select file"), caption ? /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "body2",
     sx: {
       color: 'text.secondary'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126,
-      columnNumber: 13
     }
   }, caption) : /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "body2",
     sx: {
       color: 'text.secondary'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130,
-      columnNumber: 13
     }
   }, "Drop files here or click\xA0", /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "body2",
     component: "span",
     sx: {
       color: 'primary.main'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 132,
-      columnNumber: 15
     }
   }, "browse"), "\xA0thorough your machine")), file && /*#__PURE__*/_react.default.createElement(_core.Box, {
     component: "img",
@@ -223,12 +174,6 @@ function UploadSingleFile(_ref) {
       position: 'absolute',
       width: 'calc(100% - 16px)',
       height: 'calc(100% - 16px)'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 11
     }
   })));
 }

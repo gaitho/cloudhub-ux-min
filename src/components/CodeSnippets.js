@@ -2,10 +2,10 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
-import Markdown from 'src/components/Markdown';
+import Markdown from './Markdown';
 import codeFill from '@iconify-icons/eva/code-fill';
-import { DialogAnimate } from 'src/components/Animate';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { DialogAnimate } from './Animate';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Tooltip,
   IconButton,

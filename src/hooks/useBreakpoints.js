@@ -1,5 +1,5 @@
 import { useMediaQuery } from '@material-ui/core';
-import { useTheme } from 'cloudhub-components/dist/mui/styles';
+import { useTheme } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

@@ -7,7 +7,7 @@ exports.default = void 0;
 
 var _palette = require("./palette");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 // ----------------------------------------------------------------------
 var BASE_LIGHT = (0, _palette.getLightColors)().grey[500];

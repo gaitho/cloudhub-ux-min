@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -13,3 +11,5 @@ Object.defineProperty(exports, "ApexChartsOption", {
 });
 
 var _ApexChartsOption = _interopRequireDefault(require("./ApexChartsOption"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

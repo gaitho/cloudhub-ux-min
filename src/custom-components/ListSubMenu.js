@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 
 import clsx from 'clsx';
-import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles, alpha } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';

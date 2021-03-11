@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Pickers;
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 // ----------------------------------------------------------------------
 function Pickers(_ref) {
@@ -116,17 +116,17 @@ function Pickers(_ref) {
           position: 'relative'
         },
         clock: {
-          backgroundColor: theme.palette.grey[50024]
+          backgroundColor: theme.palette.grey[500_24]
         },
         amButton: {
           left: -8,
           bottom: -24,
-          backgroundColor: theme.palette.grey[50024]
+          backgroundColor: theme.palette.grey[500_24]
         },
         pmButton: {
           right: -8,
           bottom: -24,
-          backgroundColor: theme.palette.grey[50024]
+          backgroundColor: theme.palette.grey[500_24]
         }
       }
     }

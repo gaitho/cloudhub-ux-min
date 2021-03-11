@@ -1,5 +1,5 @@
 import { pxToRem } from '../../utils/formatFontSize';
-import { createBreakpoints } from 'cloudhub-components/dist/mui/styles';
+import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
 
 // ----------------------------------------------------------------------
 

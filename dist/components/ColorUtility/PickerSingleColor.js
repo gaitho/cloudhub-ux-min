@@ -1,17 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _defineProperty2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty"));
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
 
 var _clsx3 = _interopRequireDefault(require("clsx"));
 
@@ -23,11 +15,20 @@ var _react2 = require("@iconify/react");
 
 var _checkmarkFill = _interopRequireDefault(require("@iconify-icons/eva/checkmark-fill"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/ColorUtility/PickerSingleColor.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
@@ -70,7 +71,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
     whiteColor: {
       border: "solid 1px ".concat(theme.palette.divider),
       '&$isChecked': {
-        boxShadow: "4px 4px 8px 0 ".concat(theme.palette.grey[50024]),
+        boxShadow: "4px 4px 8px 0 ".concat(theme.palette.grey[500_24]),
         '& svg': {
           width: 12,
           height: 12,
@@ -83,24 +84,12 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
 
 function RadioIcon(_ref) {
   var className = _ref.className,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["className"]);
-  return /*#__PURE__*/_react.default.createElement("div", (0, _extends2.default)({
+      other = _objectWithoutProperties(_ref, ["className"]);
+
+  return /*#__PURE__*/_react.default.createElement("div", _extends({
     className: className
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 5
-    }
-  }), /*#__PURE__*/_react.default.createElement(_react2.Icon, {
-    icon: _checkmarkFill.default,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 7
-    }
+  }, other), /*#__PURE__*/_react.default.createElement(_react2.Icon, {
+    icon: _checkmarkFill.default
   }));
 }
 
@@ -110,23 +99,15 @@ PickerSingleColor.propTypes = {
 };
 
 function PickerSingleColor(_ref2) {
-  var _this = this;
-
   var colors = _ref2.colors,
       className = _ref2.className,
-      other = (0, _objectWithoutProperties2.default)(_ref2, ["colors", "className"]);
+      other = _objectWithoutProperties(_ref2, ["colors", "className"]);
+
   var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement(_core.RadioGroup, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_core.RadioGroup, _extends({
     row: true,
     className: (0, _clsx3.default)(classes.root, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 5
-    }
-  }), colors.map(function (color) {
+  }, other), colors.map(function (color) {
     return /*#__PURE__*/_react.default.createElement(_core.Radio, {
       key: color,
       value: color,
@@ -135,30 +116,12 @@ function PickerSingleColor(_ref2) {
         color: color
       },
       icon: /*#__PURE__*/_react.default.createElement(RadioIcon, {
-        className: (0, _clsx3.default)(classes.radioIcon, (0, _defineProperty2.default)({}, classes.whiteColor, color === '#FFFFFF' || color === 'white')),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 88,
-          columnNumber: 13
-        }
+        className: (0, _clsx3.default)(classes.radioIcon, _defineProperty({}, classes.whiteColor, color === '#FFFFFF' || color === 'white'))
       }),
       checkedIcon: /*#__PURE__*/_react.default.createElement(RadioIcon, {
-        className: (0, _clsx3.default)(classes.radioIcon, classes.isChecked, (0, _defineProperty2.default)({}, classes.whiteColor, color === '#FFFFFF' || color === 'white')),
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 95,
-          columnNumber: 13
-        }
+        className: (0, _clsx3.default)(classes.radioIcon, classes.isChecked, _defineProperty({}, classes.whiteColor, color === '#FFFFFF' || color === 'white'))
       }),
-      className: classes.radio,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82,
-        columnNumber: 9
-      }
+      className: classes.radio
     });
   }));
 }

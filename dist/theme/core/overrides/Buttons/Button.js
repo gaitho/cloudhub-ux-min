@@ -30,7 +30,7 @@ function Button(_ref) {
           boxShadow: theme.shadows[25].primary
         },
         outlinedInherit: {
-          border: "1px solid ".concat(theme.palette.grey[50032]),
+          border: "1px solid ".concat(theme.palette.grey[500_32]),
           '&:hover': {
             backgroundColor: theme.palette.action.hover
           }

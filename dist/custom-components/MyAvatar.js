@@ -7,7 +7,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 var _theme = require("../theme");
+
+var _createAvatar = _interopRequireDefault(require("../utils/createAvatar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17,15 +21,23 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var StatusLabel = function StatusLabel(_ref) {
-  var children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["children"]);
-
-  return /*#__PURE__*/_react.default.createElement(_theme.MLabel, _extends({
-    color: "primary",
-    variant: "filled"
-  }, props), children);
+// ----------------------------------------------------------------------
+MyAvatar.propTypes = {
+  className: _propTypes.default.string
 };
 
-var _default = StatusLabel;
+function MyAvatar(_ref) {
+  var className = _ref.className,
+      user = _ref.user,
+      other = _objectWithoutProperties(_ref, ["className", "user"]);
+
+  return /*#__PURE__*/_react.default.createElement(_theme.MAvatar, _extends({
+    src: user.photoURL,
+    alt: user.Name,
+    color: user.photoURL ? 'default' : (0, _createAvatar.default)(user.Name).color,
+    className: className
+  }, other), (0, _createAvatar.default)(user.Name).name);
+}
+
+var _default = MyAvatar;
 exports.default = _default;

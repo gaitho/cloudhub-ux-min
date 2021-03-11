@@ -13,11 +13,13 @@ import componentsOverride from './overrides';
 import { CacheProvider } from '@emotion/react';
 import useSettings from '../../hooks/useSettings';
 import React, { useMemo, useEffect } from 'react';
+
 import {
   jssPreset,
   createMuiTheme,
   StylesProvider
-} from 'cloudhub-components/dist/mui/styles';
+} from '@material-ui/core/styles';
+
 import ThemeProvider from 'cloudhub-components/dist/theme/ThemeProvider';
 import { CssBaseline } from '@material-ui/core';
 

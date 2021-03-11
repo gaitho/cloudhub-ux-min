@@ -1,6 +1,6 @@
 import React from 'react';
 import { YAxis } from 'recharts';
-import { useTheme } from 'cloudhub-components/dist/mui/styles';
+import { useTheme } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

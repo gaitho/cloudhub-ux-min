@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useAuth from 'src/hooks/useAuth';
-import { PATH_APP } from 'src/routes/paths';
+import useAuth from '../../hooks/useAuth';
+import { PATH_APP } from '../../routes/paths';
 import { Redirect } from 'react-router-dom';
-import LoadingScreen from 'src/components/LoadingScreen';
+import LoadingScreen from '../../components/LoadingScreen';
 
 // ----------------------------------------------------------------------
 

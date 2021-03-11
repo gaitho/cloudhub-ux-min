@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -21,3 +19,5 @@ Object.defineProperty(exports, "MLinearProgress", {
 var _MCircularProgress = _interopRequireDefault(require("./MCircularProgress"));
 
 var _MLinearProgress = _interopRequireDefault(require("./MLinearProgress"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

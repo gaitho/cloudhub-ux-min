@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import React, { forwardRef } from 'react';
 import { Chip } from '@material-ui/core';
 import { capitalize } from '@material-ui/core/utils';
-import {
-  alpha,
-  makeStyles,
-  emphasize
-} from 'cloudhub-components/dist/mui/styles';
+import { alpha, makeStyles, emphasize } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

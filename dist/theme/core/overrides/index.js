@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -74,6 +72,8 @@ var _Pagination = _interopRequireDefault(require("./Pagination"));
 var _Breadcrumbs = _interopRequireDefault(require("./Breadcrumbs"));
 
 var _Autocomplete = _interopRequireDefault(require("./Autocomplete"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ----------------------------------------------------------------------
 function ComponentsOverrides(_ref) {

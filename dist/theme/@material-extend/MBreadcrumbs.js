@@ -1,15 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
 
 var _clsx = _interopRequireDefault(require("clsx"));
 
@@ -21,11 +15,18 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _reach = require("cloudhub-components/dist/reach");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/theme/@material-extend/MBreadcrumbs.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
@@ -40,12 +41,6 @@ var Separator = /*#__PURE__*/_react.default.createElement(_core.Box, {
     height: 4,
     borderRadius: '50%',
     bgcolor: 'text.disabled'
-  },
-  __self: void 0,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 3
   }
 });
 
@@ -67,12 +62,6 @@ function LinkItem(_ref) {
       '& > div': {
         display: 'inherit'
       }
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 5
     }
   }, icon && /*#__PURE__*/_react.default.createElement(_core.Box, {
     sx: {
@@ -81,12 +70,6 @@ function LinkItem(_ref) {
         width: 20,
         height: 20
       }
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 9
     }
   }, icon), name);
 }
@@ -98,43 +81,24 @@ MBreadcrumbs.propTypes = {
 };
 
 function MBreadcrumbs(_ref2) {
-  var _this = this;
-
   var links = _ref2.links,
       _ref2$activeLast = _ref2.activeLast,
       activeLast = _ref2$activeLast === void 0 ? false : _ref2$activeLast,
       className = _ref2.className,
-      other = (0, _objectWithoutProperties2.default)(_ref2, ["links", "activeLast", "className"]);
+      other = _objectWithoutProperties(_ref2, ["links", "activeLast", "className"]);
+
   var classes = useStyles();
   var currentLink = (0, _lodash.last)(links).name;
   var listDefault = links.map(function (link) {
     return /*#__PURE__*/_react.default.createElement(LinkItem, {
-      link: link,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 70,
-        columnNumber: 43
-      }
+      link: link
     });
   });
   var listActiveLast = links.map(function (link) {
     return /*#__PURE__*/_react.default.createElement("div", {
-      key: link.name,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 72,
-        columnNumber: 5
-      }
+      key: link.name
     }, link.name !== currentLink ? /*#__PURE__*/_react.default.createElement(LinkItem, {
-      link: link,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 74,
-        columnNumber: 9
-      }
+      link: link
     }) : /*#__PURE__*/_react.default.createElement(_core.Typography, {
       variant: "body2",
       sx: {
@@ -143,26 +107,13 @@ function MBreadcrumbs(_ref2) {
         whiteSpace: 'nowrap',
         color: 'text.disabled',
         textOverflow: 'ellipsis'
-      },
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 76,
-        columnNumber: 9
       }
     }, currentLink));
   });
-  return /*#__PURE__*/_react.default.createElement(_core.Breadcrumbs, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_core.Breadcrumbs, _extends({
     separator: Separator,
     className: (0, _clsx.default)(classes.root, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 5
-    }
-  }), activeLast ? listDefault : listActiveLast);
+  }, other), activeLast ? listDefault : listActiveLast);
 }
 
 var _default = MBreadcrumbs;

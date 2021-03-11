@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Pagination;
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 // ----------------------------------------------------------------------
 function Pagination(_ref) {
@@ -28,7 +28,7 @@ function Pagination(_ref) {
           }
         },
         outlined: {
-          border: "1px solid ".concat(theme.palette.grey[50032])
+          border: "1px solid ".concat(theme.palette.grey[500_32])
         },
         outlinedPrimary: {
           '&.Mui-selected': {

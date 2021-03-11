@@ -1,8 +1,4 @@
-import {
-  useTheme,
-  makeStyles,
-  createStyles
-} from 'cloudhub-components/dist/mui/styles';
+import { useTheme, makeStyles, createStyles } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

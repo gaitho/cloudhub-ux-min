@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import Logo from './Logo';
-import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles, alpha } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

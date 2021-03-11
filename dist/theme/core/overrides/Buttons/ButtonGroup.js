@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = ButtonGroup;
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 // ----------------------------------------------------------------------
 function ButtonGroup(_ref) {
@@ -52,7 +52,7 @@ function ButtonGroup(_ref) {
           }
         },
         grouped: {
-          borderColor: "".concat(theme.palette.grey[50032], " !important")
+          borderColor: "".concat(theme.palette.grey[500_32], " !important")
         },
         groupedContained: {
           color: theme.palette.grey[800]

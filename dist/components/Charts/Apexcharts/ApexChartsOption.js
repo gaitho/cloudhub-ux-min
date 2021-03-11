@@ -1,15 +1,17 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
 
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
+var _styles = require("@material-ui/core/styles");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
@@ -26,7 +28,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       '.apexcharts-tooltip-title': {
         border: '0 !important',
         fontWeight: theme.typography.fontWeightBold,
-        backgroundColor: "".concat(theme.palette.grey[50016], " !important"),
+        backgroundColor: "".concat(theme.palette.grey[500_16], " !important"),
         color: theme.palette.text[theme.palette.mode === 'light' ? 'secondary' : 'primary']
       },
       '.apexcharts-xaxistooltip-bottom': {
@@ -60,15 +62,18 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
 function ApexChartsOption() {
   useStyles();
   var theme = (0, _styles.useTheme)();
-  var LABEL_TOTAL = (0, _objectSpread2.default)({
+
+  var LABEL_TOTAL = _objectSpread({
     show: true,
     label: 'Total',
     color: theme.palette.text.secondary
   }, theme.typography.subtitle2);
-  var LABEL_VALUE = (0, _objectSpread2.default)({
+
+  var LABEL_VALUE = _objectSpread({
     offsetY: 8,
     color: theme.palette.text.primary
   }, theme.typography.h3);
+
   return {
     // Colors
     colors: [theme.palette.primary.main, theme.palette.warning.main, theme.palette.info.main, theme.palette.error.main, theme.palette.success.main],
@@ -177,7 +182,7 @@ function ApexChartsOption() {
       radialBar: {
         track: {
           strokeWidth: '100%',
-          background: theme.palette.grey[50016]
+          background: theme.palette.grey[500_16]
         },
         dataLabels: {
           value: LABEL_VALUE,

@@ -1,4 +1,4 @@
-import { googleAnalyticsConfig } from 'src/config';
+import { googleAnalyticsConfig } from '../config';
 
 // ----------------------------------------------------------------------
 

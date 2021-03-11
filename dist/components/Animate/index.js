@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -57,3 +55,5 @@ var _MotionContainer = _interopRequireDefault(require("./MotionContainer"));
 var _DialogAnimate = _interopRequireDefault(require("./DialogAnimate"));
 
 var _ButtonAnimate = _interopRequireDefault(require("./ButtonAnimate"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

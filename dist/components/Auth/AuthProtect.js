@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -11,15 +9,16 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _useAuth2 = _interopRequireDefault(require("src/hooks/useAuth"));
+var _useAuth2 = _interopRequireDefault(require("../../hooks/useAuth"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _paths = require("src/routes/paths");
+var _paths = require("../../routes/paths");
 
-var _LoadingScreen = _interopRequireDefault(require("src/components/LoadingScreen"));
+var _LoadingScreen = _interopRequireDefault(require("../LoadingScreen"));
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Auth/AuthProtect.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 // ----------------------------------------------------------------------
 AuthProtect.propTypes = {
   children: _propTypes.default.node
@@ -33,25 +32,12 @@ function AuthProtect(_ref) {
       isAuthenticated = _useAuth.isAuthenticated;
 
   if (isLoading) {
-    return /*#__PURE__*/_react.default.createElement(_LoadingScreen.default, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 12
-      }
-    });
+    return /*#__PURE__*/_react.default.createElement(_LoadingScreen.default, null);
   }
 
   if (!isAuthenticated) {
     return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Redirect, {
-      to: _paths.PATH_PAGE.auth.login,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 12
-      }
+      to: _paths.PATH_PAGE.auth.login
     });
   }
 

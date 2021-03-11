@@ -1,15 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
 
 var _clsx = _interopRequireDefault(require("clsx"));
 
@@ -21,9 +15,16 @@ var _reactDraftWysiwyg = require("react-draft-wysiwyg");
 
 var _EditorToolbar = require("./EditorToolbar");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/Editor/DraftEditor/index.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   var isLight = theme.palette.mode === 'light';
@@ -31,7 +32,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     root: {
       borderRadius: theme.shape.borderRadius,
-      border: "solid 1px ".concat(theme.palette.grey[50032]),
+      border: "solid 1px ".concat(theme.palette.grey[500_32]),
       // Toggle
       '& .toggle': {
         border: 'none',
@@ -60,7 +61,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
         borderRadius: 6,
         boxShadow: 'none',
         background: 'transparent',
-        border: "solid 1px ".concat(theme.palette.grey[50032]),
+        border: "solid 1px ".concat(theme.palette.grey[500_32]),
         '&:hover': {
           boxShadow: 'none',
           background: theme.palette.action.hover
@@ -146,7 +147,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
           padding: theme.spacing(0, 1.5),
           color: theme.palette.text.primary,
           borderRadius: theme.shape.borderRadius,
-          border: "solid 1px ".concat(theme.palette.grey[50032])
+          border: "solid 1px ".concat(theme.palette.grey[500_32])
         }
       },
       // Popup Color Picker
@@ -154,7 +155,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
         padding: 0,
         '& .rdw-colorpicker-modal-header': {
           padding: theme.spacing(1),
-          background: theme.palette.grey[50012],
+          background: theme.palette.grey[500_12],
           '& .rdw-colorpicker-modal-style-label': {
             fontSize: 13,
             padding: theme.spacing(0.75, 0),
@@ -243,7 +244,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
         height: 'auto',
         '& .rdw-embedded-modal-header': {
           padding: theme.spacing(1),
-          background: theme.palette.grey[50012],
+          background: theme.palette.grey[500_12],
           '& .rdw-embedded-modal-header-label': {
             display: 'none'
           },
@@ -270,7 +271,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
           zIndex: 9,
           fontSize: 13,
           padding: theme.spacing(1),
-          background: theme.palette.grey[50012],
+          background: theme.palette.grey[500_12],
           fontWeight: theme.typography.fontWeightMedium,
           '& .rdw-image-modal-header-option': {
             position: 'relative',
@@ -302,7 +303,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
           textAlign: 'center',
           color: theme.palette.text.disabled,
           borderRadius: theme.shape.borderRadius,
-          border: "dashed 1px ".concat(theme.palette.grey[50032])
+          border: "dashed 1px ".concat(theme.palette.grey[500_32])
         },
         '& .rdw-image-modal-btn-section': {
           padding: theme.spacing(0, 2, 2)
@@ -316,7 +317,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       border: 'none',
       marginBottom: 0,
       background: 'transparent',
-      borderBottom: "solid 1px ".concat(theme.palette.grey[50032])
+      borderBottom: "solid 1px ".concat(theme.palette.grey[500_32])
     },
     editor: {
       minHeight: 200,
@@ -334,22 +335,16 @@ DraftEditor.propTypes = {
 
 function DraftEditor(_ref) {
   var className = _ref.className,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["className"]);
+      other = _objectWithoutProperties(_ref, ["className"]);
+
   var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement(_reactDraftWysiwyg.Editor, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_reactDraftWysiwyg.Editor, _extends({
     wrapperClassName: (0, _clsx.default)(classes.root, className),
     toolbarClassName: classes.toolbar,
     editorClassName: classes.editor,
     toolbar: _EditorToolbar.editorToolbar,
     placeholder: "Write something awesome..."
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 310,
-      columnNumber: 5
-    }
-  }));
+  }, other));
 }
 
 var _default = DraftEditor;

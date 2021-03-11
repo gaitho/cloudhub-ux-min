@@ -1,15 +1,17 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getDarkColors = exports.getLightColors = void 0;
 
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
+var _styles = require("@material-ui/core/styles");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // ----------------------------------------------------------------------
 function createGradient(color1, color2) {
@@ -70,14 +72,14 @@ var GREY = {
   700: '#454F5B',
   800: '#212B36',
   900: '#161C24',
-  5008: (0, _styles.alpha)('#919EAB', 0.08),
-  50012: (0, _styles.alpha)('#919EAB', 0.12),
-  50016: (0, _styles.alpha)('#919EAB', 0.16),
-  50024: (0, _styles.alpha)('#919EAB', 0.24),
-  50032: (0, _styles.alpha)('#919EAB', 0.32),
-  50048: (0, _styles.alpha)('#919EAB', 0.48),
-  50056: (0, _styles.alpha)('#919EAB', 0.56),
-  50080: (0, _styles.alpha)('#919EAB', 0.8)
+  500_8: (0, _styles.alpha)('#919EAB', 0.08),
+  500_12: (0, _styles.alpha)('#919EAB', 0.12),
+  500_16: (0, _styles.alpha)('#919EAB', 0.16),
+  500_24: (0, _styles.alpha)('#919EAB', 0.24),
+  500_32: (0, _styles.alpha)('#919EAB', 0.32),
+  500_48: (0, _styles.alpha)('#919EAB', 0.48),
+  500_56: (0, _styles.alpha)('#919EAB', 0.56),
+  500_80: (0, _styles.alpha)('#919EAB', 0.8)
 };
 
 var getColors = function getColors(colors) {
@@ -100,36 +102,36 @@ var getColors = function getColors(colors) {
       black: '#000',
       white: '#fff'
     },
-    primary: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, PRIMARY), {}, {
+    primary: _objectSpread(_objectSpread({}, PRIMARY), {}, {
       contrastText: '#fff'
     }, primaryColors),
-    secondary: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, SECONDARY), {}, {
+    secondary: _objectSpread(_objectSpread({}, SECONDARY), {}, {
       contrastText: '#fff'
     }, secondaryColors),
-    tertiary: (0, _objectSpread2.default)({}, tertiaryColors),
-    background: (0, _objectSpread2.default)({}, backgroundColors),
-    text: (0, _objectSpread2.default)({}, textColors),
-    info: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, INFO), {}, {
+    tertiary: _objectSpread({}, tertiaryColors),
+    background: _objectSpread({}, backgroundColors),
+    text: _objectSpread({}, textColors),
+    info: _objectSpread(_objectSpread({}, INFO), {}, {
       contrastText: '#fff'
     }),
-    success: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, SUCCESS), {}, {
+    success: _objectSpread(_objectSpread({}, SUCCESS), {}, {
       contrastText: GREY[800]
     }),
-    warning: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, WARNING), {}, {
+    warning: _objectSpread(_objectSpread({}, WARNING), {}, {
       contrastText: GREY[800]
     }),
-    error: (0, _objectSpread2.default)((0, _objectSpread2.default)({}, ERROR), {}, {
+    error: _objectSpread(_objectSpread({}, ERROR), {}, {
       contrastText: '#fff'
     }),
     grey: GREY,
     gradients: GRADIENTS,
-    divider: GREY[50024],
+    divider: GREY[500_24],
     action: {
-      hover: GREY[5008],
-      selected: GREY[50016],
-      disabled: GREY[50080],
-      disabledBackground: GREY[50024],
-      focus: GREY[50024],
+      hover: GREY[500_8],
+      selected: GREY[500_16],
+      disabled: GREY[500_80],
+      disabledBackground: GREY[500_24],
+      focus: GREY[500_24],
       hoverOpacity: 0.08,
       disabledOpacity: 0.48
     }
@@ -138,7 +140,7 @@ var getColors = function getColors(colors) {
 };
 
 var getLightColors = function getLightColors(colors) {
-  return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, getColors(colors)), {}, {
+  return _objectSpread(_objectSpread({}, getColors(colors)), {}, {
     mode: 'light',
     text: {
       primary: GREY[800],
@@ -150,7 +152,7 @@ var getLightColors = function getLightColors(colors) {
       default: '#fff',
       neutral: GREY[200]
     },
-    action: (0, _objectSpread2.default)({
+    action: _objectSpread({
       active: GREY[600]
     }, getColors(colors).action)
   });
@@ -160,7 +162,7 @@ var getLightColors = function getLightColors(colors) {
 exports.getLightColors = getLightColors;
 
 var getDarkColors = function getDarkColors(colors) {
-  return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, getColors(colors)), {}, {
+  return _objectSpread(_objectSpread({}, getColors(colors)), {}, {
     mode: 'dark',
     text: {
       primary: '#fff',
@@ -170,9 +172,9 @@ var getDarkColors = function getDarkColors(colors) {
     background: {
       paper: GREY[800],
       default: GREY[900],
-      neutral: GREY[50016]
+      neutral: GREY[500_16]
     },
-    action: (0, _objectSpread2.default)({
+    action: _objectSpread({
       active: GREY[500]
     }, getColors(colors).action)
   });

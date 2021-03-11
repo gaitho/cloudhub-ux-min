@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -19,7 +17,7 @@ var _alertTriangleFill = _interopRequireDefault(require("@iconify-icons/eva/aler
 
 var _checkmarkCircle2Fill = _interopRequireDefault(require("@iconify-icons/eva/checkmark-circle-2-fill"));
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/theme/core/overrides/Alert.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ----------------------------------------------------------------------
 function Alert(_ref) {
@@ -52,40 +50,16 @@ function Alert(_ref) {
       defaultProps: {
         iconMapping: {
           error: /*#__PURE__*/_react.default.createElement(_react2.Icon, {
-            icon: _infoFill.default,
-            __self: this,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 38,
-              columnNumber: 18
-            }
+            icon: _infoFill.default
           }),
           info: /*#__PURE__*/_react.default.createElement(_react2.Icon, {
-            icon: _alertCircleFill.default,
-            __self: this,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39,
-              columnNumber: 17
-            }
+            icon: _alertCircleFill.default
           }),
           success: /*#__PURE__*/_react.default.createElement(_react2.Icon, {
-            icon: _checkmarkCircle2Fill.default,
-            __self: this,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 40,
-              columnNumber: 20
-            }
+            icon: _checkmarkCircle2Fill.default
           }),
           warning: /*#__PURE__*/_react.default.createElement(_react2.Icon, {
-            icon: _alertTriangleFill.default,
-            __self: this,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 41,
-              columnNumber: 20
-            }
+            icon: _alertTriangleFill.default
           })
         }
       },

@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -10,8 +8,6 @@ exports.getFileName = getFileName;
 exports.getFileFullName = getFileFullName;
 exports.getFileFormat = getFileFormat;
 exports.getFileThumb = getFileThumb;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -33,7 +29,10 @@ var _fileTypePowerpoint = _interopRequireDefault(require("@iconify-icons/vscode-
 
 var _fileTypePhotoshop = _interopRequireDefault(require("@iconify-icons/vscode-icons/file-type-photoshop2"));
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/utils/getFileFormat.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 // ----------------------------------------------------------------------
 var ICON_SIZE = {
   width: 28,
@@ -71,118 +70,56 @@ function getFileThumb(fileUrl) {
     case 'image':
       thumb = /*#__PURE__*/_react.default.createElement("img", {
         src: fileUrl,
-        alt: fileUrl,
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59,
-          columnNumber: 15
-        }
+        alt: fileUrl
       });
       break;
 
     case 'video':
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileTypeVideo.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
       break;
 
     case 'word':
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileTypeWord.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
       break;
 
     case 'excel':
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileTypeExcel.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
       break;
 
     case 'powerpoint':
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileTypePowerpoint.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 71,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
       break;
 
     case 'pdf':
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileTypePdf.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 74,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
       break;
 
     case 'photoshop':
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileTypePhotoshop.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 77,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
       break;
 
     case 'illustrator':
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileTypeAi.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 80,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
       break;
 
     default:
-      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, (0, _extends2.default)({
+      thumb = /*#__PURE__*/_react.default.createElement(_react2.Icon, _extends({
         icon: _fileFill.default
-      }, ICON_SIZE, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 83,
-          columnNumber: 15
-        }
-      }));
+      }, ICON_SIZE));
   }
 
   return thumb;

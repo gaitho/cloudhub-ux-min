@@ -1,7 +1,7 @@
 import React from 'react';
 
 import clsx from 'clsx';
-import { makeStyles, alpha } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles, alpha } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography.body2,
     height: 48,
     textTransform: 'capitalize',
-    paddingLeft: theme.spacing(5),
+    paddingLeft: theme.spacing(2.5),
     paddingRight: theme.spacing(2.5),
     color: theme.palette.text.secondary
   },

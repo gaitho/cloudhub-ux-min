@@ -1,17 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
-
-var _defineProperty2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -19,9 +11,18 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _core = require("@material-ui/core");
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/PopoverMenu.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
@@ -30,9 +31,9 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       marginLeft: 4,
       overflow: 'inherit',
       boxShadow: theme.shadows[25].z20,
-      border: "solid 1px ".concat(theme.palette.grey[5008])
+      border: "solid 1px ".concat(theme.palette.grey[500_8])
     },
-    arrow: (0, _defineProperty2.default)({}, theme.breakpoints.up('sm'), {
+    arrow: _defineProperty({}, theme.breakpoints.up('sm'), {
       top: -7,
       zIndex: 1,
       width: 12,
@@ -59,9 +60,10 @@ function DropdownMenu(_ref) {
   var children = _ref.children,
       width = _ref.width,
       className = _ref.className,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["children", "width", "className"]);
+      other = _objectWithoutProperties(_ref, ["children", "width", "className"]);
+
   var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement(_core.Popover, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_core.Popover, _extends({
     getContentAnchorEl: null,
     anchorOrigin: {
       vertical: 'bottom',
@@ -76,31 +78,12 @@ function DropdownMenu(_ref) {
       root: classes.root,
       paper: classes.paper
     }
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 5
-    }
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    className: classes.arrow,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 7
-    }
+  }, other), /*#__PURE__*/_react.default.createElement("span", {
+    className: classes.arrow
   }), /*#__PURE__*/_react.default.createElement(_core.Box, {
     sx: {
       width: width,
       maxWidth: '100%'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 7
     }
   }, children));
 }

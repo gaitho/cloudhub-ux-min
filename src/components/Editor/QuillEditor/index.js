@@ -7,7 +7,7 @@ import EditorToolbar, {
   redoChange,
   undoChange
 } from './EditorToolbar';
-import { makeStyles } from 'cloudhub-components/dist/mui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 // ----------------------------------------------------------------------
 

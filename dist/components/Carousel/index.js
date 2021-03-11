@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -45,3 +43,5 @@ var _CarouselArrowsBasic = _interopRequireDefault(require("./CarouselArrowsBasic
 var _CarouselArrowsBasic2 = _interopRequireDefault(require("./CarouselArrowsBasic2"));
 
 var _CarouselArrowsIndex = _interopRequireDefault(require("./CarouselArrowsIndex"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

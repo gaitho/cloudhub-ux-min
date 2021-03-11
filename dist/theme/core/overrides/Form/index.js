@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -20,6 +18,8 @@ var _Select = _interopRequireDefault(require("./Select"));
 var _Checkbox = _interopRequireDefault(require("./Checkbox"));
 
 var _ControlLabel = _interopRequireDefault(require("./ControlLabel"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ----------------------------------------------------------------------
 function Form(_ref) {

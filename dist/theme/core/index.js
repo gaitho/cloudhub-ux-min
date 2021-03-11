@@ -1,17 +1,11 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
-var _interopRequireWildcard = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _objectSpread2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread2"));
-
-var _toConsumableArray2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray"));
 
 var _jssRtl = _interopRequireDefault(require("jss-rtl"));
 
@@ -43,13 +37,36 @@ var _useSettings2 = _interopRequireDefault(require("../../hooks/useSettings"));
 
 var _react2 = _interopRequireWildcard(require("react"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _ThemeProvider = _interopRequireDefault(require("cloudhub-components/dist/theme/ThemeProvider"));
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/theme/core/index.js";
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 // ----------------------------------------------------------------------
 RTLProvider.propTypes = {
   direction: _propTypes.default.oneOf(['ltr', 'rtl']),
@@ -61,7 +78,7 @@ function RTLProvider(_ref) {
       children = _ref.children;
   var isRTL = direction === 'rtl';
   var jss = (0, _jss.create)({
-    plugins: [].concat((0, _toConsumableArray2.default)((0, _styles.jssPreset)().plugins), [(0, _jssRtl.default)()])
+    plugins: [].concat(_toConsumableArray((0, _styles.jssPreset)().plugins), [(0, _jssRtl.default)()])
   });
   var cache = (0, _cache.default)({
     key: isRTL ? 'rtl' : 'css',
@@ -73,21 +90,9 @@ function RTLProvider(_ref) {
     document.dir = direction;
   }, [direction]);
   return /*#__PURE__*/_react2.default.createElement(_react.CacheProvider, {
-    value: cache,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 5
-    }
+    value: cache
   }, /*#__PURE__*/_react2.default.createElement(_styles.StylesProvider, {
-    jss: jss,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 7
-    }
+    jss: jss
   }, children));
 }
 
@@ -121,14 +126,14 @@ function ThemeConfig(_ref2) {
           typography: (0, _typography.default)(fonts),
           shape: _borderRadius.default,
           direction: themeDirection,
-          colors: (0, _objectSpread2.default)({}, colors),
-          sizes: (0, _objectSpread2.default)({}, sizes),
-          fonts: (0, _objectSpread2.default)({}, fonts)
+          colors: _objectSpread({}, colors),
+          sizes: _objectSpread({}, sizes),
+          fonts: _objectSpread({}, fonts)
         }
       }),
-      colors: (0, _objectSpread2.default)({}, colors),
-      sizes: (0, _objectSpread2.default)({}, sizes),
-      fonts: (0, _objectSpread2.default)({}, fonts)
+      colors: _objectSpread({}, colors),
+      sizes: _objectSpread({}, sizes),
+      fonts: _objectSpread({}, fonts)
     };
   }, // eslint-disable-next-line react-hooks/exhaustive-deps
   [isLight, themeDirection]);
@@ -137,35 +142,9 @@ function ThemeConfig(_ref2) {
     theme: theme,
     colors: colors,
     fonts: fonts,
-    sizes: sizes,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/_react2.default.createElement(_core.CssBaseline, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/_react2.default.createElement(_globalStyles.default, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/_react2.default.createElement(RTLProvider, {
-    direction: themeDirection,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 7
-    }
+    sizes: sizes
+  }, /*#__PURE__*/_react2.default.createElement(_core.CssBaseline, null), /*#__PURE__*/_react2.default.createElement(_globalStyles.default, null), /*#__PURE__*/_react2.default.createElement(RTLProvider, {
+    direction: themeDirection
   }, children));
 }
 

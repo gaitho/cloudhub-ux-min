@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { login, register, logout } from 'src/redux/slices/authJwt';
+import { login, register, logout } from '../redux/slices/authJwt';
 import {
   isEmpty,
   isLoaded,

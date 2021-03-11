@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -29,3 +27,5 @@ var _MCheckbox = _interopRequireDefault(require("./MCheckbox"));
 var _MRadio = _interopRequireDefault(require("./MRadio"));
 
 var _MSwitch = _interopRequireDefault(require("./MSwitch"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

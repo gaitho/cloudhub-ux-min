@@ -11,8 +11,7 @@
     "./src/components",
     "./src/custom-components",
     "./src/widgets",
-    "./src/hooks",
     "./src/utils",
-    "src/components.js"
+    "src/index.js"
   ]
 }

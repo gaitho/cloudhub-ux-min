@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _config = require("src/config");
+var _config = require("../config");
 
 // ----------------------------------------------------------------------
 var setup = function setup() {

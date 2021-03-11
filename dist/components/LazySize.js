@@ -1,15 +1,9 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _extends2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties"));
 
 var _clsx = _interopRequireDefault(require("clsx"));
 
@@ -17,11 +11,18 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _styles = require("cloudhub-components/dist/mui/styles");
+var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/components/LazySize.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 // ----------------------------------------------------------------------
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
@@ -51,12 +52,13 @@ function LazySize(_ref) {
       _ref$noPlaceholder = _ref.noPlaceholder,
       noPlaceholder = _ref$noPlaceholder === void 0 ? false : _ref$noPlaceholder,
       className = _ref.className,
-      other = (0, _objectWithoutProperties2.default)(_ref, ["component", "alt", "src", "size", "noBlur", "noPlaceholder", "className"]);
+      other = _objectWithoutProperties(_ref, ["component", "alt", "src", "size", "noBlur", "noPlaceholder", "className"]);
+
   var classes = useStyles();
   var lazyClass = noBlur ? 'lazyload' : 'lazyload blur-up';
   var placeholder = noPlaceholder ? '' : '/static/images/placeholder.svg';
   var isAuto = Boolean(size);
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, isAuto ? /*#__PURE__*/_react.default.createElement(_core.Box, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, isAuto ? /*#__PURE__*/_react.default.createElement(_core.Box, _extends({
     component: component,
     alt: alt,
     "data-sizes": "auto",
@@ -64,27 +66,13 @@ function LazySize(_ref) {
     "data-src": src,
     "data-srcset": size,
     className: (0, _clsx.default)(classes.root, lazyClass, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 9
-    }
-  })) : /*#__PURE__*/_react.default.createElement(_core.Box, (0, _extends2.default)({
+  }, other)) : /*#__PURE__*/_react.default.createElement(_core.Box, _extends({
     component: component,
     alt: alt,
     src: placeholder,
     "data-src": src,
     className: (0, _clsx.default)(classes.root, lazyClass, className)
-  }, other, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 9
-    }
-  })));
+  }, other)));
 }
 
 var _default = LazySize;

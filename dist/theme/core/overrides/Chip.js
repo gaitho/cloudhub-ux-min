@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/bernardgaitho/repos/designs/cloudhub-min/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -13,7 +11,7 @@ var _react2 = require("@iconify/react");
 
 var _closeCircleFill = _interopRequireDefault(require("@iconify-icons/eva/close-circle-fill"));
 
-var _jsxFileName = "/Users/bernardgaitho/repos/designs/cloudhub-min/src/theme/core/overrides/Chip.js";
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ----------------------------------------------------------------------
 function Chip(_ref) {
@@ -23,13 +21,7 @@ function Chip(_ref) {
     MuiChip: {
       defaultProps: {
         deleteIcon: /*#__PURE__*/_react.default.createElement(_react2.Icon, {
-          icon: _closeCircleFill.default,
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 13,
-            columnNumber: 21
-          }
+          icon: _closeCircleFill.default
         })
       },
       styleOverrides: {
@@ -42,7 +34,7 @@ function Chip(_ref) {
           }
         },
         outlined: {
-          borderColor: theme.palette.grey[50032],
+          borderColor: theme.palette.grey[500_32],
           '&.MuiChip-colorPrimary': {
             borderColor: theme.palette.primary.main
           }

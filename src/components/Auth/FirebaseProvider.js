@@ -2,10 +2,10 @@ import 'firebase/auth';
 import 'firebase/firestore';
 import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
-import { store } from 'src/redux/store';
-import useAuth from 'src/hooks/useAuth';
+import { store } from '../../redux/store';
+import useAuth from '../../hooks/useAuth';
 import React, { useEffect } from 'react';
-import { firebaseConfig } from 'src/config';
+import { firebaseConfig } from '../../config';
 import { createFirestoreInstance } from 'redux-firestore';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
 
