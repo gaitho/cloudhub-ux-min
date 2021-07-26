@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => {
       padding: theme.spacing(1),
       borderRadius: theme.shape.borderRadiusSm,
       border: `solid 1px ${theme.palette.divider}`,
-      backgroundColor: theme.palette.grey[isLight ? 100 : 800],
+      backgroundColor: theme.palette.grey[isLight ? '100' : '800'],
       '& > *': {
         margin: `${theme.spacing(1)} !important`
       }

@@ -9,9 +9,11 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _theme = require("../theme");
+var _materialExtend = require("../@material-extend");
 
 var _createAvatar = _interopRequireDefault(require("../utils/createAvatar"));
+
+var _excluded = ["className", "user"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29,9 +31,9 @@ MyAvatar.propTypes = {
 function MyAvatar(_ref) {
   var className = _ref.className,
       user = _ref.user,
-      other = _objectWithoutProperties(_ref, ["className", "user"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
-  return /*#__PURE__*/_react.default.createElement(_theme.MAvatar, _extends({
+  return /*#__PURE__*/_react.default.createElement(_materialExtend.MAvatar, _extends({
     src: user.photoURL,
     alt: user.displayName,
     color: user.photoURL ? 'default' : (0, _createAvatar.default)(user.displayName).color,

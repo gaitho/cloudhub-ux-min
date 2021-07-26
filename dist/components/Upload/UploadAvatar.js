@@ -17,11 +17,7 @@ var _react = require("@iconify/react");
 
 var _reactDropzone = require("react-dropzone");
 
-var _formatNumber = require("../../utils/formatNumber");
-
 var _react2 = _interopRequireWildcard(require("react"));
-
-var _useIsMountedRef = _interopRequireDefault(require("../../hooks/useIsMountedRef"));
 
 var _roundAddAPhoto = _interopRequireDefault(require("@iconify-icons/ic/round-add-a-photo"));
 
@@ -29,9 +25,15 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+var _formatNumber = require("../../utils/formatNumber");
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+var _useIsMountedRef = _interopRequireDefault(require("../../hooks/useIsMountedRef"));
+
+var _excluded = ["disabled", "caption", "error", "value", "onChange", "className", "config"];
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51,7 +53,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -71,7 +73,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       margin: 'auto',
       borderRadius: '50%',
       padding: theme.spacing(1),
-      border: "1px dashed ".concat(theme.palette.grey[500_32])
+      border: "1px dashed ".concat(theme.palette.grey['500_32'])
     },
     dropZone: {
       zIndex: 0,
@@ -101,7 +103,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       alignItems: 'center',
       position: 'absolute',
       justifyContent: 'center',
-      backgroundColor: (0, _styles.alpha)(theme.palette.grey[900], 0.72)
+      backgroundColor: (0, _styles.alpha)(theme.palette.grey['900'], 0.72)
     },
     placeholder: {
       display: 'flex',
@@ -122,7 +124,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
     hover: {
       opacity: 0,
       color: theme.palette.common.white,
-      backgroundColor: theme.palette.grey[900],
+      backgroundColor: theme.palette.grey['900'],
       '&:hover': {
         opacity: 0.8
       }
@@ -160,7 +162,7 @@ function UploadAvatar(_ref) {
       className = _ref.className,
       _ref$config = _ref.config,
       config = _ref$config === void 0 ? {} : _ref$config,
-      other = _objectWithoutProperties(_ref, ["disabled", "caption", "error", "value", "onChange", "className", "config"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
 

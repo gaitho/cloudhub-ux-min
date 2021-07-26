@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => {
   return {
     root: {
       borderRadius: theme.shape.borderRadius,
-      border: `solid 1px ${theme.palette.grey[500_32]}`,
+      border: `solid 1px ${theme.palette.grey['500_32']}`,
 
       // Toggle
       '& .toggle': {
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => {
         borderRadius: 6,
         boxShadow: 'none',
         background: 'transparent',
-        border: `solid 1px ${theme.palette.grey[500_32]}`,
+        border: `solid 1px ${theme.palette.grey['500_32']}`,
         '&:hover': {
           boxShadow: 'none',
           background: theme.palette.action.hover
@@ -128,7 +128,7 @@ const useStyles = makeStyles((theme) => {
           padding: theme.spacing(0, 1.5),
           color: theme.palette.text.primary,
           borderRadius: theme.shape.borderRadius,
-          border: `solid 1px ${theme.palette.grey[500_32]}`
+          border: `solid 1px ${theme.palette.grey['500_32']}`
         }
       },
 
@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme) => {
         padding: 0,
         '& .rdw-colorpicker-modal-header': {
           padding: theme.spacing(1),
-          background: theme.palette.grey[500_12],
+          background: theme.palette.grey['500_12'],
           '& .rdw-colorpicker-modal-style-label': {
             fontSize: 13,
             padding: theme.spacing(0.75, 0),
@@ -216,7 +216,7 @@ const useStyles = makeStyles((theme) => {
         height: 'auto',
         '& .rdw-embedded-modal-header': {
           padding: theme.spacing(1),
-          background: theme.palette.grey[500_12],
+          background: theme.palette.grey['500_12'],
           '& .rdw-embedded-modal-header-label': { display: 'none' },
           '& .rdw-embedded-modal-header-option': {
             fontSize: 13,
@@ -241,7 +241,7 @@ const useStyles = makeStyles((theme) => {
           zIndex: 9,
           fontSize: 13,
           padding: theme.spacing(1),
-          background: theme.palette.grey[500_12],
+          background: theme.palette.grey['500_12'],
           fontWeight: theme.typography.fontWeightMedium,
           '& .rdw-image-modal-header-option': {
             position: 'relative',
@@ -273,7 +273,7 @@ const useStyles = makeStyles((theme) => {
           textAlign: 'center',
           color: theme.palette.text.disabled,
           borderRadius: theme.shape.borderRadius,
-          border: `dashed 1px ${theme.palette.grey[500_32]}`
+          border: `dashed 1px ${theme.palette.grey['500_32']}`
         },
         '& .rdw-image-modal-btn-section': { padding: theme.spacing(0, 2, 2) },
         '& .rdw-image-modal-size, .rdw-image-modal-url-section': {
@@ -285,7 +285,7 @@ const useStyles = makeStyles((theme) => {
       border: 'none',
       marginBottom: 0,
       background: 'transparent',
-      borderBottom: `solid 1px ${theme.palette.grey[500_32]}`
+      borderBottom: `solid 1px ${theme.palette.grey['500_32']}`
     },
     editor: {
       minHeight: 200,

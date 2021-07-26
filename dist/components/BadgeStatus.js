@@ -15,6 +15,8 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
+var _excluded = ["size", "status", "className"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -101,7 +103,7 @@ function BadgeStatus(_ref) {
       _ref$status = _ref.status,
       status = _ref$status === void 0 ? 'offline' : _ref$status,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["size", "status", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement(_core.Box, _extends({

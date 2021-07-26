@@ -4,17 +4,18 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 
 import { useDropzone } from 'react-dropzone';
-import { fData } from '../../utils/formatNumber';
 import React, { useCallback, useState } from 'react';
-import useIsMountedRef from '../../hooks/useIsMountedRef';
 import roundAddAPhoto from '@iconify-icons/ic/round-add-a-photo';
 import { alpha, makeStyles } from '@material-ui/core/styles';
 import {
   Box,
   Typography,
   FormHelperText,
-  CircularProgress
+  CircularProgress,
 } from '@material-ui/core';
+
+import { fData } from '../../utils/formatNumber';
+import useIsMountedRef from '../../hooks/useIsMountedRef';
 
 // ----------------------------------------------------------------------
 
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     borderRadius: '50%',
     padding: theme.spacing(1),
-    border: `1px dashed ${theme.palette.grey[500_32]}`
+    border: `1px dashed ${theme.palette.grey['500_32']}`,
   },
   dropZone: {
     zIndex: 0,
@@ -42,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     '& > *': { width: '100%', height: '100%' },
-    '&:hover': { cursor: 'pointer', '& $placeholder': { zIndex: 9 } }
+    '&:hover': { cursor: 'pointer', '& $placeholder': { zIndex: 9 } },
   },
   loading: {
     zIndex: 99,
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     position: 'absolute',
     justifyContent: 'center',
-    backgroundColor: alpha(theme.palette.grey[900], 0.72)
+    backgroundColor: alpha(theme.palette.grey['900'], 0.72),
   },
   placeholder: {
     display: 'flex',
@@ -62,23 +63,23 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.neutral,
     transition: theme.transitions.create('opacity', {
       easing: theme.transitions.easing.easeInOut,
-      duration: theme.transitions.duration.shorter
+      duration: theme.transitions.duration.shorter,
     }),
-    '&:hover': { opacity: 0.72 }
+    '&:hover': { opacity: 0.72 },
   },
   hover: {
     opacity: 0,
     color: theme.palette.common.white,
-    backgroundColor: theme.palette.grey[900],
-    '&:hover': { opacity: 0.8 }
+    backgroundColor: theme.palette.grey['900'],
+    '&:hover': { opacity: 0.8 },
   },
   isDragActive: { opacity: 0.72 },
   isDragReject: {
     color: theme.palette.error.main,
     borderColor: theme.palette.error.light,
-    backgroundColor: theme.palette.error.lighter
+    backgroundColor: theme.palette.error.lighter,
   },
-  isDragAccept: {}
+  isDragAccept: {},
 }));
 
 // ----------------------------------------------------------------------
@@ -89,7 +90,7 @@ UploadAvatar.propTypes = {
   error: PropTypes.bool,
   file: PropTypes.object,
   setFile: PropTypes.func,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 function UploadAvatar({
@@ -132,7 +133,7 @@ function UploadAvatar({
           formData.append('api_key', config.cloudinaryKey || '');
           return axios
             .post(config.cloudinaryUrl || '', formData, {
-              headers: { 'X-Requested-With': 'XMLHttpRequest' }
+              headers: { 'X-Requested-With': 'XMLHttpRequest' },
             })
             .then((response) => {
               const data = response.data;
@@ -155,11 +156,11 @@ function UploadAvatar({
     getInputProps,
     isDragActive,
     isDragReject,
-    isDragAccept
+    isDragAccept,
   } = useDropzone({
     onDrop: handleDrop,
     multiple: false,
-    disabled: disabled
+    disabled: disabled,
   });
 
   return (
@@ -169,7 +170,7 @@ function UploadAvatar({
           className={clsx(classes.dropZone, {
             [classes.isDragActive]: isDragActive,
             [classes.isDragAccept]: isDragAccept,
-            [classes.isDragReject]: isDragReject || error
+            [classes.isDragReject]: isDragReject || error,
           })}
           {...getRootProps()}
         >
@@ -225,7 +226,7 @@ function UploadAvatar({
           mx: 'auto',
           display: 'block',
           textAlign: 'center',
-          color: 'text.secondary'
+          color: 'text.secondary',
         }}
       >
         {caption ? (

@@ -30,7 +30,7 @@ function TooltipRecharts(_ref) {
     border: 0,
     padding: 12,
     borderRadius: 8,
-    boxShadow: theme.shadows[25].z12,
+    boxShadow: theme.shadows['25'].z12,
     backgroundColor: theme.palette.background.paper
   };
   var labelStyle = {

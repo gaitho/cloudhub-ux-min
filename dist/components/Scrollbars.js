@@ -13,7 +13,11 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _simplebarReact = _interopRequireDefault(require("simplebar-react"));
 
+require("simplebar/src/simplebar.css");
+
 var _styles = require("@material-ui/core/styles");
+
+var _excluded = ["children", "className"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35,7 +39,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       maxHeight: '100%',
       '& .simplebar-scrollbar': {
         '&:before': {
-          backgroundColor: (0, _styles.alpha)(theme.palette.grey[600], 0.48)
+          backgroundColor: (0, _styles.alpha)(theme.palette.grey['600'], 0.48)
         },
         '&.simplebar-visible:before': {
           opacity: 1
@@ -65,7 +69,7 @@ Scrollbars.propTypes = {
 function Scrollbars(_ref) {
   var children = _ref.children,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["children", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement("div", {

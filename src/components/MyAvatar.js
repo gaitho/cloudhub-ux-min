@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MAvatar } from '../theme';
+import { MAvatar } from '../@material-extend';
 import createAvatar from '../utils/createAvatar';
 
 // ----------------------------------------------------------------------
 
 MyAvatar.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 function MyAvatar({ className, user, ...other }) {

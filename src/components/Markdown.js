@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => {
         padding: theme.spacing(2),
         color: theme.palette.common.white,
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: theme.palette.grey[isLight ? 900 : 500_16]
+        backgroundColor: theme.palette.grey[isLight ? '900' : '500_16']
       },
       '& code': {
         fontSize: 14,

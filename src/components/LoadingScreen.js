@@ -43,7 +43,7 @@ LoadingScreen.propTypes = {
   className: PropTypes.string
 };
 
-function LoadingScreen({ className, ...other }) {
+function LoadingScreen({ className, logo, ...other }) {
   const classes = useStyles();
 
   return (
@@ -58,7 +58,7 @@ function LoadingScreen({ className, ...other }) {
           repeatDelay: 1
         }}
       >
-        <Logo sx={{ height: 64 }} />
+        <Logo src={logo} sx={{ height: 64 }} />
       </motion.div>
 
       <motion.div

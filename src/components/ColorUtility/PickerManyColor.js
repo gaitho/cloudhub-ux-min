@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   whiteColor: {
     border: `solid 1px ${theme.palette.divider}`,
     '&$isChecked': {
-      boxShadow: `4px 4px 8px 0 ${theme.palette.grey[500_24]}`,
+      boxShadow: `4px 4px 8px 0 ${theme.palette.grey['500_24']}`,
       '& svg': {
         width: 12,
         height: 12,

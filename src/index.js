@@ -1,7 +1,6 @@
-export { default as ThemeProvider } from './theme/core';
+export { default as ThemeProvider } from './ClientThemeProvider';
 
 //lib components
-
 export { default as BadgeStatus } from './components/BadgeStatus';
 export { default as Block } from './components/Block';
 export { default as CodeSnippets } from './components/CodeSnippets';
@@ -51,18 +50,6 @@ export { default as CarouselArrowsBasic1 } from './components/Carousel/CarouselA
 export { default as CarouselArrowsBasic2 } from './components/Carousel/CarouselArrowsBasic2';
 export { default as CarouselArrowsIndex } from './components/Carousel/CarouselArrowsIndex';
 
-export * from './theme/@material-extend/Buttons';
-export * from './theme/@material-extend/Progress';
-export * from './theme/@material-extend/SelectionControls';
-export * from './theme/@material-extend/Timeline';
-
-export { default as MChip } from './theme/@material-extend/MChip';
-export { default as MIcon } from './theme/@material-extend/MIcon';
-export { default as MBadge } from './theme/@material-extend/MBadge';
-export { default as MLabel } from './theme/@material-extend/MLabel';
-export { default as MAvatar } from './theme/@material-extend/MAvatar';
-export { default as MBreadcrumbs } from './theme/@material-extend/MBreadcrumbs';
-
 //Animate
 export * from './components/Animate/variants';
 
@@ -70,15 +57,7 @@ export { default as MotionInView } from './components/Animate/MotionInView';
 export { default as MotionContainer } from './components/Animate/MotionContainer';
 export { default as DialogAnimate } from './components/Animate/DialogAnimate';
 export { default as ButtonAnimate } from './components/Animate/ButtonAnimate';
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// custom components
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-export * from './theme/@material-extend';
-export { default as StatusLabel } from './custom-components/StatusLabel';
-export { default as ListSubMenu } from './custom-components/ListSubMenu';
-export { default as ListMenuItem } from './custom-components/ListMenuItem';
-export { default as MyAvatar } from './custom-components/MyAvatar';
+export * from './@material-extend';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Widgets

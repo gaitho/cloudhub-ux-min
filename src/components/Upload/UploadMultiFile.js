@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { fData } from '../../utils/formatNumber';
+
 import fileFill from '@iconify-icons/eva/file-fill';
 import closeFill from '@iconify-icons/eva/close-fill';
 import { motion, AnimatePresence } from 'framer-motion';
-import { varFadeInRight } from '../Animate';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Box,
@@ -20,7 +19,10 @@ import {
   ListItemText,
   ListItemSecondaryAction
 } from '@material-ui/core';
-import { MIconButton } from '../../theme';
+
+import { varFadeInRight } from '../Animate';
+import { fData } from '../../utils/formatNumber';
+import { MIconButton } from '../../@material-extend';
 
 // ----------------------------------------------------------------------
 
@@ -36,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(5, 1),
     borderRadius: theme.shape.borderRadius,
     backgroundColor: theme.palette.background.neutral,
-    border: `1px dashed ${theme.palette.grey[500_32]}`,
+    border: `1px dashed ${theme.palette.grey['500_32']}`,
     '&:hover': {
       opacity: 0.72,
       cursor: 'pointer'

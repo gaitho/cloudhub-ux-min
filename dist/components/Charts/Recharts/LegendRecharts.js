@@ -13,6 +13,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _styles = require("@material-ui/core/styles");
 
+var _excluded = ["align", "verticalAlign"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -59,7 +61,7 @@ function LegendRecharts(_ref) {
       align = _ref$align === void 0 ? 'right' : _ref$align,
       _ref$verticalAlign = _ref.verticalAlign,
       verticalAlign = _ref$verticalAlign === void 0 ? 'top' : _ref$verticalAlign,
-      other = _objectWithoutProperties(_ref, ["align", "verticalAlign"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   useStyles();
   return /*#__PURE__*/_react.default.createElement(_recharts.Legend, _extends({

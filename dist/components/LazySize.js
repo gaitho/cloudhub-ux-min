@@ -5,6 +5,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+require("lazysizes");
+
+require("lazysizes/plugins/attrchange/ls.attrchange");
+
+require("lazysizes/plugins/object-fit/ls.object-fit");
+
+require("lazysizes/plugins/parent-fit/ls.parent-fit");
+
 var _clsx = _interopRequireDefault(require("clsx"));
 
 var _react = _interopRequireDefault(require("react"));
@@ -14,6 +22,10 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
+
+var _placeholder = _interopRequireDefault(require("../assets/placeholder.svg"));
+
+var _excluded = ["component", "alt", "src", "size", "noBlur", "noPlaceholder", "className"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48,15 +60,15 @@ function LazySize(_ref) {
       src = _ref.src,
       size = _ref.size,
       _ref$noBlur = _ref.noBlur,
-      noBlur = _ref$noBlur === void 0 ? false : _ref$noBlur,
+      noBlur = _ref$noBlur === void 0 ? true : _ref$noBlur,
       _ref$noPlaceholder = _ref.noPlaceholder,
       noPlaceholder = _ref$noPlaceholder === void 0 ? false : _ref$noPlaceholder,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["component", "alt", "src", "size", "noBlur", "noPlaceholder", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   var lazyClass = noBlur ? 'lazyload' : 'lazyload blur-up';
-  var placeholder = noPlaceholder ? '' : '/static/images/placeholder.svg';
+  var placeholder = noPlaceholder ? '' : _placeholder.default;
   var isAuto = Boolean(size);
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, isAuto ? /*#__PURE__*/_react.default.createElement(_core.Box, _extends({
     component: component,

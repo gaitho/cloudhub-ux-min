@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) =>
       // Tooltip
       '.apexcharts-tooltip,.apexcharts-xaxistooltip': {
         border: '0 !important',
-        boxShadow: `${theme.shadows[25].z24} !important`,
+        boxShadow: `${theme.shadows['25'].z24} !important`,
         color: `${theme.palette.text.primary} !important`,
         borderRadius: `${theme.shape.borderRadiusSm}px !important`,
         backgroundColor: `${theme.palette.background.default} !important`
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) =>
       '.apexcharts-tooltip-title': {
         border: '0 !important',
         fontWeight: theme.typography.fontWeightBold,
-        backgroundColor: `${theme.palette.grey[500_16]} !important`,
+        backgroundColor: `${theme.palette.grey['500_16']} !important`,
         color:
           theme.palette.text[
             theme.palette.mode === 'light' ? 'secondary' : 'primary'
@@ -179,7 +179,7 @@ function ApexChartsOption() {
       radialBar: {
         track: {
           strokeWidth: '100%',
-          background: theme.palette.grey[500_16]
+          background: theme.palette.grey['500_16']
         },
         dataLabels: {
           value: LABEL_VALUE,

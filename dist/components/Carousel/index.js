@@ -34,6 +34,10 @@ Object.defineProperty(exports, "CarouselArrowsIndex", {
   }
 });
 
+require("slick-carousel/slick/slick.css");
+
+require("slick-carousel/slick/slick-theme.css");
+
 var _CarouselCustomPaging = _interopRequireDefault(require("./CarouselCustomPaging1"));
 
 var _CarouselCustomPaging2 = _interopRequireDefault(require("./CarouselCustomPaging2"));

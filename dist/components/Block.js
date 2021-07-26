@@ -15,6 +15,8 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
+var _excluded = ["children", "className", "title"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -39,7 +41,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       padding: theme.spacing(1),
       borderRadius: theme.shape.borderRadiusSm,
       border: "solid 1px ".concat(theme.palette.divider),
-      backgroundColor: theme.palette.grey[isLight ? 100 : 800],
+      backgroundColor: theme.palette.grey[isLight ? '100' : '800'],
       '& > *': {
         margin: "".concat(theme.spacing(1), " !important")
       }
@@ -57,7 +59,7 @@ function Block(_ref) {
   var children = _ref.children,
       className = _ref.className,
       title = _ref.title,
-      other = _objectWithoutProperties(_ref, ["children", "className", "title"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement(_core.Box, _extends({

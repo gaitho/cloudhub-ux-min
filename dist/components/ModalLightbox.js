@@ -7,6 +7,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+require("react-image-lightbox/style.css");
+
 var _clsx = _interopRequireDefault(require("clsx"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
@@ -19,9 +21,11 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+var _excluded = ["images", "photoIndex", "setPhotoIndex", "isOpen", "onClose", "className"];
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31,7 +35,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
@@ -46,7 +50,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       backgroundSize: '24px 24px',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      backgroundColor: (0, _styles.alpha)(theme.palette.grey[900], 0.8),
+      backgroundColor: (0, _styles.alpha)(theme.palette.grey['900'], 0.8),
       backgroundImage: "url(\"/static/icons/controls/".concat(iconName, ".svg\")")
     };
   };
@@ -54,7 +58,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     root: {
       backdropFilter: 'blur(8px)',
-      backgroundColor: (0, _styles.alpha)(theme.palette.grey[900], 0.88),
+      backgroundColor: (0, _styles.alpha)(theme.palette.grey['900'], 0.88),
       // Toolbar
       '& .ril__toolbar': {
         height: 'auto !important',
@@ -128,7 +132,7 @@ function ModalLightbox(_ref) {
       isOpen = _ref.isOpen,
       onClose = _ref.onClose,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["images", "photoIndex", "setPhotoIndex", "isOpen", "onClose", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   (0, _react.useEffect)(function () {

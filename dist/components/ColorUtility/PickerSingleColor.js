@@ -19,6 +19,9 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
+var _excluded = ["className"],
+    _excluded2 = ["colors", "className"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -71,7 +74,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
     whiteColor: {
       border: "solid 1px ".concat(theme.palette.divider),
       '&$isChecked': {
-        boxShadow: "4px 4px 8px 0 ".concat(theme.palette.grey[500_24]),
+        boxShadow: "4px 4px 8px 0 ".concat(theme.palette.grey['500_24']),
         '& svg': {
           width: 12,
           height: 12,
@@ -84,7 +87,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
 
 function RadioIcon(_ref) {
   var className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   return /*#__PURE__*/_react.default.createElement("div", _extends({
     className: className
@@ -101,7 +104,7 @@ PickerSingleColor.propTypes = {
 function PickerSingleColor(_ref2) {
   var colors = _ref2.colors,
       className = _ref2.className,
-      other = _objectWithoutProperties(_ref2, ["colors", "className"]);
+      other = _objectWithoutProperties(_ref2, _excluded2);
 
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement(_core.RadioGroup, _extends({

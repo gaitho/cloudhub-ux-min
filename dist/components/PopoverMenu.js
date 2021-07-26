@@ -13,6 +13,8 @@ var _core = require("@material-ui/core");
 
 var _styles = require("@material-ui/core/styles");
 
+var _excluded = ["children", "width", "className"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -30,8 +32,8 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       marginTop: 12,
       marginLeft: 4,
       overflow: 'inherit',
-      boxShadow: theme.shadows[25].z20,
-      border: "solid 1px ".concat(theme.palette.grey[500_8])
+      boxShadow: theme.shadows['25'].z20,
+      border: "solid 1px ".concat(theme.palette.grey['500_8'])
     },
     arrow: _defineProperty({}, theme.breakpoints.up('sm'), {
       top: -7,
@@ -44,8 +46,8 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       borderRadius: '0 0 4px 0',
       transform: 'rotate(-135deg)',
       background: theme.palette.background.paper,
-      borderRight: "solid 1px ".concat((0, _styles.alpha)(theme.palette.grey[500], 0.12)),
-      borderBottom: "solid 1px ".concat((0, _styles.alpha)(theme.palette.grey[500], 0.12))
+      borderRight: "solid 1px ".concat((0, _styles.alpha)(theme.palette.grey['500'], 0.12)),
+      borderBottom: "solid 1px ".concat((0, _styles.alpha)(theme.palette.grey['500'], 0.12))
     })
   };
 }); // ----------------------------------------------------------------------
@@ -60,7 +62,7 @@ function DropdownMenu(_ref) {
   var children = _ref.children,
       width = _ref.width,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["children", "width", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement(_core.Popover, _extends({

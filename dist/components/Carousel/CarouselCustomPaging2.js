@@ -15,6 +15,8 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
+var _excluded = ["color", "className"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -61,7 +63,7 @@ CarouselCustomPaging1.propTypes = {
 function CarouselCustomPaging1(_ref) {
   var color = _ref.color,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["color", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   return {

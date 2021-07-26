@@ -17,25 +17,27 @@ var _react2 = _interopRequireWildcard(require("react"));
 
 var _reactDropzone = require("react-dropzone");
 
-var _formatNumber = require("../../utils/formatNumber");
-
 var _fileFill = _interopRequireDefault(require("@iconify-icons/eva/file-fill"));
 
 var _closeFill = _interopRequireDefault(require("@iconify-icons/eva/close-fill"));
 
 var _framerMotion = require("framer-motion");
 
-var _Animate = require("../Animate");
-
 var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _theme = require("../../theme");
+var _Animate = require("../Animate");
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+var _formatNumber = require("../../utils/formatNumber");
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+var _materialExtend = require("../../@material-extend");
+
+var _excluded = ["caption", "error", "value", "onChange", "className"];
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47,7 +49,7 @@ function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread n
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 
@@ -75,7 +77,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       padding: theme.spacing(5, 1),
       borderRadius: theme.shape.borderRadius,
       backgroundColor: theme.palette.background.neutral,
-      border: "1px dashed ".concat(theme.palette.grey[500_32]),
+      border: "1px dashed ".concat(theme.palette.grey['500_32']),
       '&:hover': {
         opacity: 0.72,
         cursor: 'pointer'
@@ -123,7 +125,7 @@ function UploadMultiFile(_ref) {
       files = _ref.value,
       setFiles = _ref.onChange,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["caption", "error", "value", "onChange", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   var hasFile = files.length > 0;
@@ -201,7 +203,7 @@ function UploadMultiFile(_ref) {
       primaryTypographyProps: {
         variant: 'subtitle2'
       }
-    }), /*#__PURE__*/_react2.default.createElement(_core.ListItemSecondaryAction, null, /*#__PURE__*/_react2.default.createElement(_theme.MIconButton, {
+    }), /*#__PURE__*/_react2.default.createElement(_core.ListItemSecondaryAction, null, /*#__PURE__*/_react2.default.createElement(_materialExtend.MIconButton, {
       edge: "end",
       size: "small",
       onClick: function onClick() {

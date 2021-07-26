@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     position: 'absolute',
     left: theme.spacing(-2),
-    boxShadow: theme.shadows[25].z20,
+    boxShadow: theme.shadows['25'].z20,
     borderRadius: theme.shape.borderRadiusMd,
     '& .emoji-mart': {
       border: 'none',
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     '& .emoji-mart-search input': {
       backgroundColor: 'transparent',
       color: theme.palette.text.primary,
-      borderColor: theme.palette.grey[500_32],
+      borderColor: theme.palette.grey['500_32'],
       '&::placeholder': {
         ...theme.typography.body2,
         color: theme.palette.text.disabled

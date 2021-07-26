@@ -21,7 +21,9 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _theme = require("../../theme");
+var _materialExtend = require("../../@material-extend");
+
+var _excluded = ["onNext", "onPrevious", "className"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -61,14 +63,14 @@ function CarouselArrowsBasic1(_ref) {
   var onNext = _ref.onNext,
       onPrevious = _ref.onPrevious,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["onNext", "onPrevious", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   var theme = (0, _styles.useTheme)();
   var isRTL = theme.direction === 'rtl';
   return /*#__PURE__*/_react.default.createElement(_core.Box, _extends({
     className: (0, _clsx.default)(classes.root, className)
-  }, other), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
+  }, other), /*#__PURE__*/_react.default.createElement(_materialExtend.MIconButton, {
     size: "small",
     color: "white",
     onClick: onPrevious,
@@ -77,7 +79,7 @@ function CarouselArrowsBasic1(_ref) {
     width: 20,
     height: 20,
     icon: isRTL ? _arrowRightFill.default : _arrowLeftFill.default
-  })), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
+  })), /*#__PURE__*/_react.default.createElement(_materialExtend.MIconButton, {
     size: "small",
     color: "white",
     onClick: onNext,

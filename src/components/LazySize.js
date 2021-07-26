@@ -1,15 +1,22 @@
+import 'lazysizes';
+import 'lazysizes/plugins/attrchange/ls.attrchange';
+import 'lazysizes/plugins/object-fit/ls.object-fit';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 import clsx from 'clsx';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 
+import placeholdersvg from '../assets/placeholder.svg';
+
 // ----------------------------------------------------------------------
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    objectFit: 'cover'
-  }
+    objectFit: 'cover',
+  },
 }));
 
 // ----------------------------------------------------------------------
@@ -20,7 +27,7 @@ LazySize.propTypes = {
   size: PropTypes.string,
   noBlur: PropTypes.bool,
   noPlaceholder: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 function LazySize({
@@ -28,14 +35,14 @@ function LazySize({
   alt,
   src,
   size,
-  noBlur = false,
+  noBlur = true,
   noPlaceholder = false,
   className,
   ...other
 }) {
   const classes = useStyles();
   const lazyClass = noBlur ? 'lazyload' : 'lazyload blur-up';
-  const placeholder = noPlaceholder ? '' : '/static/images/placeholder.svg';
+  const placeholder = noPlaceholder ? '' : placeholdersvg;
   const isAuto = Boolean(size);
 
   return (

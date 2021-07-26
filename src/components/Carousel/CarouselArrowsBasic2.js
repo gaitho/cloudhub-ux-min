@@ -6,7 +6,7 @@ import arrowLeftFill from '@iconify-icons/eva/arrow-left-fill';
 import arrowRightFill from '@iconify-icons/eva/arrow-right-fill';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
-import { MIconButton } from '../../theme';
+import { MIconButton } from '../../@material-extend';
 
 // ----------------------------------------------------------------------
 
@@ -33,11 +33,11 @@ const useStyles = makeStyles((theme) => ({
     cursor: 'pointer',
     alignItems: 'center',
     justifyContent: 'center',
-    background: theme.palette.grey[900],
+    background: theme.palette.grey['900'],
     borderRadius: theme.shape.borderRadiusSm,
     '&:hover': {
       opacity: 1,
-      background: theme.palette.grey[900]
+      background: theme.palette.grey['900']
     }
   }
 }));

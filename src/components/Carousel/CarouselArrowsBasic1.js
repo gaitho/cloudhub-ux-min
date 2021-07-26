@@ -6,7 +6,7 @@ import arrowLeftFill from '@iconify-icons/eva/arrow-left-fill';
 import arrowRightFill from '@iconify-icons/eva/arrow-right-fill';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
-import { MIconButton } from '../../theme';
+import { MIconButton } from '../../@material-extend';
 
 // ----------------------------------------------------------------------
 

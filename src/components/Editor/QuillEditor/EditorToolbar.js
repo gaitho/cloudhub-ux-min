@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => {
       },
       '& .ql-toolbar': {
         border: 'none',
-        borderBottom: `solid 1px ${theme.palette.grey[500_32]}`,
+        borderBottom: `solid 1px ${theme.palette.grey['500_32']}`,
         '& .ql-formats': {
           '&:not(:last-child)': { marginRight: theme.spacing(2) }
         },

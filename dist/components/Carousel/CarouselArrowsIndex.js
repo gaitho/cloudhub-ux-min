@@ -21,7 +21,9 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _theme = require("../../theme");
+var _materialExtend = require("../../@material-extend");
+
+var _excluded = ["index", "total", "onNext", "onPrevious", "className"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -43,7 +45,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       right: theme.spacing(2),
       color: theme.palette.common.white,
       borderRadius: theme.shape.borderRadius,
-      backgroundColor: (0, _styles.alpha)(theme.palette.grey[900], 0.48)
+      backgroundColor: (0, _styles.alpha)(theme.palette.grey['900'], 0.48)
     },
     arrow: {
       padding: 6,
@@ -69,14 +71,14 @@ function CarouselArrowsIndex(_ref) {
       onNext = _ref.onNext,
       onPrevious = _ref.onPrevious,
       className = _ref.className,
-      other = _objectWithoutProperties(_ref, ["index", "total", "onNext", "onPrevious", "className"]);
+      other = _objectWithoutProperties(_ref, _excluded);
 
   var classes = useStyles();
   var theme = (0, _styles.useTheme)();
   var isRTL = theme.direction === 'rtl';
   return /*#__PURE__*/_react.default.createElement(_core.Box, _extends({
     className: (0, _clsx.default)(classes.root, className)
-  }, other), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
+  }, other), /*#__PURE__*/_react.default.createElement(_materialExtend.MIconButton, {
     size: "small",
     color: "white",
     onClick: onPrevious,
@@ -87,7 +89,7 @@ function CarouselArrowsIndex(_ref) {
     icon: isRTL ? _arrowRightFill.default : _arrowLeftFill.default
   })), /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "subtitle2"
-  }, index + 1, "/", total), /*#__PURE__*/_react.default.createElement(_theme.MIconButton, {
+  }, index + 1, "/", total), /*#__PURE__*/_react.default.createElement(_materialExtend.MIconButton, {
     size: "small",
     color: "white",
     onClick: onNext,

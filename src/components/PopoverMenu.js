@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 12,
     marginLeft: 4,
     overflow: 'inherit',
-    boxShadow: theme.shadows[25].z20,
-    border: `solid 1px ${theme.palette.grey[500_8]}`
+    boxShadow: theme.shadows['25'].z20,
+    border: `solid 1px ${theme.palette.grey['500_8']}`
   },
   arrow: {
     [theme.breakpoints.up('sm')]: {
@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: '0 0 4px 0',
       transform: 'rotate(-135deg)',
       background: theme.palette.background.paper,
-      borderRight: `solid 1px ${alpha(theme.palette.grey[500], 0.12)}`,
-      borderBottom: `solid 1px ${alpha(theme.palette.grey[500], 0.12)}`
+      borderRight: `solid 1px ${alpha(theme.palette.grey['500'], 0.12)}`,
+      borderBottom: `solid 1px ${alpha(theme.palette.grey['500'], 0.12)}`
     }
   }
 }));

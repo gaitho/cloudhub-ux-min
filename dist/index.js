@@ -42,25 +42,15 @@ var _exportNames = {
   CarouselArrowsBasic1: true,
   CarouselArrowsBasic2: true,
   CarouselArrowsIndex: true,
-  MChip: true,
-  MIcon: true,
-  MBadge: true,
-  MLabel: true,
-  MAvatar: true,
-  MBreadcrumbs: true,
   MotionInView: true,
   MotionContainer: true,
   DialogAnimate: true,
-  ButtonAnimate: true,
-  StatusLabel: true,
-  ListSubMenu: true,
-  ListMenuItem: true,
-  MyAvatar: true
+  ButtonAnimate: true
 };
 Object.defineProperty(exports, "ThemeProvider", {
   enumerable: true,
   get: function get() {
-    return _core.default;
+    return _ClientThemeProvider.default;
   }
 });
 Object.defineProperty(exports, "BadgeStatus", {
@@ -285,42 +275,6 @@ Object.defineProperty(exports, "CarouselArrowsIndex", {
     return _CarouselArrowsIndex.default;
   }
 });
-Object.defineProperty(exports, "MChip", {
-  enumerable: true,
-  get: function get() {
-    return _MChip.default;
-  }
-});
-Object.defineProperty(exports, "MIcon", {
-  enumerable: true,
-  get: function get() {
-    return _MIcon.default;
-  }
-});
-Object.defineProperty(exports, "MBadge", {
-  enumerable: true,
-  get: function get() {
-    return _MBadge.default;
-  }
-});
-Object.defineProperty(exports, "MLabel", {
-  enumerable: true,
-  get: function get() {
-    return _MLabel.default;
-  }
-});
-Object.defineProperty(exports, "MAvatar", {
-  enumerable: true,
-  get: function get() {
-    return _MAvatar.default;
-  }
-});
-Object.defineProperty(exports, "MBreadcrumbs", {
-  enumerable: true,
-  get: function get() {
-    return _MBreadcrumbs.default;
-  }
-});
 Object.defineProperty(exports, "MotionInView", {
   enumerable: true,
   get: function get() {
@@ -345,32 +299,8 @@ Object.defineProperty(exports, "ButtonAnimate", {
     return _ButtonAnimate.default;
   }
 });
-Object.defineProperty(exports, "StatusLabel", {
-  enumerable: true,
-  get: function get() {
-    return _StatusLabel.default;
-  }
-});
-Object.defineProperty(exports, "ListSubMenu", {
-  enumerable: true,
-  get: function get() {
-    return _ListSubMenu.default;
-  }
-});
-Object.defineProperty(exports, "ListMenuItem", {
-  enumerable: true,
-  get: function get() {
-    return _ListMenuItem.default;
-  }
-});
-Object.defineProperty(exports, "MyAvatar", {
-  enumerable: true,
-  get: function get() {
-    return _MyAvatar.default;
-  }
-});
 
-var _core = _interopRequireDefault(require("./theme/core"));
+var _ClientThemeProvider = _interopRequireDefault(require("./ClientThemeProvider"));
 
 var _BadgeStatus = _interopRequireDefault(require("./components/BadgeStatus"));
 
@@ -444,74 +374,6 @@ var _CarouselArrowsBasic2 = _interopRequireDefault(require("./components/Carouse
 
 var _CarouselArrowsIndex = _interopRequireDefault(require("./components/Carousel/CarouselArrowsIndex"));
 
-var _Buttons = require("./theme/@material-extend/Buttons");
-
-Object.keys(_Buttons).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _Buttons[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _Buttons[key];
-    }
-  });
-});
-
-var _Progress = require("./theme/@material-extend/Progress");
-
-Object.keys(_Progress).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _Progress[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _Progress[key];
-    }
-  });
-});
-
-var _SelectionControls = require("./theme/@material-extend/SelectionControls");
-
-Object.keys(_SelectionControls).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _SelectionControls[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _SelectionControls[key];
-    }
-  });
-});
-
-var _Timeline = require("./theme/@material-extend/Timeline");
-
-Object.keys(_Timeline).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _Timeline[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _Timeline[key];
-    }
-  });
-});
-
-var _MChip = _interopRequireDefault(require("./theme/@material-extend/MChip"));
-
-var _MIcon = _interopRequireDefault(require("./theme/@material-extend/MIcon"));
-
-var _MBadge = _interopRequireDefault(require("./theme/@material-extend/MBadge"));
-
-var _MLabel = _interopRequireDefault(require("./theme/@material-extend/MLabel"));
-
-var _MAvatar = _interopRequireDefault(require("./theme/@material-extend/MAvatar"));
-
-var _MBreadcrumbs = _interopRequireDefault(require("./theme/@material-extend/MBreadcrumbs"));
-
 var _variants = require("./components/Animate/variants");
 
 Object.keys(_variants).forEach(function (key) {
@@ -534,7 +396,7 @@ var _DialogAnimate = _interopRequireDefault(require("./components/Animate/Dialog
 
 var _ButtonAnimate = _interopRequireDefault(require("./components/Animate/ButtonAnimate"));
 
-var _materialExtend = require("./theme/@material-extend");
+var _materialExtend = require("./@material-extend");
 
 Object.keys(_materialExtend).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -547,13 +409,5 @@ Object.keys(_materialExtend).forEach(function (key) {
     }
   });
 });
-
-var _StatusLabel = _interopRequireDefault(require("./custom-components/StatusLabel"));
-
-var _ListSubMenu = _interopRequireDefault(require("./custom-components/ListSubMenu"));
-
-var _ListMenuItem = _interopRequireDefault(require("./custom-components/ListMenuItem"));
-
-var _MyAvatar = _interopRequireDefault(require("./custom-components/MyAvatar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
