@@ -15,7 +15,7 @@ var _styles = require("@material-ui/core/styles");
 
 var _utils = require("@material-ui/core/utils");
 
-var _Timeline = _interopRequireDefault(require("@material-ui/lab/Timeline"));
+var _TimelineDot = _interopRequireDefault(require("@material-ui/lab/TimelineDot"));
 
 var _excluded = ["color", "variant", "className"];
 
@@ -72,14 +72,13 @@ function MTimelineDot(_ref) {
   var classes = useStyles();
 
   if (color === 'grey' || color === 'inherit' || color === 'primary' || color === 'secondary') {
-    return /*#__PURE__*/_react.default.createElement(_Timeline.default, _extends({
+    return /*#__PURE__*/_react.default.createElement(_TimelineDot.default, _extends({
       color: color,
-      variant: variant,
-      className: className
+      variant: variant
     }, other));
   }
 
-  return /*#__PURE__*/_react.default.createElement(_Timeline.default, _extends({
+  return /*#__PURE__*/_react.default.createElement(_TimelineDot.default, _extends({
     variant: variant,
     className: (0, _clsx2.default)(classes[variant], _defineProperty({}, classes["".concat(variant).concat((0, _utils.capitalize)(color))], color), className)
   }, other));
