@@ -1,29 +1,36 @@
 // ----------------------------------------------------------------------
 
 export default function getColorName(hex) {
-  if (hex === '#00AB55') {
-    return 'Green';
+  let color;
+
+  switch (hex) {
+    case '#00AB55':
+      color = 'Green';
+      break;
+    case '#000000':
+      color = 'Black';
+      break;
+    case '#FFFFFF':
+      color = 'White';
+      break;
+    case '#FFC0CB':
+      color = 'Pink';
+      break;
+    case '#FF4842':
+      color = 'Red';
+      break;
+    case '#1890FF':
+      color = 'Blue';
+      break;
+    case '#94D82D':
+      color = 'Greenyellow';
+      break;
+    case '#FFC107':
+      color = 'Orange';
+      break;
+    default:
+      color = hex;
   }
-  if (hex === '#000000') {
-    return 'Black';
-  }
-  if (hex === '#FFFFFF') {
-    return 'White';
-  }
-  if (hex === '#FFC0CB') {
-    return 'Pink';
-  }
-  if (hex === '#FF4842') {
-    return 'Red';
-  }
-  if (hex === '#1890FF') {
-    return 'Blue';
-  }
-  if (hex === '#94D82D') {
-    return 'Greenyellow';
-  }
-  if (hex === '#FFC107') {
-    return 'Orange';
-  }
-  return;
+
+  return color;
 }

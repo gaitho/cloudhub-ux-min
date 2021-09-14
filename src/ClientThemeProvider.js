@@ -2,18 +2,18 @@ import React from 'react';
 import Loadable from '@react-loadable/revised';
 import Box from '@material-ui/core/Box';
 
-import MuiThemeProvider from './core';
-import ThemeContext from 'cloudhub-components/dist/theme/ThemeContext';
-import { Loading } from 'cloudhub-components';
-import localsizes from 'cloudhub-components/dist/theme/Sizes';
-import localcolors from 'cloudhub-components/dist/theme/Colors';
-import localfonts from 'cloudhub-components/dist/theme/Fonts';
-import { ToastContainer } from 'cloudhub-components/dist/toastr';
+import MuiThemeProvider from './theme';
+import ThemeContext from '@cloudhub-ux/core/theme/ThemeContext';
+import { Loading } from '@cloudhub-ux/core';
+import localsizes from '@cloudhub-ux/core/theme/Sizes';
+import localcolors from '@cloudhub-ux/core/theme/Colors';
+import localfonts from '@cloudhub-ux/core/theme/Fonts';
+import { ToastContainer } from '@cloudhub-ux/core/toastr';
 
 const BaseTheme = Loadable({
   loader: () =>
     import(
-      /* webpackChunkName: "BaseTheme" */ 'cloudhub-components/dist/baseweb/theme/BaseTheme'
+      /* webpackChunkName: "BaseTheme" */ '@cloudhub-ux/core/baseweb/theme/BaseTheme'
     ),
   loading: () => (
     <Box justifyContent="center" alignItems="center">

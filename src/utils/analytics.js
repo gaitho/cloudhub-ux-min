@@ -1,3 +1,5 @@
+import { googleAnalyticsConfig } from '../config';
+
 // ----------------------------------------------------------------------
 
 const setup = (...args) => {
@@ -11,7 +13,7 @@ const setup = (...args) => {
 };
 
 const track = {
-  pageview: (props, googleAnalyticsConfig) => {
+  pageview: (props) => {
     setup('config', googleAnalyticsConfig, props);
   },
   event: (type, props) => {

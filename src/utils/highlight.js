@@ -4,7 +4,7 @@ import 'highlight.js/styles/atom-one-dark.css';
 // ----------------------------------------------------------------------
 
 hljs.configure({
-  languages: ['javascript', 'jsx', 'sh', 'html', 'css', 'bash', 'json']
+  languages: ['javascript', 'jsx', 'sh', 'bash', 'html', 'scss', 'css', 'json']
 });
 
 window.hljs = hljs;

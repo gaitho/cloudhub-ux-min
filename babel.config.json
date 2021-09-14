@@ -6,12 +6,19 @@
         "modules": "commonjs"
       }
     ],
-    "@babel/preset-react",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic",
+        "importSource": "@emotion/react"
+      }
+    ],
     "@babel/flow"
   ],
   "plugins": [
     "@babel/plugin-transform-object-assign",
     "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining"
   ]
 }
