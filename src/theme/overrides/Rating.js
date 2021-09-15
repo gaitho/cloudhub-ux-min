@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import starFill from '@iconify/icons-eva/star-fill';
 
-import { SvgIcon } from '@material-ui/core';
+import { SvgIcon } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
@@ -20,19 +20,19 @@ export default function Rating(theme) {
     MuiRating: {
       defaultProps: {
         emptyIcon: ICON,
-        icon: ICON
+        icon: ICON,
       },
 
       styleOverrides: {
         root: {
           '&.Mui-disabled': {
-            opacity: 0.48
-          }
+            opacity: 0.48,
+          },
         },
         iconEmpty: { color: theme.palette.grey['500_48'] },
         sizeSmall: { '& svg': { ...ICON_SMALL } },
-        sizeLarge: { '& svg': { ...ICON_LARGE } }
-      }
-    }
+        sizeLarge: { '& svg': { ...ICON_LARGE } },
+      },
+    },
   };
 }

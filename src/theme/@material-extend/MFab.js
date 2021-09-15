@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 // material
-import { useTheme } from '@material-ui/core/styles';
-import { Fab } from '@material-ui/core';
+import { useTheme } from '@mui/material/styles';
+import { Fab } from '@mui/material';
 //
 import { ButtonAnimate } from '../animate';
 
@@ -37,9 +37,9 @@ const MFab = forwardRef(
             color: theme.palette[color].contrastText,
             bgcolor: theme.palette[color].main,
             '&:hover': {
-              bgcolor: theme.palette[color].dark
+              bgcolor: theme.palette[color].dark,
             },
-            ...sx
+            ...sx,
           }}
           {...other}
         >
@@ -61,8 +61,8 @@ MFab.propTypes = {
     'info',
     'success',
     'warning',
-    'error'
-  ])
+    'error',
+  ]),
 };
 
 export default MFab;

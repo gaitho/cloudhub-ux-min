@@ -1,6 +1,6 @@
 import React from 'react';
 import Loadable from '@react-loadable/revised';
-import Box from '@material-ui/core/Box';
+import Box from '@mui/material/Box';
 
 import MuiThemeProvider from './theme';
 import ThemeContext from '@cloudhub-ux/core/theme/ThemeContext';
@@ -19,7 +19,7 @@ const BaseTheme = Loadable({
     <Box justifyContent="center" alignItems="center">
       <Loading />
     </Box>
-  )
+  ),
 });
 
 const ThemeProvider = ({
@@ -46,7 +46,7 @@ const ThemeProvider = ({
               colors: newcolors,
               sizes: newsizes,
               CONFIG: props.CONFIG || {},
-              ...props
+              ...props,
             }}
           >
             {children}
@@ -62,7 +62,7 @@ const ThemeProvider = ({
             colors: newcolors,
             sizes: newsizes,
             CONFIG: props.CONFIG || {},
-            ...props
+            ...props,
           }}
         >
           {children}

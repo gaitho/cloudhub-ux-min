@@ -1,5 +1,5 @@
 // material
-import { Box } from '@material-ui/core';
+import { Box } from '@mui/material';
 //
 import { Icon } from '@iconify/react';
 import fileFill from '@iconify/icons-eva/file-fill';
@@ -20,7 +20,9 @@ export function getFileType(fileUrl) {
 }
 
 export function getFileName(fileUrl) {
-  return fileUrl.substring(fileUrl.lastIndexOf('/') + 1).replace(/\.[^/.]+$/, '');
+  return fileUrl
+    .substring(fileUrl.lastIndexOf('/') + 1)
+    .replace(/\.[^/.]+$/, '');
 }
 
 export function getFileFullName(fileUrl) {
@@ -63,14 +65,26 @@ export function getFileFormat(fileUrl) {
 }
 
 const getIcon = (name) => (
-  <Box component="img" src={`/static/icons/file/${name}.svg`} alt={name} sx={{ width: 28, height: 28 }} />
+  <Box
+    component="img"
+    src={`/static/icons/file/${name}.svg`}
+    alt={name}
+    sx={{ width: 28, height: 28 }}
+  />
 );
 
 export function getFileThumb(fileUrl) {
   let thumb;
   switch (getFileFormat(fileUrl)) {
     case 'image':
-      thumb = <Box component="img" src={fileUrl} alt={fileUrl} sx={{ width: 1, height: 1 }} />;
+      thumb = (
+        <Box
+          component="img"
+          src={fileUrl}
+          alt={fileUrl}
+          sx={{ width: 1, height: 1 }}
+        />
+      );
       break;
     case 'video':
       thumb = getIcon('file_type_video');
@@ -94,7 +108,9 @@ export function getFileThumb(fileUrl) {
       thumb = getIcon('file_type_ai');
       break;
     default:
-      thumb = <Box component={Icon} icon={fileFill} sx={{ width: 28, height: 28 }} />;
+      thumb = (
+        <Box component={Icon} icon={fileFill} sx={{ width: 28, height: 28 }} />
+      );
   }
   return thumb;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 // material
-import { IconButton } from '@material-ui/core';
+import { IconButton } from '@mui/material';
 //
 import { ButtonAnimate } from '../animate';
 
@@ -17,7 +17,7 @@ const MIconButton = forwardRef(({ children, ...other }, ref) => (
 ));
 
 MIconButton.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default MIconButton;

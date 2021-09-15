@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { alpha, styled } from '@material-ui/core/styles';
+import { alpha, styled } from '@mui/material/styles';
 import Scrollbar from '../components/Scrollbar';
 
 // ----------------------------------------------------------------------
@@ -19,28 +19,28 @@ const RootStyle = styled('pre')(({ theme }) => ({
   color: theme.palette.primary.light,
   background: alpha(theme.palette.grey['900'], 0.96),
   '& code': {
-    ...theme.typography.body1
-  }
+    ...theme.typography.body1,
+  },
 }));
 
 const LabelStyle = styled('div')(({ theme }) => ({
   ...theme.typography.subtitle1,
   minWidth: 160,
   margin: theme.spacing(1, 0),
-  color: theme.palette.primary.lighter
+  color: theme.palette.primary.lighter,
 }));
 
 const BoolStyle = styled('div')(({ theme }) => ({
   '& code': {
     color: theme.palette.warning.contrastText,
-    backgroundColor: theme.palette.warning.main
-  }
+    backgroundColor: theme.palette.warning.main,
+  },
 }));
 
 // ----------------------------------------------------------------------
 
 HelperFormik.propTypes = {
-  formik: PropTypes.object
+  formik: PropTypes.object,
 };
 
 export default function HelperFormik({ formik }) {
@@ -57,7 +57,7 @@ export default function HelperFormik({ formik }) {
     initialValues,
     validateOnBlur,
     validateOnMount,
-    validateOnChange
+    validateOnChange,
   } = formik;
 
   const Bool = (name, action) => (
@@ -68,9 +68,9 @@ export default function HelperFormik({ formik }) {
         ...(action && {
           '& code': {
             color: 'warning.contrastText',
-            bgcolor: 'primary.main'
-          }
-        })
+            bgcolor: 'primary.main',
+          },
+        }),
       }}
     >
       <LabelStyle>{name}</LabelStyle>

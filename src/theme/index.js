@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 import { useMemo } from 'react';
 // material
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
 import {
   createTheme,
   ThemeProvider,
-  StyledEngineProvider
-} from '@material-ui/core/styles';
+  StyledEngineProvider,
+} from '@mui/material/styles';
 // hooks
 import useSettings from '../hooks/useSettings';
 //
@@ -23,7 +23,7 @@ import shadows, { customShadows } from './shadows';
 // ----------------------------------------------------------------------
 
 ThemeConfig.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default function ThemeConfig({ children, fonts, sizes, colors }) {
@@ -43,7 +43,7 @@ export default function ThemeConfig({ children, fonts, sizes, colors }) {
       customShadows: isLight ? customShadows.light : customShadows.dark,
       fonts,
       sizes,
-      colors
+      colors,
     }),
     [isLight, themeDirection]
   );
