@@ -4,7 +4,7 @@ import plusSquareOutline from '@iconify/icons-eva/plus-square-outline';
 import minusSquareOutline from '@iconify/icons-eva/minus-square-outline';
 import closeSquareOutline from '@iconify/icons-eva/close-square-outline';
 
-import { Box } from '@material-ui/core';
+import { Box } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
@@ -23,14 +23,14 @@ export default function TreeView(theme) {
             {...ICON_SIZE}
             sx={{ color: 'text.secondary' }}
           />
-        )
-      }
+        ),
+      },
     },
     MuiTreeItem: {
       styleOverrides: {
         label: { ...theme.typography.body2 },
-        iconContainer: { width: 'auto' }
-      }
-    }
+        iconContainer: { width: 'auto' },
+      },
+    },
   };
 }

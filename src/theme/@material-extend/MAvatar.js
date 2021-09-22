@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { forwardRef } from 'react';
 // material
-import { Avatar, useTheme } from '@material-ui/core';
+import { Avatar } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 
@@ -25,7 +26,7 @@ const MAvatar = forwardRef(
           fontWeight: theme.typography.fontWeightMedium,
           color: theme.palette[color].contrastText,
           backgroundColor: theme.palette[color].main,
-          ...sx
+          ...sx,
         }}
         {...other}
       >
@@ -45,8 +46,8 @@ MAvatar.propTypes = {
     'info',
     'success',
     'warning',
-    'error'
-  ])
+    'error',
+  ]),
 };
 
 export default MAvatar;

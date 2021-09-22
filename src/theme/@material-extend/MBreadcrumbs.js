@@ -3,7 +3,7 @@ import { last } from 'lodash';
 import PropTypes from 'prop-types';
 // material
 import { Link as RouterLink } from '@cloudhub-ux/core/reach';
-import { Typography, Box, Link, Breadcrumbs } from '@material-ui/core';
+import { Typography, Box, Link, Breadcrumbs } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
@@ -15,7 +15,7 @@ const Separator = (
 );
 
 LinkItem.propTypes = {
-  link: PropTypes.object
+  link: PropTypes.object,
 };
 
 function LinkItem({ link }) {
@@ -31,14 +31,14 @@ function LinkItem({ link }) {
         display: 'flex',
         alignItems: 'center',
         color: 'text.primary',
-        '& > div': { display: 'inherit' }
+        '& > div': { display: 'inherit' },
       }}
     >
       {icon && (
         <Box
           sx={{
             mr: 1,
-            '& svg': { width: 20, height: 20 }
+            '& svg': { width: 20, height: 20 },
           }}
         >
           {icon}
@@ -51,7 +51,7 @@ function LinkItem({ link }) {
 
 MBreadcrumbs.propTypes = {
   links: PropTypes.array.isRequired,
-  activeLast: PropTypes.bool
+  activeLast: PropTypes.bool,
 };
 
 export default function MBreadcrumbs({ links, activeLast = false, ...other }) {
@@ -72,7 +72,7 @@ export default function MBreadcrumbs({ links, activeLast = false, ...other }) {
             overflow: 'hidden',
             whiteSpace: 'nowrap',
             color: 'text.disabled',
-            textOverflow: 'ellipsis'
+            textOverflow: 'ellipsis',
           }}
         >
           {currentLink}
