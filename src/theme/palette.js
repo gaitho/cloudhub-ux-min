@@ -36,7 +36,7 @@ const PRIMARY = {
   main: '#00AB55',
   dark: '#007B55',
   darker: '#005249',
-  contrastText: '#fff',
+  contrastText: '#fff'
 };
 const SECONDARY = {
   lighter: '#D6E4FF',
@@ -44,7 +44,7 @@ const SECONDARY = {
   main: '#3366FF',
   dark: '#1939B7',
   darker: '#091A7A',
-  contrastText: '#fff',
+  contrastText: '#fff'
 };
 const INFO = {
   lighter: '#D0F2FF',
@@ -52,7 +52,7 @@ const INFO = {
   main: '#1890FF',
   dark: '#0C53B7',
   darker: '#04297A',
-  contrastText: '#fff',
+  contrastText: '#fff'
 };
 const SUCCESS = {
   lighter: '#E9FCD4',
@@ -60,7 +60,7 @@ const SUCCESS = {
   main: '#54D62C',
   dark: '#229A16',
   darker: '#08660D',
-  contrastText: GREY['800'],
+  contrastText: GREY['800']
 };
 const WARNING = {
   lighter: '#FFF7CD',
@@ -68,7 +68,7 @@ const WARNING = {
   main: '#FFC107',
   dark: '#B78103',
   darker: '#7A4F01',
-  contrastText: GREY['800'],
+  contrastText: GREY['800']
 };
 const ERROR = {
   lighter: '#FFE7D9',
@@ -76,7 +76,7 @@ const ERROR = {
   main: '#FF4842',
   dark: '#B72136',
   darker: '#7A0C2E',
-  contrastText: '#fff',
+  contrastText: '#fff'
 };
 
 const GRADIENTS = {
@@ -85,6 +85,7 @@ const GRADIENTS = {
   success: createGradient(SUCCESS.light, SUCCESS.main),
   warning: createGradient(WARNING.light, WARNING.main),
   error: createGradient(ERROR.light, ERROR.main),
+  danger: createGradient(ERROR.light, ERROR.main)
 };
 
 const CHART_COLORS = {
@@ -92,7 +93,7 @@ const CHART_COLORS = {
   blue: ['#2D99FF', '#83CFFF', '#A5F3FF', '#CCFAFF'],
   green: ['#2CD9C5', '#60F1C8', '#A4F7CC', '#C0F2DC'],
   yellow: ['#FFE700', '#FFEF5A', '#FFF7AE', '#FFF3D6'],
-  red: ['#FF6C40', '#FF8F6D', '#FFBD98', '#FFF2D4'],
+  red: ['#FF6C40', '#FF8F6D', '#FFBD98', '#FFF2D4']
 };
 
 const COMMON = {
@@ -103,6 +104,7 @@ const COMMON = {
   success: { ...SUCCESS },
   warning: { ...WARNING },
   error: { ...ERROR },
+  danger: { ...ERROR },
   grey: GREY,
   gradients: GRADIENTS,
   chart: CHART_COLORS,
@@ -114,8 +116,8 @@ const COMMON = {
     disabledBackground: GREY['500_24'],
     focus: GREY['500_24'],
     hoverOpacity: 0.08,
-    disabledOpacity: 0.48,
-  },
+    disabledOpacity: 0.48
+  }
 };
 
 const palette = {
@@ -124,10 +126,10 @@ const palette = {
     text: {
       primary: GREY['800'],
       secondary: GREY['600'],
-      disabled: GREY['500'],
+      disabled: GREY['500']
     },
     background: { paper: '#fff', default: '#fff', neutral: GREY['200'] },
-    action: { active: GREY['600'], ...COMMON.action },
+    action: { active: GREY['600'], ...COMMON.action }
   },
   dark: {
     ...COMMON,
@@ -135,10 +137,10 @@ const palette = {
     background: {
       paper: GREY['800'],
       default: GREY['900'],
-      neutral: GREY['500_16'],
+      neutral: GREY['500_16']
     },
-    action: { active: GREY['500'], ...COMMON.action },
-  },
+    action: { active: GREY['500'], ...COMMON.action }
+  }
 };
 
 export default palette;

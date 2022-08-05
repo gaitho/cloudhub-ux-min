@@ -3,7 +3,8 @@
     [
       "@babel/preset-env",
       {
-        "modules": "commonjs"
+        "loose": true,
+        "modules": false
       }
     ],
     [
