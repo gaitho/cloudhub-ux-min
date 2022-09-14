@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import starFill from '@iconify/icons-eva/star-fill';
 
-import { SvgIcon } from '@mui/material';
+import SvgIcon from '@mui/material/SvgIcon';
 
 // ----------------------------------------------------------------------
 

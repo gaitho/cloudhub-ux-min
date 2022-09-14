@@ -1,5 +1,5 @@
 // material
-import { Box } from '@mui/material';
+import Box from '@mui/material/Box';
 //
 import { Icon } from '@iconify/react';
 import fileFill from '@iconify/icons-eva/file-fill';
